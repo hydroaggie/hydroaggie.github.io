@@ -154,9 +154,14 @@ HAMLETS (NeurIPS: <a href="https://hamlets-workshop.github.io/" target="_blank">
 ICBINB (NeurIPS: <a href="https://i-cant-believe-its-not-better.github.io/" target="_blank">2020</a>, <a href="https://i-cant-believe-its-not-better.github.io/neurips2021/" target="_blank">2021</a>) <br>
 Neural Compression (ICLR: <a href="https://neuralcompression.github.io/" target="_blank">2021</a>) <br>
 Score Based Methods (NeurIPS: <a href="https://score-based-methods-workshop.github.io/" target="_blank">2022</a>)<br>
+<<<<<<< HEAD
 Images2Symbols (CogSci: <a href="https://images2symbols.github.io/" target="_blank"> 2022</a>) <br>
 Medical Robotics Junior Faculty Forum (ISMR: <a href="https://junior-forum-ismr.github.io/" target="_blank"> 2023</a>)<br>
 Beyond Vision: Physics meets AI (ICIAP: <a href="https://physicsmeetsai.github.io/beyond-vision/" target="_blank">2023</a>)
+=======
+Images2Symbols (CogSci: <a href="https://images2symbols.github.io/" target="_blank"> 2022</a>)
+Medical Robotics Junior Faculty Forum (ISMR: <a href="https://junior-forum-ismr.github.io/" target="_blank"> 2023</a>)
+>>>>>>> fad970c (Initial commit)
 </td>
 </tr>
 </table>
@@ -167,10 +172,17 @@ Beyond Vision: Physics meets AI (ICIAP: <a href="https://physicsmeetsai.github.i
 
 ## Table Of Contents
 
+<<<<<<< HEAD
   - [User community](#user-community)
   - [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
   - [Table Of Contents](#table-of-contents)
   - [Getting started](#getting-started)
+=======
+  * [User community](#user-community)
+  * [Lighthouse PageSpeed Insights](#lighthouse-pagespeed-insights)
+  * [Table Of Contents](#table-of-contents)
+  * [Getting started](#getting-started)
+>>>>>>> fad970c (Initial commit)
     - [Installation](#installation)
       - [Local setup using Docker (Recommended)](#local-setup-using-docker-recommended)
       - [Local Setup (Legacy)](#local-setup-legacy)
@@ -312,6 +324,7 @@ $ bundle exec jekyll build --lsi
 which will (re-)generate the static webpage in the `_site/` folder.
 Then simply copy the contents of the `_site/` directory to your hosting server.
 
+<<<<<<< HEAD
 If you also want to remove unused css classes from your file, run:
 
 ```bash
@@ -320,6 +333,8 @@ $ purgecss -c purgecss.config.js
 
 which will replace the css files in the `_site/assets/css/` folder with the purged css files.
 
+=======
+>>>>>>> fad970c (Initial commit)
 **Note:** Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` before building the webpage. If you are deploying your webpage to `your-domain.com/your-project/`, you must set `url: your-domain.com` and `baseurl: /your-project/`. If you are deploying directly to `your-domain.com`, leave `baseurl` blank.
 
 </details>
@@ -631,7 +646,11 @@ A variety of beautiful theme colors have been selected for you to choose from.
 The default is purple, but you can quickly change it by editing the
 `--global-theme-color` variable in the `_sass/_themes.scss` file.
 Other color variables are listed there as well.
+<<<<<<< HEAD
 The stock theme color options available can be found at `_sass/_variables.scss`.
+=======
+The stock theme color options available can be found at `_sass/variables.scss`.
+>>>>>>> fad970c (Initial commit)
 You can also add your own colors to this file assigning each a name for ease of
 use across the template.
 
