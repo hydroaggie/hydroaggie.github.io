@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The CIHG research group has officially started at Utah State University :grin:
+The Shuai CIHG research group is born today at Utah State University :grin:
