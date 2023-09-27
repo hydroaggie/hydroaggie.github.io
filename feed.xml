@@ -1,4 +1,162 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hydroaggie.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://hydroaggie.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-09-14T20:09:45+00:00</updated><id>https://hydroaggie.github.io/feed.xml</id><title type="html">Computational and Integrated Hydrology Group</title><subtitle>The CIHG research group at USU. </subtitle><entry><title type="html">Create Your Personal Website using GitHub Pages</title><link href="https://hydroaggie.github.io/blog/2023/Create-Your-Personal-Website-Using-Github-Pages/" rel="alternate" type="text/html" title="Create Your Personal Website using GitHub Pages"/><published>2023-09-08T00:00:00+00:00</published><updated>2023-09-08T00:00:00+00:00</updated><id>https://hydroaggie.github.io/blog/2023/Create-Your-Personal-Website-Using-Github-Pages</id><content type="html" xml:base="https://hydroaggie.github.io/blog/2023/Create-Your-Personal-Website-Using-Github-Pages/"><![CDATA[<p>This tutorial shows simple steps you need to take to set up your personal website using <a href="https://pages.github.com/">GitHub Pages</a> and <a href="https://jekyllrb.com/">Jekyll</a> templates. It is completely free! You can also find <a href="https://pages.github.com/">official document page</a>, YouTube <a href="https://www.youtube.com/watch?v=QyFcl_Fba-k">tutorials</a>, and <a href="https://jayrobwilliams.com/posts/2020/06/academic-website/">blogs</a> online.</p> <h2 id="pre-requisites">Pre-requisites</h2> <ul> <li>GitHub account. Before we start, make sure you have a <a href="https://github.com/">GitHub</a> account.</li> <li>Docker. Install Docker locally on your computer. This will be used to run Docker images.</li> </ul> <h2 id="find-a-template">Find a template</h2> <p>To avoid building from scratch, start with a template. There are many templates on Github. Here are a few that focus on academia. We will use al-folio as an example in this blog.</p> <ul> <li><a href="https://github.com/alshedivat/al-folio">al-folio</a>: A Jekyll theme website for academics. You can use it to build both personal and group/lab pages. There are many examples listed in the Readme. I personally used it to create my <a href="https://hydroaggie.github.io/">group website</a>. There is a cool <a href="https://www.youtube.com/watch?v=g6AJ9qPPoyc">video</a> on how to setup.</li> <li><a href="https://github.com/academicpages/academicpages.github.io">academicpages</a>: Another template for academic websites. It provides detailed instructions on its readme. Also see this <a href="https://jayrobwilliams.com/posts/2020/06/academic-website/">blog</a> as an example.</li> </ul> <h2 id="installation">Installation</h2> <ul> <li>Go to <code class="language-plaintext highlighter-rouge">https://github.com/alshedivat/al-folio</code>, click the green button <code class="language-plaintext highlighter-rouge">Use this template</code> and select <code class="language-plaintext highlighter-rouge">Create a new repository</code>. Follow the instructions to create a new repo. <strong>Remember to use <code class="language-plaintext highlighter-rouge">your_github_name/your_github_name.github.io</code> as the new repository name</strong>. This will allow GitHub Page to work.</li> <li>Go to the newly created repo <code class="language-plaintext highlighter-rouge">your_github_name/your_github_name.github.io</code>, click <code class="language-plaintext highlighter-rouge">Code</code> and clone the repo. You can also choose to open with GitHub Desktop. Here is a command line example. <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/your_github_name/your_github_name.github.io.git
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hydroaggie.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://hydroaggie.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2023-09-27T15:58:34+00:00</updated><id>https://hydroaggie.github.io/feed.xml</id><title type="html">Computational and Integrated Hydrology Group</title><subtitle>The CIHG research group at USU. </subtitle><entry><title type="html">A Zotero to Obsidian Workflow</title><link href="https://hydroaggie.github.io/blog/2023/A-Zotero-to-Obsidian-Workflow/" rel="alternate" type="text/html" title="A Zotero to Obsidian Workflow"/><published>2023-09-26T00:00:00+00:00</published><updated>2023-09-26T00:00:00+00:00</updated><id>https://hydroaggie.github.io/blog/2023/A-Zotero-to-Obsidian-Workflow</id><content type="html" xml:base="https://hydroaggie.github.io/blog/2023/A-Zotero-to-Obsidian-Workflow/"><![CDATA[<p>This tutorial combines the contents from <a href="https://forum.obsidian.md/t/zotero-zotfile-mdnotes-obsidian-dataview-workflow/15536">this</a> and <a href="https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd">this</a> blog with customization.</p> <h2 id="pre-requisites">Pre-requisites:</h2> <ul> <li>Zotero (v6.0.27)</li> <li>Obsidian (v1.4.13)</li> <li>Obsidian plugins: Zotero Integration, Templater, Dataview</li> <li>Optional Zotero plugins: Zotfile, Better BibTex (used to create citation key)</li> </ul> <h2 id="setup">Setup</h2> <h3 id="create-a-template-for-zotero-integration">Create a template for Zotero Integration</h3> <p>To add a template, go to …</p> <p>I started with the template provided in <a href="https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd">this</a> post. I like the different callouts used for citation, abstract, and etc. However, I don’t like the look of the annotations and the images are not embeded in the notes.</p> <p>I came across <a href="https://forum.obsidian.md/t/zotero-integration-import-templates/36310">this post</a> in the Obsidian Forum, which color-codes the highlights and provides image embeding in the annotation. There is one little problem with the color style in the CSS snippet. The colors do not match the ones used in Zotero (see <code class="language-plaintext highlighter-rouge">Variables</code> in <a href="https://www.zotero.org/support/note_templates">ref</a>). I have updated the CSS snippet and provided below.</p> <p>In the end, I combined those two templates and came up with <a href="">this customized one</a> that I really like.</p> <p>Here is the color code for highlights:</p> <table> <thead> <tr> <th style="text-align: left">Color</th> <th style="text-align: center">Meaning</th> </tr> </thead> <tbody> <tr> <td style="text-align: left"><span style="color:yellow;"> yellow</span></td> <td style="text-align: center"><span style="color:yellow;"> Relavent/important. The default color.</span></td> </tr> <tr> <td style="text-align: left"><span style="color:green;"> green </span></td> <td style="text-align: center"><span style="color:green;"> Follow up and read the cited papers. </span></td> </tr> <tr> <td style="text-align: left"><span style="color:red;"> red </span></td> <td style="text-align: center"><span style="color:red;"> Disagree with the author. </span></td> </tr> <tr> <td style="text-align: left"><span style="color:magenta;"> magenta </span></td> <td style="text-align: center"><span style="color:magenta;"> The author critiques previous work or points out knowledge gaps. </span></td> </tr> <tr> <td style="text-align: left"><span style="color:orange;"> orange </span></td> <td style="text-align: center"><span style="color:orange;"> Questions/confusion about the statement </span></td> </tr> </tbody> </table> <p>I will breakdown into different sections:</p> <ul> <li>Cite:</li> <li>Synthesis:</li> <li>Link:</li> <li>Abstract:</li> <li>Annotations: The page link will take you back to the PDF reader in Zotero.**</li> <li>Metadata</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+---
+cssclass: literature-note
+category: literaturenote
+title: {{title}}
+tags: {% if allTags %}{{allTags}}{% endif %}
+citekey: {{citekey}}
+status: unread
+dateread:
+---
+
+&gt; [!Cite]
+&gt; {{bibliography}}
+
+&gt;[!Synthesis]
+&gt;**Contribution**:: 
+&gt;
+&gt;**Related**:: {% for relation in relations | selectattr("citekey") %} [[@{{relation.citekey}}]]{% if not loop.last %}, {% endif%} {% endfor %}
+&gt;
+
+&gt; [!Link] 
+&gt; {%- for attachment in attachments | filterby("path", "endswith", ".pdf") %}
+&gt;  [{{attachment.title}}](file://{{attachment.path | replace(" ", "%20")}})  {%- endfor -%}.
+
+&gt; [!Abstract]-
+&gt; {%- if abstractNote %}
+&gt; {{abstractNote}}
+&gt; {%- endif -%}.
+
+
+## Annotations
+
+{%- macro colorValueToName(color) -%}
+	{%- switch color -%}
+		{%- case "#ffd400" -%}
+			Relevant / important
+		{%- case "#ff6666" -%}
+			Disagree
+		{%- case "#e56eee" -%}
+			Critiques
+		{%- case "#a28ae5" -%}
+			Questions / confusion
+		{%- case "#5fb236" -%}
+			TODO / follow up
+		{%- default -%}
+			Note
+	{%- endswitch -%}
+{%- endmacro -%}
+
+{%- macro calloutHeader(type) -%}
+	{%- switch type -%}
+		{%- case "highlight" -%}
+			Highlight
+		{%- case "strike" -%}
+			Strikethrough
+		{%- case "underline" -%}
+			Underline
+		{%- case "image" -%}
+			Image
+		{%- default -%}
+			Note
+	{%- endswitch -%}
+{%- endmacro %}
+
+{% persist "annotations" %}
+{% set annots = annotations | filterby("date", "dateafter", lastImportDate) -%}
+{% if annots.length &gt; 0 %}
+### Imported on {{importDate | format("YYYY-MM-DD h:mm a")}}
+
+{% for color, annots in annots | groupby("color") -%}
+#### {{colorValueToName(color)}}
+
+{% for annot in annots -%}
+&gt; [!quote{% if annot.color %}|{{annot.color}}{% endif %}] {{calloutHeader(annot.type)}}
+{%- if annot.annotatedText %}
+&gt; {{annot.annotatedText | nl2br}}
+{%- endif -%}
+{%- if annot.imageRelativePath %}
+&gt; ![[{{annot.imageRelativePath}}]]
+{%- endif %}
+{%- if annot.ocrText %}
+&gt; {{annot.ocrText}}
+{%- endif %}
+{%- if annot.comment %}
+&gt;
+&gt;&gt; {{annot.comment | nl2br}}
+{%- endif %}
+&gt;
+&gt; [Page {{annot.page}}](zotero://open-pdf/library/items/{{annot.attachment.itemKey}}?page={{annot.page}}) [{{annot.date | format("YYYY-MM-DD#h:mm a")}}]
+
+{% endfor -%}
+{% endfor -%}
+{% endif %}
+{% endpersist %}
+
+&gt;[!metadata]-
+{% for type, creators in creators | groupby("creatorType") -%}
+{%- for creator in creators -%}
+&gt; **{{"First" if loop.first}}{{type | capitalize}}**::
+{%- if creator.name %} {{creator.name}}  
+{%- else %} {{creator.lastName}}, {{creator.firstName}}  
+{%- endif %}  
+{% endfor %}~ 
+{%- endfor %}    
+&gt; **Title**:: {{title}}  
+&gt; **Year**:: {{date | format("YYYY")}}   
+&gt; **Citekey**:: {{citekey}} {%- if itemType %}  
+&gt; **itemType**:: {{itemType}}{%- endif %}{%- if itemType == "journalArticle" %}  
+&gt; **Journal**:: *{{publicationTitle}}* {%- endif %}{%- if volume %}  
+&gt; **Volume**:: {{volume}} {%- endif %}{%- if issue %}  
+&gt; **Issue**:: {{issue}} {%- endif %}{%- if itemType == "bookSection" %}  
+&gt; **Book**:: {{publicationTitle}} {%- endif %}{%- if publisher %}  
+&gt; **Publisher**:: {{publisher}} {%- endif %}{%- if place %}  
+&gt; **Location**:: {{place}} {%- endif %}{%- if pages %}   
+&gt; **Pages**:: {{pages}} {%- endif %}{%- if DOI %}  
+&gt; **DOI**:: {{DOI}} {%- endif %}{%- if ISBN %}  
+&gt; **ISBN**:: {{ISBN}} {%- endif %}    
+
+
+</code></pre></div></div> <p>To add the CSS snippet, go to … Here is the updated CSS snippet:</p> <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Yellow */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#ffd400"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">255</span><span class="p">,</span> <span class="m">204</span><span class="p">,</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Red */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#ff6666"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">255</span><span class="p">,</span> <span class="m">59</span><span class="p">,</span> <span class="m">48</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Orange */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#f19837"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">255</span><span class="p">,</span> <span class="m">149</span><span class="p">,</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Green */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#5fb236"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">40</span><span class="p">,</span> <span class="m">205</span><span class="p">,</span> <span class="m">65</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Blue */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#2ea8e5"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span> <span class="m">122</span><span class="p">,</span> <span class="m">255</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Purple */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#a28ae5"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">125</span><span class="p">,</span> <span class="m">84</span><span class="p">,</span> <span class="m">222</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Magenta */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#e56eee"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">255</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Gray */</span>
+<span class="nc">.literature-note</span> <span class="nc">.callout</span><span class="o">[</span><span class="nt">data-callout-metadata</span><span class="o">=</span><span class="s1">"#aaaaaa"</span><span class="o">]</span> <span class="p">{</span>
+  <span class="py">--callout-color</span><span class="p">:</span> <span class="m">50</span><span class="p">,</span> <span class="m">50</span><span class="p">,</span> <span class="m">50</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div> <h2 id="workflow">Workflow</h2> <h3 id="export-annotation-to-note">Export annotation to note</h3> <p>After you made highlights and comments, export them to a note using xx. You can further format the color and text (see <a href="https://www.zotero.org/support/note_templates">note templates documentation</a>). However, I will skip this and just use formatting in the Zotero Integration template.</p> <h3 id="import-notes-into-obsidian">Import notes into Obsidian</h3> <p>Open command pallett:</p> <p>Alternative, create a hotkey for that command.</p> <p>In the pop-up box, type in the author to search for literature. Once found, hit <code class="language-plaintext highlighter-rouge">enter</code>. It will automatically generate a markdown note using the zotero template.</p> <p>Here is a screenshot shows the final markdown file in Obsidian.</p> <p>You can create internal links in the created file to generate a mind-map.</p> <h3 id="create-table-using-dataview">Create table using Dataview</h3> <h2 id="references">References</h2> <ul> <li>https://forum.obsidian.md/t/zotero-integration-import-templates/36310</li> <li>https://forum.obsidian.md/t/zotero-zotfile-mdnotes-obsidian-dataview-workflow/15536</li> <li>https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd</li> </ul>]]></content><author><name></name></author><category term="tutorial"/><category term="Zotero"/><category term="Obsidian"/><category term="Workflow"/><category term="note-taking"/><summary type="html"><![CDATA[A workflow on how to export notes from Zotero to Obsidian]]></summary></entry><entry><title type="html">Create Your Personal Website using GitHub Pages</title><link href="https://hydroaggie.github.io/blog/2023/Create-Your-Personal-Website-Using-Github-Pages/" rel="alternate" type="text/html" title="Create Your Personal Website using GitHub Pages"/><published>2023-09-08T00:00:00+00:00</published><updated>2023-09-08T00:00:00+00:00</updated><id>https://hydroaggie.github.io/blog/2023/Create-Your-Personal-Website-Using-Github-Pages</id><content type="html" xml:base="https://hydroaggie.github.io/blog/2023/Create-Your-Personal-Website-Using-Github-Pages/"><![CDATA[<p>This tutorial shows simple steps you need to take to set up your personal website using <a href="https://pages.github.com/">GitHub Pages</a> and <a href="https://jekyllrb.com/">Jekyll</a> templates. It is completely free! You can also find <a href="https://pages.github.com/">official document page</a>, YouTube <a href="https://www.youtube.com/watch?v=QyFcl_Fba-k">tutorials</a>, and <a href="https://jayrobwilliams.com/posts/2020/06/academic-website/">blogs</a> online.</p> <h2 id="pre-requisites">Pre-requisites</h2> <ul> <li>GitHub account. Before we start, make sure you have a <a href="https://github.com/">GitHub</a> account.</li> <li>Docker. Install Docker locally on your computer. This will be used to run Docker images.</li> </ul> <h2 id="find-a-template">Find a template</h2> <p>To avoid building from scratch, start with a template. There are many templates on Github. Here are a few that focus on academia. We will use al-folio as an example in this blog.</p> <ul> <li><a href="https://github.com/alshedivat/al-folio">al-folio</a>: A Jekyll theme website for academics. You can use it to build both personal and group/lab pages. There are many examples listed in the Readme. I personally used it to create my <a href="https://hydroaggie.github.io/">group website</a>. There is a cool <a href="https://www.youtube.com/watch?v=g6AJ9qPPoyc">video</a> on how to setup.</li> <li><a href="https://github.com/academicpages/academicpages.github.io">academicpages</a>: Another template for academic websites. It provides detailed instructions on its readme. Also see this <a href="https://jayrobwilliams.com/posts/2020/06/academic-website/">blog</a> as an example.</li> </ul> <h2 id="installation">Installation</h2> <ul> <li>Go to <code class="language-plaintext highlighter-rouge">https://github.com/alshedivat/al-folio</code>, click the green button <code class="language-plaintext highlighter-rouge">Use this template</code> and select <code class="language-plaintext highlighter-rouge">Create a new repository</code>. Follow the instructions to create a new repo. <strong>Remember to use <code class="language-plaintext highlighter-rouge">your_github_name/your_github_name.github.io</code> as the new repository name</strong>. This will allow GitHub Page to work.</li> <li>Go to the newly created repo <code class="language-plaintext highlighter-rouge">your_github_name/your_github_name.github.io</code>, click <code class="language-plaintext highlighter-rouge">Code</code> and clone the repo. You can also choose to open with GitHub Desktop. Here is a command line example. <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/your_github_name/your_github_name.github.io.git
 <span class="nb">cd </span>your_github_name.github.io
 </code></pre></div> </div> </li> <li>Local setup using Docker (<strong>Recommended</strong>). Follow the instructions <a href="https://github.com/alshedivat/al-folio#local-setup-using-docker-recommended">here</a>. Alternatively, you can <a href="https://github.com/alshedivat/al-folio#local-setup-legacy">set up locally</a> by installing several packages (this may be challenging for new users).</li> <li>Once the local setup is successful, you will see a prompt with the local server address on screen. <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Auto-regeneration: enabled <span class="k">for</span> <span class="s1">'Path/to/your_github_name.github.io'</span>
   Server address: http://127.0.0.1:4000
@@ -397,37 +555,4 @@ pip <span class="nb">install</span> <span class="nt">-Iv</span> <span class="nv"
                   <span class="s">python -m unittest discover tests/</span>
             <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">pip install -r requirements_docs.txt</span>
             <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">mkdocs gh-deploy --force</span> 
-</code></pre></div></div> <h2 id="trouble-shooting">Trouble shooting</h2> <ol> <li>Pip could not find the latest version even though it is updated on Pypi website. <ul> <li>solution: update pip first using <code class="language-plaintext highlighter-rouge">pip install -U pip</code>, then install the package using <code class="language-plaintext highlighter-rouge">pip install -U PACKAGE_NAME</code> <h2 id="reference">Reference</h2> </li> </ul> </li> </ol> <ul> <li>My <code class="language-plaintext highlighter-rouge">modvis</code> python package: https://github.com/pinshuai/modvis</li> <li><code class="language-plaintext highlighter-rouge">Pypackage</code> by Qiusheng Wu: https://github.com/giswqs/pypackage</li> </ul>]]></content><author><name></name></author><category term="geek"/><category term="python"/><category term="package"/><summary type="html"><![CDATA[A tutorial on how to publish a python package on Pypi]]></summary></entry><entry><title type="html">Working with SNODAS data</title><link href="https://hydroaggie.github.io/blog/2021/Postprocess-SNODAS/" rel="alternate" type="text/html" title="Working with SNODAS data"/><published>2021-10-25T00:00:00+00:00</published><updated>2021-10-25T00:00:00+00:00</updated><id>https://hydroaggie.github.io/blog/2021/Postprocess-SNODAS</id><content type="html" xml:base="https://hydroaggie.github.io/blog/2021/Postprocess-SNODAS/"><![CDATA[<p>I will show how to post-process SNODAS data using a suite of tools in the command line. This tutorial has only been tested on Linux/Ubuntu system, but the method should be the same for other OS.</p> <p>Some notes about the SNODAS snow data:</p> <ul> <li>The <a href="https://nsidc.org/sites/nsidc.org/files/G02158-V001-UserGuide_2.pdf">User guide</a> provides the most complete information about SNODAS.</li> <li>the masked snow data files for the CONUS since Oct 2003; the unmasked data is for the</li> </ul> <h2 id="software-requirement">Software requirement</h2> <p><code class="language-plaintext highlighter-rouge">nco</code>, Docker</p> <h2 id="download-data">Download data</h2> <p>See https://nsidc.org/support/64231694-FTP-Client-Data-Access for more details.</p> <p>I used wget to download all the snow data:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget <span class="nt">--ftp-user</span><span class="o">=</span>anonymous <span class="nt">-r</span> <span class="nt">-nd</span> ftp://sidads.colorado.edu/DATASETS/NOAA/G02158/masked
-</code></pre></div></div> <h2 id="post-process">Post-process</h2> <h3 id="untar-and-unzip">Untar and unzip</h3> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># untar</span>
-<span class="nb">ls</span> <span class="k">*</span>.tar | xargs <span class="nt">-i</span> <span class="nb">tar </span>xf <span class="o">{}</span>
-
-<span class="c"># unzip .gz files</span>
-<span class="nb">gunzip</span> <span class="k">*</span>.gz  <span class="c"># note, this will replace original files!</span>
-</code></pre></div></div> <p>You will have both *.dat and *.txt file with the same file name.</p> <p>Each .dat file is differentiated by the product code. See SNODAS user guide for more details.</p> <ul> <li><code class="language-plaintext highlighter-rouge">us_ssmv11034tS*.dat</code> is for SWE</li> </ul> <h3 id="subset-data-using-pyrs">Subset data using pyrs</h3> <p>See https://nsidc.org/support/how/subsetting-and-reformatting-nsidc-pyrs-docker-container for more info.</p> <ul> <li> <p>prepare data. Move all <code class="language-plaintext highlighter-rouge">us_ssmv11034tS__T0001TTNATS*.dat</code> into a single folder.</p> </li> <li> <p>Download docker (<strong>need root permission</strong>). Follow the <a href="https://docs.docker.com/engine/install/ubuntu/">instructions</a> for installing Linux-ubuntu version.</p> </li> <li> <p>Run docker. This will mount input datasets as well as output directory, and run <code class="language-plaintext highlighter-rouge">pyrs</code> interactively.</p> </li> <li> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-it</span> <span class="nt">--rm</span> <span class="nt">-v</span> /mnt/4tbd/pin/SNODAS/extracted-files/us_swe/extracted-files/dat/:/DATASETS <span class="nt">-v</span> /mnt/4tbd/pin/SNODAS/extracted-files/us_swe/extracted-files/netcdf/:/output  nsidc/pyrs_container:v1.1.0
-</code></pre></div> </div> <ul> <li>Run PyRS <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># enter command for interactive operation</span>
-<span class="nv">$ </span>pyrs
-<span class="c"># choose data source</span>
-Source <span class="nb">type</span> <span class="o">(</span>one of SNODAS, NSIDC-0051, NSIDC-0081<span class="o">)</span>:SNODAS
-<span class="c"># choose format</span>
-Output format <span class="o">(</span>one of geotiff, netcdf<span class="o">)</span>: netcdf
-<span class="c"># then follow the prompts to enter input/output directory</span>
-Input directory <span class="o">[</span>/]:/DATASETS
-Output directory <span class="o">[</span>/]:/output
-<span class="c"># wheter to subset the data</span>
-Would you like to subset the data? <span class="o">[</span>y/N]:y
-<span class="c"># enter the box region in decimal</span>
-westernmost bound <span class="o">(</span>decimal degrees from <span class="nt">-125</span>.0 to <span class="nt">-67</span>.0<span class="o">)</span> <span class="o">[</span><span class="nt">-125</span>.0]:-108
-northernmost bound <span class="o">(</span>decimal degrees from 25.0 to 53.0<span class="o">)</span> <span class="o">[</span>53.0]:40
-easternmost bound <span class="o">(</span>decimal degrees from <span class="nt">-108</span>.0 to <span class="nt">-67</span>.0<span class="o">)</span> <span class="o">[</span><span class="nt">-67</span>.0]:-106
-southernmost bound <span class="o">(</span>decimal degrees from 25.0 to 40.0<span class="o">)</span> <span class="o">[</span>25.0]:38
-<span class="c"># wait for it to process</span>
-<span class="c"># exit when it is done</span>
-<span class="nb">exit</span>
-</code></pre></div> </div> </li> </ul> </li> </ul> <h3 id="combine-netcdf-files">combine netcdf files</h3> <ul> <li>download <a href="http://nco.sourceforge.net/">NCO tookit</a> For Ubuntu/Linux: <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aptitude <span class="nb">install </span>nco
-</code></pre></div> </div> </li> <li>Combine all daily netcdf files using <code class="language-plaintext highlighter-rouge">ncrcat</code> command:</li> </ul> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">ls</span> | <span class="nb">grep</span> <span class="se">\.</span>nc | ncrcat <span class="nt">-o</span> SWE_2014-east-taylor.nc
-</code></pre></div></div> <ul> <li>remove concat history from the attributes field using <code class="language-plaintext highlighter-rouge">ncatted</code> command. This can help to reduce the netcdf filesize.</li> </ul> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ncatted <span class="nt">-a</span> nco_input_file_list,global,d,, SWE_2014-east-taylor.nc
-</code></pre></div></div> <p>​ For details on how to use <code class="language-plaintext highlighter-rouge">ncatted</code>, see http://nco.sourceforge.net/nco.html#ncatted</p> <p>​ - view the contect of netcdf using <code class="language-plaintext highlighter-rouge">ncdump -hs SWE_2014.nc</code></p> <h3 id="subset-region">Subset region</h3> <p>Use <code class="language-plaintext highlighter-rouge">ncea</code> to subset regions. See <a href="http://nco.sourceforge.net/nco.html#xmp_ncea">documentation</a> for more details.</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># format</span>
-ncea <span class="nt">-d</span> lat,minimum_lat,maximum_lat <span class="nt">-d</span> lon,minimum_lon,maximum_lon <span class="k">in</span>.nc out.nc
-<span class="c"># for example</span>
-ncea <span class="nt">-d</span> lat,38.0,40.0 <span class="nt">-d</span> lon,-108.0,-106.0 SNODAS_SWE-US-2003-2021.nc SNODAS_SWE_EastTaylor-2003-2021.nc
-</code></pre></div></div>]]></content><author><name></name></author><category term="data"/><category term="data"/><category term="postprocess"/><summary type="html"><![CDATA[A tutorial on how to download and post-process SNODAS data]]></summary></entry></feed>
+</code></pre></div></div> <h2 id="trouble-shooting">Trouble shooting</h2> <ol> <li>Pip could not find the latest version even though it is updated on Pypi website. <ul> <li>solution: update pip first using <code class="language-plaintext highlighter-rouge">pip install -U pip</code>, then install the package using <code class="language-plaintext highlighter-rouge">pip install -U PACKAGE_NAME</code> <h2 id="reference">Reference</h2> </li> </ul> </li> </ol> <ul> <li>My <code class="language-plaintext highlighter-rouge">modvis</code> python package: https://github.com/pinshuai/modvis</li> <li><code class="language-plaintext highlighter-rouge">Pypackage</code> by Qiusheng Wu: https://github.com/giswqs/pypackage</li> </ul>]]></content><author><name></name></author><category term="geek"/><category term="python"/><category term="package"/><summary type="html"><![CDATA[A tutorial on how to publish a python package on Pypi]]></summary></entry></feed>
