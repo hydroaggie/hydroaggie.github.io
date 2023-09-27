@@ -45,8 +45,9 @@ git latexdiff --main manuscript.tex HEAD~2
 git latexdiff --main manuscript.tex c0b1428d8dc81dbe12bf28b17e83382df31c4200 HEAD
 ```
 
+**note**: If the citations are not rendered correctly, see the second approach below using `latexdiff`.
 
-## Diff the tex files using `latexdiff`
+## Diff the tex files using `latexdiff` (more stable)
 
 - Save the different versions of tex files to local computer
 - Using `latexdiff` and `pdflatex` on the command line
