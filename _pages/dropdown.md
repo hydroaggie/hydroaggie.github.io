@@ -2,12 +2,12 @@
 layout: page
 title: submenus
 nav: true
-nav_order: 6
+nav_order: 99
 dropdown: true
 children: 
-    - title: publications
-      permalink: /publications/
+    - title: prospective students
+      permalink: /prospective_students/
     - title: divider
-    - title: projects
-      permalink: /projects/
+    - title: group handbook
+      permalink: /group_handbook/
 ---
