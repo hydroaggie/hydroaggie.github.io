@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Fuzzy Search using FZF
-date: 2021-07-01 
+date: 2021-07-01
 description: A tutorial on how to use FZF fuzzy search capability to quickly find files
-tags: tutorial mac 
-categories: tool
+tags:
+  - tutorial
+  - mac
+categories: tutorial
 giscus_comments: true
 related_posts: true
 toc:
@@ -15,6 +17,13 @@ toc:
 FZF is a command line tool to fuzzy search files. See [github README](https://github.com/junegunn/fzf). 
 
 ## Installation
+
+- (**Recommended**) System independent installation. This works on Linux/Unix and does not require root privilege.
+
+```bash
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
 
 - On MacOS
 
@@ -30,12 +39,6 @@ $ /opt/homebrew/opt/fzf/install
 $ /usr/local/opt/fzf/install # press enter
 ```
 
-- System independent
-
-```bash
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-```
 
 - (**Recommended**) install either `rg` (ripgrep) or `ag` (the Silver Searcher?) to make searching much faster
 
@@ -63,6 +66,16 @@ if type rg &> /dev/null; then
   --bind '?:toggle-preview' 
 "
 fi
+
+
+# add alias to bash
+
+alias cf='c $(fzf)' # navigate to different directory. This requires the `c` bash function enabled.
+alias f='fzf' # search current directory
+
+# optionally use rg with fzf. This requires `rg` installation.
+alias in='rg . | fzf --print0'  # use -e for exact match; use -u for unrestricted match (i.e., skip .ignore files)
+alias F='rg . --files --hidden --unrestricted | fzf --print0'
 ```
 
 ## Command line usage
@@ -83,20 +96,18 @@ $ cd $(fzf)
 - Fzf provide several command-line shortcut after installation:
 
   - `Ctrl + T`: paste the path of file or directory found on the command line
-  - `Ctrl + R`: find history command and paste command on the command line
+  - `Ctrl + R`: find history command and paste command on the command line. Most useful.
   - `Alt + C`: cd to specific directory. Note this shortcut will not work on some MacOS system, try `Esc + C` or add `bindkey "ç" fzf-cd-widget` to .zshrc [ref](https://github.com/junegunn/fzf/issues/164)
 
-- auto completion
+- auto completion. use `TAB` to auto-complete the command.
 
-  - ```bash
+  ```bash
     $ vi ~/Dropbox/**<tab>
     $ cd ~/Dropbox/**<tab>
     $ ls ~/**<tab>
     $ ssh **<tab>
     $ kill<tab>
-    ```
-
-    
+```
 
 ## Use with Vim
 

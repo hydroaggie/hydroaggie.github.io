@@ -21,12 +21,36 @@ This tutorial combines the contents from [this](https://forum.obsidian.md/t/zote
 - Zotero (v6.0.27)
 - Obsidian (v1.4.13)
 - Obsidian plugins: Zotero Integration, Templater, Dataview
+- Optional Zotero Browser Extension for Chrome/Firefox
 - Optional Zotero plugins: Zotfile, Better BibTex (used to create citation key)
 
 ## Setup
 
+### Install Obsidian plugins
+For this workflow to work, you will need to install Zotero Integration, Templater, Dataview.
+
+It may be difficult to find where the plugins are for the first time. 
+- Click the settings icon (ie. ) in the lower left corner of the app.
+- Click `Community plugins` on the left panel and select `browse`. This will open window with a list of plugins.
+- Search for `Zotero Integration`, click `install`
+- Once installed, click `enable`. **This step is necessary to activate the plugin** 
+
+Once you have all the plugins installed, you need to change the settings for each.
+#### Zotero Integration
+
+Change settings...
+
+### Install Zotero plugins
+You may need the following plugins: 
+It's a bit inconvenient to install Zotero plugins. 
+- Download the `.xpi` file for each plugin (e.g., Go to xx)
+- Open Zotero, go to `Tools --> Add-ons`
+- Click settings icon on the upper right, select `Install Add-on from File...`
+- Locate the downloaded `.xpi` file, click `open`, and select `install`
+
 ### Create a template for Zotero Integration
-To add a template, go to ...
+
+To add a template, create a markdown file named `zotero note template.md`. You can also put it under a folder (e.g., `templates`).
 
 I started with the template provided in [this](https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd) post. I like the different callouts used for citation, abstract, and etc. However, I don't like the look of the annotations and the images are not embeded in the notes. 
 
@@ -174,8 +198,16 @@ dateread:
 {% endraw %}
 ```
 
+### Add CSS snippet
 To add the CSS snippet, go to ...
-Here is the updated CSS snippet:
+```bash
+# go to the root directory of your vault (i.e., where notes are stored)
+cd PATH/TO/VAULT/.obsidian/snippets
+# create a css file, you can also use text editor to create a file. Make sure the file has .css as extention
+vi callouts.css
+```
+
+Inside the `callouts.css` file, paste the updated CSS snippet as follows:
 
 ```css
 /* Yellow */
@@ -218,6 +250,13 @@ Here is the updated CSS snippet:
   --callout-color: 50, 50, 50;
 }
 ```
+
+To enable the CSS snippet
+
+- Go to `Settings --> Appearance --> CSS snippets`
+- Enable the newly installed snippet (i.e., `callouts`)
+
+This should automatically color your callouts in the notes.
 ## Workflow
 
 ### Export annotation to note

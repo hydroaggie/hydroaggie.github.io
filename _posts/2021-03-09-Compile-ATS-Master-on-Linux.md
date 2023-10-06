@@ -17,7 +17,7 @@ The following steps roughly follow the official guide [here](https://github.com/
 ## Install packages (optional if on HPC)
 
 - Install `cmake`
-- make sure `open-mpi, lapack` has been installed
+- make sure `open-mpi`, `lapack` has been installed
 ```bash
 # openmpi
 sudo apt-get install libopenmpi-dev openmpi-bin 
@@ -93,16 +93,16 @@ ${AMANZI_SRC_DIR}/bootstrap.sh \
    ${dbg_option} \
    --with-mpi=${OPENMPI_DIR} \
    --enable-shared \
-   --disable-clm \
+   --disable-clm \ # disable this!
    --disable-structured  --enable-unstructured \
    --disable-stk_mesh --enable-mstk_mesh \
    --enable-hypre \
-   --disable-silo \
+   --disable-silo \ # disable this
    --disable-petsc \
    --disable-amanzi_physics \
    --enable-ats_physics \
    --disable-ats_dev \
-   --enable-geochemistry \
+   --enable-geochemistry \ # enable this!
    --amanzi-install-prefix=${AMANZI_DIR} \
    --amanzi-build-dir=${AMANZI_BUILD_DIR} \
    --tpl-install-prefix=${AMANZI_TPLS_DIR} \
