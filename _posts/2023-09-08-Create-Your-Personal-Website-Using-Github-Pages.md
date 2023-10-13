@@ -87,5 +87,6 @@ jobs:
 # Assuming the current directory is <your-repo-name>
 $ git remote add upstream https://github.com/alshedivat/al-folio.git
 $ git fetch upstream
+# find the most recent release version
 $ git rebase v0.9.0
 ```
