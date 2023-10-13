@@ -376,7 +376,6 @@ enable_progressbar:         true   # enables a horizontal progress bar linked to
 # Library versions
 # -----------------------------------------------------------------------------
 
-<<<<<<< HEAD
 bootstrap-table:
   version: "1.22.1"
 jquery:
