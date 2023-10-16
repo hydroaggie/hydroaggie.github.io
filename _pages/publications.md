@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Publications by categories in reversed chronological order. For a full list of publications, see our Google Scholar page.
 nav: true
 nav_order: 1

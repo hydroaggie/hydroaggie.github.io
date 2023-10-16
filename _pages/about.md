@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: A research group affiliated with the <a href="https://engineering.usu.edu/cee">Department of Civil and Environmental Engineering</a> and <a href="https://uwrl.usu.edu">Utah Water Resources Laboratory</a> at <a href="https://www.usu.edu">Utah State University</a> 
 
