@@ -1,11 +1,11 @@
 ---
 layout: page
-title: ExaSheds
+title: ExaSheds Subcontract
 description: Advancing Watershed System Science using Machine Learning-Assisted Simulation
 img: assets/img/12.jpg
 importance: 3
 category: past
-related_publications: Cromwell2021, jiang_knowledge-informed_2023, Shuai2022, Coon2022
+related_publications: jiang_knowledge-informed_2023, Coon2022
 ---
 
 ## Summary
@@ -19,9 +19,9 @@ related_publications: Cromwell2021, jiang_knowledge-informed_2023, Shuai2022, Co
     This image shows the ExaSheds project overview.
 </div>
 
-ExaSheds is a DOE funded project aims to advance watershed system science using machine learning-assisted simulation.
+ExaSheds is a DOE funded project that aims to advance watershed system science using machine learning-assisted simulation. You can read about the detailed information [here](https://exasheds.org/about/).
 
-You can read about the detailed information [here]().
+The USU team was awarded a subcontract to develop watershed hydro-thermal models for the Upper Neversink Watershed within the Delaware River Basin. The developed watershed models will provide training data for ML-assisted inverse modeling which will be performed by the PNNL team. 
 
 **USU Team**: 
 
