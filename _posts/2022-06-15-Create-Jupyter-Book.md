@@ -1,9 +1,11 @@
 ---
 layout: post
 title: A Tutorial on How to Create a Jupyter Book
-date: 2022-06-15 
+date: 2022-06-15
 description: A tutorial on how to create a Jupyter Book
-tags: Jupyter website 
+tags:
+  - website
+  - jupyter
 categories: geek
 giscus_comments: true
 related_posts: true

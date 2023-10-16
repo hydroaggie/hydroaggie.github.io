@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Use Rkernel for Jupyter Notebook
-date: 2021-04-08 
+date: 2021-04-08
 description: A tutorial on how to use Rkernel in Jupyter Notebook
-tags: Jupyter R
+tags:
+  - R
+  - jupyter
 categories: geek tutorial
 giscus_comments: true
 related_posts: true
