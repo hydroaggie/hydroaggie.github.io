@@ -276,10 +276,6 @@ This should automatically color your callouts in the notes.
 ### Highlight and comment
 Highlight and comment on the paper as you read. Use the color code for different highlight colors. Use box comment for images (this will save images as snapshots in Obsidian).
 
-### Export annotations to a note
-After you made highlights and comments, export them to a note using xx. 
-You can further format the color and text (see [note templates documentation](https://www.zotero.org/support/note_templates)). However, I will skip this and just use formatting in the Zotero Integration template.
-
 ### Import the note into Obsidian
 Open command pallett:
 
