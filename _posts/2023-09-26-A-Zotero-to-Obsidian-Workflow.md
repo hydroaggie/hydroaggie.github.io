@@ -20,9 +20,10 @@ This tutorial combines the contents from [this](https://forum.obsidian.md/t/zote
 ## Pre-requisites:
 - Zotero (v6.0.27)
 - Obsidian (v1.4.13)
-- Obsidian plugins: Zotero Integration, Templater, Dataview
-- Optional Zotero Browser Extension for Chrome/Firefox
-- Optional Zotero plugins: Zotfile, Better BibTex (used to create citation key)
+- Obsidian plugins: [Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration), Templater, Dataview
+- Zotero plugins: [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/installation/), Zotfile, 
+- (Optional) Zotero Browser Extension for Chrome/Firefox. This may be useful for downloading papers to Zotero.
+
 
 ## Setup
 
@@ -38,7 +39,7 @@ It may be difficult to find where the plugins are for the first time.
 Once you have all the plugins installed, you need to change the settings for each.
 #### Zotero Integration
 
-Change settings...
+Change settings in Obsidian...
 
 ### Install Zotero plugins
 You may need the following plugins: 
@@ -47,6 +48,13 @@ It's a bit inconvenient to install Zotero plugins.
 - Open Zotero, go to `Tools --> Add-ons`
 - Click settings icon on the upper right, select `Install Add-on from File...`
 - Locate the downloaded `.xpi` file, click `open`, and select `install`
+
+#### Better BibTeX for Zotero
+This plugin is useful for creating citation keys (e.g., `author_year`) for papers.
+- The citation key is used as note title in Obsidian. To change the citation keys
+	- Go to `Zotero --> Settings --> Advanced --> Advanced Configuration --> Config Editor`, search for `better-bibtex.citekeyFormat`. Double click to edit the format.
+The default is `​auth.lower + shorttitle(3,3) + year`. I used `auth.capitalize+ year.postfix('\_') + journal` (e.g., `Tashie2022_WaterResour.Res.`). More formatting options are available [here](https://retorque.re/zotero-better-bibtex/citing/)
+
 
 ### Create a template for Zotero Integration
 
@@ -69,12 +77,12 @@ Here is the color code for highlights:
 | <span style="color:orange;"> orange </span> | <span style="color:orange;"> Questions/confusion about the statement </span>  |  
 
 I will breakdown into different sections:
-- Cite: 
-- Synthesis:
-- Link:
-- Abstract:
-- Annotations: The page link will take you back to the PDF reader in Zotero.**
-- Metadata
+- Cite: Citation of the paper
+- Synthesis: Your personal opinions on this paper.
+- Link: Link to the PDF file on your local PC.
+- Abstract: Abstract of the article.
+- Annotations: All highlights, notes, comments (including box comments), links grouped by color. 
+- Metadata: all metadata associated with the paper which are useful for data query using DataView.
 
 ```
 {% raw %}
@@ -198,6 +206,12 @@ dateread:
 {% endraw %}
 ```
 
+- The following need to removed from template file.
+
+```
+{% raw %}
+{% endraw %}
+```
 ### Add CSS snippet
 To add the CSS snippet, go to ...
 ```bash
@@ -259,11 +273,14 @@ To enable the CSS snippet
 This should automatically color your callouts in the notes.
 ## Workflow
 
-### Export annotation to note
+### Highlight and comment
+Highlight and comment on the paper as you read. Use the color code for different highlight colors. Use box comment for images (this will save images as snapshots in Obsidian).
+
+### Export annotations to a note
 After you made highlights and comments, export them to a note using xx. 
 You can further format the color and text (see [note templates documentation](https://www.zotero.org/support/note_templates)). However, I will skip this and just use formatting in the Zotero Integration template.
 
-### Import notes into Obsidian
+### Import the note into Obsidian
 Open command pallett:
 
 Alternative, create a hotkey for that command.
@@ -272,13 +289,24 @@ In the pop-up box, type in the author to search for literature. Once found, hit 
 
 Here is a screenshot shows the final markdown file in Obsidian. 
 
-You can create internal links in the created file to generate a mind-map.
+- The nice thing about the annotations is that each annotation has a link to the page number in the paper. When clicking on the link, it will bring you back to highlighted page of the PDF in Zotero. 
+- All snapshots are embeded under annotations, which make it extremely useful for storing key figures.
 
-
+- Add additional notes. You may add additional notes under `Synthesis` which may include the main contribution of the paper, the impression of the paper and other notes. **Any comments added outside of Synthesis including changes made in the annotations will be overriden when the same note is imported again!**. See the Tips below on how to create a customized note section that prevents override.
 ### Create table using Dataview
+Once you have a collection of notes, you can create a DataView query which lists all papers and their key information in a table. This may be helpful for writting literature review.
 
+# Tips
 
-## References
+- The annotations do not have internal links. However, you can add internal links in comments. Simply added comments after the highlights and keywords with internal links (e.g., `[[keyword]]`)
+- Obsidian does not auto-sync the literature notes. If new annotations are made in Zotero, the user has to manually pull updated by importing the same literature note again.
+- The `persist` tag prevents content from being overwritten. Any notes made in between the `persist` tag will be preserved.
+```
+## Notes
+{% persist "notes" %}
+{% endpersist %}
+```
+# References
 - https://forum.obsidian.md/t/zotero-integration-import-templates/36310
 - https://forum.obsidian.md/t/zotero-zotfile-mdnotes-obsidian-dataview-workflow/15536
 - https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd
