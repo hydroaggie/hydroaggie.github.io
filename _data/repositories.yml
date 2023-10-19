@@ -2,4 +2,5 @@ github_users:
   - pinshuai
 
 github_repos:
+  - environmental-modeling-workflows/watershed-workflow
   - pinshuai/modvis

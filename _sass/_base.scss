@@ -780,6 +780,16 @@ code {
   padding: 3px 3px;
 }
 
+// Team
+
+.team {
+  .card-body {
+    a:first-of-type {
+      text-decoration: none;
+    }
+   padding: 13.5px;  
+  }
+}
 
 // Transitioning Themes
 html.transition,
