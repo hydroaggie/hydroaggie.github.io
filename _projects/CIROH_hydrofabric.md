@@ -1,8 +1,8 @@
 ---
 layout: page
-title: CIROH
-description: Advance water management-hydrologic model coupling to improve hydrologic forecasting in managed watersheds
-img: assets/img/12.jpg
+title: Hydrofabric
+description: "CIROH: Advance water management-hydrologic model coupling to improve hydrologic forecasting in managed watersheds"
+img: assets/img/CIROH_logo.png
 importance: 1
 category: current
 ---

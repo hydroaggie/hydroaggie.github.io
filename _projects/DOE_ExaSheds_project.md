@@ -1,7 +1,7 @@
 ---
 layout: page
-title: ExaSheds Subcontract
-description: Advancing Watershed System Science using Machine Learning-Assisted Simulation
+title: ML-assisted modeling
+description: "ExaSheds: Advancing Watershed System Science using Machine Learning-Assisted Simulation"
 img: assets/img/logos/exasheds-logo.jpg
 importance: 3
 category: past
