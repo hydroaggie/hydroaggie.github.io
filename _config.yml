@@ -121,8 +121,8 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: HydroAggie # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a blog for sharing thoughts
+blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
+blog_description: A blog for sharing thoughts
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -150,7 +150,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: pshuai # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -173,6 +173,16 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  members:
+    output: true
+    permalink: /members/:path
+  collaborators:
+    output: true
+    permalink: /collaborators/:path
+  funding:
+    output: true
+    permalink: /funding/:path
+    
 
 announcements:
   enabled: true
@@ -347,7 +357,7 @@ imagemagick:
 # Jekyll Diagrams
 # -----------------------------------------------------------------------------
 
-# jekyll-diagrams:
+jekyll-diagrams:
     # configuration, see https://github.com/zhustec/jekyll-diagrams.
     # feel free to comment out this section if not using jekyll diagrams.
 
