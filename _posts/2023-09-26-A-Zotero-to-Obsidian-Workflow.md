@@ -288,19 +288,22 @@ Here is a screenshot shows the final markdown file in Obsidian.
 - The nice thing about the annotations is that each annotation has a link to the page number in the paper. When clicking on the link, it will bring you back to highlighted page of the PDF in Zotero. 
 - All snapshots are embeded under annotations, which make it extremely useful for storing key figures.
 
-- Add additional notes. You may add additional notes under `Synthesis` which may include the main contribution of the paper, the impression of the paper and other notes. **Any comments added outside of Synthesis including changes made in the annotations will be overriden when the same note is imported again!**. See the Tips below on how to create a customized note section that prevents override.
+- Add additional notes. You may add additional notes under `Synthesis` which may include the main contribution of the paper, the impression of the paper and other notes. **Any edits added outside of Synthesis and Annotations will be overriden when the same note is imported again!**. See the Tips below on how to create a customized note section that prevents override.
 ### Create table using Dataview
 Once you have a collection of notes, you can create a DataView query which lists all papers and their key information in a table. This may be helpful for writting literature review.
 
-# Tips
+# Advanced Tips
 
+- If you want to add more information in the template and are wondering which keywords to use, you can use `Zotero Data Explorer` to inspect all available keywords. In Obsidian, open command palallet and search for `Zotero Data Explorer`. Once opened, choose `Prompt For Selection` and the associated paper, you will see all meta information.
 - The annotations do not have internal links. However, you can add internal links in comments. Simply added comments after the highlights and keywords with internal links (e.g., `[[keyword]]`)
-- Obsidian does not auto-sync the literature notes. If new annotations are made in Zotero, the user has to manually pull updated by importing the same literature note again.
+- Obsidian does not auto-sync the literature notes. If new annotations are made in Zotero, the user has to manually pull updated by importing the same literature note again (refer to this [discussion](https://forums.zotero.org/discussion/comment/399431/#Comment_399431)).
 - The `persist` tag prevents content from being overwritten. Any notes made in between the `persist` tag will be preserved.
 ```
+{% raw %}
 ## Notes
 {% persist "notes" %}
 {% endpersist %}
+{% endraw %}
 ```
 # References
 - https://forum.obsidian.md/t/zotero-integration-import-templates/36310
