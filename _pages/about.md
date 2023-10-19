@@ -6,8 +6,8 @@ subtitle: A research group affiliated with the <a href="https://engineering.usu.
 
 profile:
   align: right
-  image: usu_Ablock.jpg
-  image_circular: false # crops the image to make it circular
+  image: group-logo_whiteBG.jpg
+  image_circular: true # crops the image to make it circular
   address: >
 
 news: true  # includes a list of news items
@@ -18,4 +18,4 @@ social: true  # includes social icons at the bottom of the page
 
 Welcome to the Computational and Integrated Hydrology Group (CIHG) at Utah State University! We are passionate about exploring the complex and dynamic hydrological system using novel techniques. Our research endeavors are driven by a commitment to advancing scientific knowledge, fostering innovation, and addressing pressing environmental challenges. 
 
-Our research interests lie in two areas: 1) understanding of the hydrological, biogeochemical processes occurring at the aquatic‐terrestrial interface under the impact of groundwater and surface water interactions; and 2) quantifying the flow and transport of heat, nutrients and contaminants from bedrock to canopy top in a watershed, and feedbacks between hydrology, land use, and climate change. We apply a model‐data integrative approach which combines field, laboratory, and remote sensing techniques with numerical models leveraging the power of high‐performance computing to improve understanding of hydrological processes. 
+Our research interests lie in the following areas: 1) understanding of the **hydrological, biogeochemical processes** occurring at the aquatic‐terrestrial interface under the impact of **groundwater and surface water interactions**; 2) quantifying the **flow and transport of heat, nutrients and contaminants from bedrock to canopy top in a watershed**, and feedbacks between hydrology, land use, and climate change; and 3) understanding the complex **human-natural system interactions**.  We apply a model‐data integrative approach which combines field, laboratory, and remote sensing techniques with numerical models leveraging the power of high‐performance computing to improve understanding of hydrological processes. 
