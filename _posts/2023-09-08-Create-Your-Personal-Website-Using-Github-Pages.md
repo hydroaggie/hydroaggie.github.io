@@ -92,6 +92,7 @@ $ git rebase v0.9.0
 ```
 
 - The rebase will add ALL the commit history from upstream. Once rebased, you will see merge conflicts. Try resolving those conflicts using `git mergetool`. 
+
 ```bash
 git mergetool
 
@@ -99,10 +100,12 @@ git mergetool
 git rebase --continue
 ```
 - After rebase is done, you may see your local master has diverged from origin/master. 
+
 >Your branch and ‘origin/master’ have diverged,  
 	and have xx and xx different commits each, respectively.
 
 Try force push. This will force origin/master to be sync with local master. BE careful of this if you are working with a team as it will rewrite the history (like someone has time traveled in the past and changed the course of the history).
+
 ```bash
 git push --force
 ```
