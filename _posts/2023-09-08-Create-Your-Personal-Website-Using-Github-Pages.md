@@ -53,7 +53,7 @@ git push
 - Now your repo should have a newly built branch named `gh-pages`. Go to `Settings --> Pages --> Build and deployment`, change `Source --> Deploy from a branch`, `Branch --> gh-pages` (**Important**).
 - You should be able to see your website live at `https://your_github_name.github.io`.
 
-## Sync with upstream template
+## (Optional) sync with upstream template
 If you would like to keep updated with the upstream template, you can do so by creating a new workflow. 
 - Go to `Settings -> Actions -> General -> Workflow permissions`, check `Allow GitHub Actions to create and approve pull requests` and save your changes.
 - Navigate to `your_github_name.github.io/.github/workflows`. Create a `sync.yml` file with the following content:
