@@ -2,7 +2,7 @@
 layout: page
 title: ExaSheds Subcontract
 description: Advancing Watershed System Science using Machine Learning-Assisted Simulation
-img: assets/img/12.jpg
+img: assets/img/logos/exasheds-logo.png
 importance: 3
 category: past
 related_publications: jiang_knowledge-informed_2023, Coon2022
@@ -12,7 +12,7 @@ related_publications: jiang_knowledge-informed_2023, Coon2022
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/logos/exasheds-logo.jpg" title="ExaSheds Logo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
