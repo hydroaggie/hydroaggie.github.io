@@ -6,38 +6,51 @@ layout: default
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
 
         <article>
           {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      {% if page.profile.image %}
+        {% if page.profile.href %}<a href="{{ page.profile.href | relative_url }}">{% endif %}
+          <img class="img-fluid{% assign ext = page.profile.image | slice: -4, 4 %}{% if ext != '.svg' %} z-depth-1 rounded{% endif %}" src="{{ page.profile.image | prepend: '/assets/img/team/' | relative_url }}" alt="{{ page.profile.name }}">
+        {% if page.profile.href %}</a>{% endif %}
+      {% endif %}
+      {% if page.profile.address %}
+        <div class="address">
+          <p>
+            {% if page.profile.href %}<a href="{{ page.profile.href | relative_url }}">{% endif %}
+              <span class="name">{{ page.profile.name }}</span>
+            {% if page.profile.href %}</a>{% endif %}
+              <span class="data">
+            {% if page.profile.position %}<br />{{ page.profile.position }}{% endif %}
+            {% if page.profile.email %}<br /><a href="mailto:{{ page.profile.email }}"><i class="fas fa-envelope"></i> {{ page.profile.email }}</a>{% endif %}
+            {% if page.profile.phone %}<br /><a href="tel:{{ page.profile.phone }}"><i class="fas fa-phone"></i> {{ page.profile.phone }}</a>{% endif %}
+            {% if page.profile.orcid %}<br /><a href="https://orcid.org/{{ page.profile.orcid }}" target="_blank"><i class="fab fa-orcid"></i> {{ page.profile.orcid }}</a>{% endif %}
+            {% if page.profile.twitter %}<br /><a href="https://twitter.com/{{ page.profile.twitter }}" target="_blank"><i class="fab fa-twitter"></i> {{ page.profile.twitter }}</a>{% endif %}
+            {% if page.profile.github %}<br /><a href="https://github.com/{{ page.profile.github }}" target="_blank"><i class="fab fa-github"></i> {{ page.profile.github }}</a>{% endif %}
+            {% if page.profile.website %}<br /><a href="{{ page.profile.website }}" target="_blank"><i class="fas fa-globe"></i> {{ page.profile.website }}</a>{% endif %}
+            </span>                  
+          </p>
+          <p class="post">{{ page.profile.address }}</p>
+          {% if page.profile.logos %}
+          <div><a href="https://inbt.jhu.edu"><img class="layout_commented"  style="margin-bottom: 20px" img src="{{ '/assets/img/logos/INBT-logo.png' |   relative_url }}" height="60"></a>
+            <a href="https://breakthroughcancer.org"><img class="layout_commented" style="margin-bottom: 20px" img src="{{ '/assets/img/logos/BTC-logo.png' |   relative_url }}" height="60" ></a>
+          </div>
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
-
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image
-              cache_bust=true -%}
-            {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              {{ page.profile.more_info }}
-            </div>
-            {%- endif %}
+           {% endif %}
+        </div>
+      {% endif %}
           </div>
           {%- endif %}
 
           <div class="clearfix">
+              <div class="about-logo">
+              <img style="padding-bottom: 1rem; margin-right: 2rem"; src="{{ '/assets/img/logos/epidiagnostics-logo.png' |   relative_url }}"; height = 150>
+            </div>
             {{ content }}
           </div>
 
