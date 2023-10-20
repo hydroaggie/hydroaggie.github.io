@@ -22,7 +22,7 @@ I recently discovered this Rshiny page for making a word cloud from any Google S
 
 ## My word cloud
 
-Here is the word cloud from my [Google Scholar](https://scholar.google.com/citations?user=Md_6je0AAAAJ) page. Hydrologic, river, exchange are keywords in my research. As a groundwater hydrologist, I am surprised to see that groundwater is not one of the big words.
+Here is the word cloud from my [Google Scholar](https://scholar.google.com/citations?user=Md_6je0AAAAJ) page. Hydrologic, river, exchange are keywords in my research. As a groundwater hydrologist, I am surprised to see that groundwater is not one of the big words. I think the website only grabs words from the paper titles, which may not provide the whole picture of my research.
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">

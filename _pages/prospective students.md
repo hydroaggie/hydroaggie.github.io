@@ -9,7 +9,7 @@ nav_order: 9
 
 I am always looking for passionate and talented students to join our group. 
 
-For more information, please contact me with your CV, unofficial transcripts and one-page personal statement. In your one-page personal statement, please considering addressing the following questions: 1) Why are you interested in our group? 2) What makes you a good candidate? 3) What quantitative skills (e.g., programming and modeling) do you possess?
+For more information, please contact [Dr. Pin Shuai](/members/Pin_Shuai) with your CV, unofficial transcripts and one-page personal statement. In your one-page personal statement, please considering addressing the following questions: 1) Why are you interested in our group? 2) What makes you a good candidate? 3) What quantitative skills (e.g., programming and modeling) do you possess?
 
 ## General notes
 
