@@ -5,9 +5,9 @@ nav: true
 nav_order: 99
 dropdown: true
 children: 
-    - title: prospective students
+    - title: Prospective Students
       permalink: /prospective_students/
     - title: divider
-    - title: group handbook
+    - title: Group Handbook
       permalink: /group_handbook/
 ---
