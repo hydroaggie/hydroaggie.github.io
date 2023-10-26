@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Team
+title: Members
 permalink: /team.html
 description: A list of current and previous group members afflicated with the CIHG
 nav: true
