@@ -23,7 +23,7 @@ profile:
     twitter: pinshuai
     website: https://engineering.usu.edu/directory/cee/faculty/shuai-pin
     orcid: 0000-0003-2511-9828
-    cv: 
+    cv: Shuai_CV.pdf
     address: >
 
 social: true  # includes social icons at the bottom of the page           

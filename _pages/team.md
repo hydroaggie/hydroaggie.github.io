@@ -45,9 +45,12 @@ nav_order: 2
                     {% if member.profile.github %}
                         <a href="https://github.com/{{ member.profile.github }}" class="card-link" target="_blank"><i class="fab fa-github"></i></a>
                     {% endif %}
+                    {% if member.profile.cv %}
+                        <a href="{{ '/assets/pdf/' | append: member.profile.cv | relative_url }}" class="card-link" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                    {% endif %}      
                     {% if member.profile.website %}
                         <a href="{{ member.profile.website }}" class="card-link" target="_blank"><i class="fas fa-globe"></i></a>
-                    {% endif %}
+                    {% endif %}              
                     <p class="card-text">
                         <small class="test-muted"><i class="fas fa-thumbtack"></i> {{ member.profile.address | replace: '<br />', ', ' }}</small>
                     </p>
