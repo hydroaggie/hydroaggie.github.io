@@ -5,4 +5,4 @@ date: 2023-11-03
 description: Slides of a quick introduction to Git
 redirect: /assets/pdf/Intro_to_Git.pdf
 ---
-Redirecting to another page.
+Redirecting to pdf
