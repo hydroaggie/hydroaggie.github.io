@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ML-assisted modeling
+title: Integrated Hydrologic Modeling
 description: "ExaSheds: Advancing Watershed System Science using Machine Learning-Assisted Simulation"
 img: assets/img/logos/exasheds-logo.jpg
 importance: 3
@@ -21,7 +21,11 @@ related_publications: jiang_knowledge-informed_2023, Coon2022
 
 ExaSheds is a DOE funded project that aims to advance watershed system science using machine learning-assisted simulation. You can read about the detailed information [here](https://exasheds.org/about/).
 
-The USU team was awarded a subcontract to develop watershed hydro-thermal models for the Upper Neversink Watershed within the Delaware River Basin. The developed watershed models will provide training data for ML-assisted inverse modeling which will be performed by the PNNL team. 
+The USU team was awarded a subcontract to develop integrated watershed hydro-thermal models for the Upper Neversink Watershed within the Delaware River Basin using the <a href="https://amanzi.github.io/ats/"> Advanced Terrestrial Simulator</a>. The developed watershed models will provide training data for ML-assisted inverse modeling which will be performed by the PNNL team. 
+
+**Funding Agency**: 
+
+<a href="hhttps://ess.science.energy.gov/"> Pacific Northwest National Laboratory (PNNL)</a>
 
 **USU Team**: 
 
