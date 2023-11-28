@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Create Your Personal Website using GitHub Pages
+title: Create Your Academic Website using GitHub Pages
 date: 2023-09-08 
-description: A tutorial on how to create a personal website
+description: A tutorial on how to create an academic website for personal and group use.
 tags: GitHub Jekyll website
 categories: geek
 giscus_comments: true

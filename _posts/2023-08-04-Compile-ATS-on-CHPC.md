@@ -30,12 +30,12 @@ which cmake
 which mpicc 
 
 # e.g.
-/uufs/chpc.utah.edu/sys/spack/v019/linux-rocky8-x86_64/gcc-11.2.0/openmpi-4.1.4-fvjpa3zslc4266fazcxbv6ntjgojf6rx/bin/mpic
+/uufs/chpc.utah.edu/sys/spack/v019/linux-rocky8-x86_64/gcc-11.2.0/openmpi-4.1.4-fvjpa3zslc4266fazcxbv6ntjgojf6rx/bin/mpicc
 ```
 
 ## Installation
 
-The steps follow [Install ATS on Linux](/blog/2021/Compile-ATS-Master-on-Linux) .
+The steps follow [Install ATS on Linux](/blog/2021/Compile-ATS-Master-on-Linux).
 
 ## Modulefile
 Creating a module file is useful for managing different versions of ats on HPC. The instructions follow this [post](https://hpc.ncsu.edu/Documents/user_modules.php)
@@ -96,10 +96,12 @@ prepend-path    PYTHONPATH      /uufs/chpc.utah.edu/common/home/u6046326/github/
 ```
 
 - Save the file. Put the following in `.bash_profile` or similar so the custom module is added when login. **No slash after modulefiles!**
+
 ```bash
 module use -a /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/modulefiles
 ```
 - Search for custom modules. The system will find all modules with name 'ats' in them.
+
 ```bash
 module avail ats
 # or
@@ -109,6 +111,7 @@ module spider ats
 module load ats/tpls-0.98.6+amanzi-ats-master/chpc-notchpeak/gcc-11.2.0-openmpi-4.1.4/v1.5-dev_e8cad556
 ```
 - Alternatively, enter `ml ats`, then hit `TAB`. It will list all available modules starting with `ats`
+
 ```bash
 # load module
 ml ats/tpls-0.98.6+amanzi-ats-master/chpc-notchpeak/gcc-11.2.0-openmpi-4.1.4/v1.5-dev_e8cad556

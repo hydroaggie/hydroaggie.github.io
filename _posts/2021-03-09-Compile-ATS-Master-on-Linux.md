@@ -18,6 +18,7 @@ The following steps roughly follow the official guide [here](https://github.com/
 
 - Install `cmake`
 - make sure `open-mpi`, `lapack` has been installed
+
 ```bash
 # openmpi
 sudo apt-get install libopenmpi-dev openmpi-bin 
@@ -26,6 +27,7 @@ sudo apt-get install libblas3gf libblas-doc libblas-dev liblapack3gf liblapack-d
 ```
 
 - Get `OPENMPI_DIR`. The root directory can be found by the following command. **Do not include `bin/mpicc`**
+
 ```bash
 # get the root directory of mpi
 which mpicc 
@@ -37,14 +39,15 @@ which mpiftn
 ## Configure environment
 
 - Create `set_env.sh` file with the following content.
+
 ```bash
 #!/usr/bin/env bash
 
 # EDIT THESE!
-export ATS_BASE=/software/ATS-master # root dir for the installation
+export ATS_BASE=/PATH/TO/ATS_ROOT # root dir for the installation
 export ATS_BUILD_TYPE=Release # other options: Debug, RelWithDebInfo (release with debug info)
 export ATS_VERSION=master # the branch for both amanzi and ats
-export OPENMPI_DIR=/usr # this is important to include only the directory instead of /usr/bin if mpirun exists inside /usr/bin
+export OPENMPI_DIR=/PATH/TO/MPI_DIR # this is important to include only the directory instead of /MPI_DIR/bin if mpirun exists inside /MPI_DIR/bin
 # END EDIT THESE!
 
 export AMANZI_TPLS_BUILD_DIR=${ATS_BASE}/amanzi_tpls-build-${ATS_VERSION}-${ATS_BUILD_TYPE}
@@ -65,10 +68,12 @@ export PYTHONPATH=${AMANZI_TPLS_DIR}/SEACAS/lib:${PYTHONPATH}
 ```
 
 - Source the environment
+
 ```bash
 source set_env.sh
 ```
 - (optional) to access `ats` and other binary file, put the following lines in `.bash_profile`
+
 ```bash
 export PATH=${ATS_DIR}/bin:${PATH}
 export PATH=${AMANZI_TPLS_DIR}/bin:${PATH}
@@ -88,7 +93,8 @@ git clone -b master http://github.com/amanzi/ats $ATS_SRC_DIR
 ```bash
 vi ${AMANZI_SRC_DIR}/build_ATS_generic.sh
 
-# change the following bootstrap flags and options
+# change the following bootstrap flags and options. 
+# Comments need to be removed after direct copy&paste!
 ${AMANZI_SRC_DIR}/bootstrap.sh \
    ${dbg_option} \
    --with-mpi=${OPENMPI_DIR} \
@@ -97,7 +103,7 @@ ${AMANZI_SRC_DIR}/bootstrap.sh \
    --disable-structured  --enable-unstructured \
    --disable-stk_mesh --enable-mstk_mesh \
    --enable-hypre \
-   --disable-silo \ # disable this
+   --disable-silo \ # disable this!
    --disable-petsc \
    --disable-amanzi_physics \
    --enable-ats_physics \
@@ -122,12 +128,39 @@ ${AMANZI_SRC_DIR}/bootstrap.sh \
 #   --tpl-build-dir=${AMANZI_TPLS_BUILD_DIR} \
 #   --tpl-download-dir=${ATS_BASE}/amanzi-tpls/Downloads \
 # with
-#   --tpl-config-file=${AMANZI_TPLS_DIR}/share/cmake/amanzi-tpl-config.cmake \   
+#   --tpl-config-file=${AMANZI_TPLS_DIR}/share/cmake/amanzi-tpl-config.cmake \
+
+${AMANZI_SRC_DIR}/bootstrap.sh \
+   ${dbg_option} \
+   --with-mpi=${OPENMPI_DIR} \
+   --enable-shared \
+   --disable-clm \ # disable this!
+   --disable-structured  --enable-unstructured \
+   --disable-stk_mesh --enable-mstk_mesh \
+   --enable-hypre \
+   --disable-silo \ # disable this!
+   --disable-petsc \
+   --disable-amanzi_physics \
+   --enable-ats_physics \
+   --disable-ats_dev \
+   --enable-geochemistry \ # enable this!
+   --amanzi-install-prefix=${AMANZI_DIR} \
+   --amanzi-build-dir=${AMANZI_BUILD_DIR} \
+   --tpl-config-file=${AMANZI_TPLS_DIR}/share/cmake/amanzi-tpl-config.cmake \
+   --tools-download-dir=${ATS_BASE}/amanzi-tpls/Downloads \
+   --tools-build-dir=${ATS_BASE}/build \
+   --tools-install-prefix=${ATS_BASE}/install \
+   --with-cmake=`which cmake` \
+   --with-ctest=`which ctest` \
+   --branch_ats=${ATS_VERSION} \
+   --parallel=8
+
 ```
 
 ## configure and install Amanzi-tpls, Amanzi, and ATS
 
 - run the bootstrap
+
 ```bash
 sh ${AMANZI_SRC_DIR}/build_ATS_generic.sh
 ```
@@ -135,6 +168,7 @@ sh ${AMANZI_SRC_DIR}/build_ATS_generic.sh
 After ~ 1hr, the installation would finish, with `ats` executable in `ats/amanzi-install-master-Release/bin/ats*`
 
 - check ats version
+
 ```bash
 $ which ats
 $ ats --version # this will print out the version with the last 8 digits as hash tag from git commits
