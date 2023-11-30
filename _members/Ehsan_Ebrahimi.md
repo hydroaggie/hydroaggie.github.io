@@ -18,7 +18,7 @@ profile:
     name: Ehsan Ebrahimi
     position: Doctoral Student 
     align: right
-    image: https://uwrl.usu.edu/images/people/graduate-students/ebrahimi-ehsan-400x600.jpg
+    image: ebrahimi-ehsan-400x600.jpg
     role: 
     email: ehsan.ebrahimi@usu.edu
     github: 
