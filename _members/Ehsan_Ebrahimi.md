@@ -23,13 +23,14 @@ profile:
     email: ehsan.ebrahimi@usu.edu
     github: 
     orcid: 
+    website: 
     address: >
         Department of Civil and Environmental Engineering<br />
         Utah Water Research Laboratory<br />
         Logan, UT
 ---
 
-I am a PhD student at Utah Water Research Laboratory, Utah State University. My research focuses on water management modeling and working on the USGS-funded CIROH project to extend the current hydrofabric by incorporating the water management infrastructure for water allocation purposes.
+I am a PhD student at Utah Water Research Laboratory, Utah State University. My research focuses on water management modeling and working on the USGS-funded [CIROH project](/projects/CIROH_hydrofabric) to extend the current hydrofabric by incorporating the water management infrastructure for water allocation purposes.
 
 ## Short Bio
 
