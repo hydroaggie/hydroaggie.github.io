@@ -12,15 +12,15 @@ lastname: Ebrahimi
 publications: 'author^=*Ebrahimi'
 
 teaser: >
-    My research interests are ...
+    My research interests are water management modeling, the application of ML and AI in water resources engineering, and agent-based modeling.
 
 profile:
     name: Ehsan Ebrahimi
     position: Doctoral Student 
     align: right
-    image: usu_Ablock.jpg
+    image: ebrahimi-ehsan-400x600.jpg
     role: 
-    email: your_email@usu.edu
+    email: ehsan.ebrahimi@usu.edu
     github: 
     orcid: 
     address: >
@@ -29,9 +29,9 @@ profile:
         Logan, UT
 ---
 
-I am a PhD student ... My research focuses on ...
+I am a PhD student at Utah Water Research Laboratory, Utah State University. My research focuses on water management modeling and working on the USGS-funded CIROH project to extend the current hydrofabric by incorporating the water management infrastructure for water allocation purposes.
 
 ## Short Bio
 
-I received my B.S. degree in xx from ... I started pursuing my doctoral degree at USU in xxxx.
+I received my B.S. degree in Civil Engineering from Zanjan University, Iran, and my M.S. degree in Water Resources Engineering from Shahid Beheshti University, Tehran, Iran. I started pursuing my doctoral degree at USU in 2023.
 
