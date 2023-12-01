@@ -18,7 +18,7 @@ profile:
     name: Pamela Claure
     position: Doctoral Student 
     align: right
-    image: usu_Ablock.jpg
+    image: PLCG_profile.jpg
     role: 
     email: liliana.claure@usu.edu
     github: 
@@ -34,5 +34,5 @@ I am a PhD student at Utah Water Research Laboratory. My research focus in devel
 
 ## Short Bio
 
-I have my B.S. degree in Civil Engineering from "Universidad Privada Boliviana" from Bolivia. My first M.S. degree is in Land and Water Management from Wageningen Universuty in The Netherlands. My second M.S. degree is in Water Sciences and Engineering specialization Hydroinformatics from UNESCO-IHE in The Netherlands. My two master of sciences degrees have allow me to have an in deep comprehension of both social and technical aspects of water management letting me formulate comprehensive solutions to complex problems through extensive analysis and accurate assessment of relevant data. Hydraulic/hydrology modelling, water allocation modelling, system analysis, optimization, water management, infrastructure design, data analysis, stakeholder analysis and river basin planning have been key aspects of my education and work.I started pursuing my doctoral degree at USU in 2023.
+I have my B.S. degree in Civil Engineering from "Universidad Privada Boliviana" from Bolivia. My first M.S. degree is in Land and Water Management from Wageningen Universuty in The Netherlands. My second M.S. degree is in Water Sciences and Engineering specialization Hydroinformatics from UNESCO-IHE in The Netherlands. My two master of sciences degrees have allow me to have an in deep comprehension of both social and technical aspects of water management letting me formulate comprehensive solutions to complex problems through extensive analysis and accurate assessment of relevant data. Hydraulic/hydrology modelling, water allocation modelling, system analysis, optimization, water management, infrastructure design, data analysis, stakeholder analysis and river basin planning have been key aspects of my education and work. I started pursuing my doctoral degree at USU in 2023.
 
