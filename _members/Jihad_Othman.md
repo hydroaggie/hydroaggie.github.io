@@ -17,7 +17,7 @@ profile:
     name: Jihad Othman
     position: Doctoral Student 
     align: right
-    image: ![jihad_pic](https://github.com/hydroaggie/hydroaggie.github.io/assets/122495798/c96fcfc3-88c1-4a7c-a7cd-e95f02ec3975)
+    image: jiha_pic.jpg
 
 
     role: 
