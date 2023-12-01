@@ -17,7 +17,7 @@ profile:
     name: Jihad Othman
     position: Doctoral Student 
     align: right
-    image: jiha_pic.jpg
+    image: jihad_pic.jpg
 
 
     role: 
