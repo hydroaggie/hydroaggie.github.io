@@ -11,7 +11,7 @@ I am always looking for passionate and talented students to join our group.
 
 ## Opportunities
 
-:loudspeaker: **New PhD position in Arctic Hydrology** (Spring/Fall 2024, [link](/news/2023-09-01-phd-position), [flyer](/assets/pdf/PhD-arctic_hydrology-flyer.pdf))
+:loudspeaker: **New PhD position in Arctic Hydrology** (Spring/Fall 2024, [link](/news/2023-12-05-phd-position), [flyer](/assets/pdf/arctic-flyer-fall2024.pdf))
 
 For inquiries, please contact [Dr. Pin Shuai](/members/Pin_Shuai) with your CV, unofficial transcripts and a one-page personal statement. In your one-page personal statement, please address the following questions: 1) Why are you interested in joining our group? 2) What qualities make you a strong candidate? 3) What quantitative skills, such as programming and modeling, do you possess?
 
