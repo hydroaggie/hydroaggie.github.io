@@ -6,7 +6,7 @@ inline: false
 related_posts: false
 ---
 
-We are looking for a PhD student or post-doc starting in Fall 2024 or as soon as possible ([flyer](/assets/pdf/arctic-flyer-fall2024.pdf)). Link to the anoucement page :point_right: [here](https://uwrl.usu.edu/about/opportunities). 
+We are looking for a PhD student or post-doc starting in Fall 2024 or as soon as possible ([flyer](/assets/pdf/arctic-flyer-fall2024.pdf)). Link to the announcement page :point_right: [here](https://uwrl.usu.edu/about/opportunities). 
 
 ---
 
