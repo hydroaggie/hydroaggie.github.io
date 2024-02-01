@@ -30,11 +30,11 @@ Here is the instructions on how to run ATS using the Singularity container. This
 # load module
 $ module load singularity
 
-# pull image from dockerhub. If this failed on HPC, you may need to request an interactive node.
+# pull image from dockerhub. 
 $ singularity pull ats_master.sif docker://metsi/ats:master-latest
 ```
 
-
+**Notes: If this failed on HPC, you may need to request an interactive node.**
 ## Inspect image
 
 To run image using multiple cores, the mpich version inside the image has to be compatible to the one installed in the HPC system. In this case, mpich version is `3.3.2`.
