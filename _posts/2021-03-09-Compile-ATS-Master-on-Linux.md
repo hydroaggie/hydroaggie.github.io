@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Install ATS on Linux 
-date: 2021-03-09 
+title: Install ATS on Linux
+date: 2021-03-09
 description: Documentation on how to install ATS on Linux system
-tags: HPC code 
+tags: HPC code
 categories: software
 giscus_comments: true
 related_posts: true
@@ -121,7 +121,11 @@ ${AMANZI_SRC_DIR}/bootstrap.sh \
    --with-ctest=`which ctest` \
    --branch_ats=${ATS_VERSION} \
    --parallel=8
-   
+```
+
+- Use existing TPLs install. This may speed up the installation process.
+
+```bash   
 # If TPLs have already been built, and you don't want to go
 # through that long process again, replace
 #   --tpl-install-prefix=${AMANZI_TPLS_DIR} \
@@ -157,7 +161,7 @@ ${AMANZI_SRC_DIR}/bootstrap.sh \
 
 ```
 
-## configure and install Amanzi-tpls, Amanzi, and ATS
+## Configure and install Amanzi-tpls, Amanzi, and ATS
 
 - run the bootstrap
 
@@ -174,27 +178,28 @@ $ which ats
 $ ats --version # this will print out the version with the last 8 digits as hash tag from git commits
 ```
 
-## testing
+## Testing
 
-- download testing problem
+- download testing problem. The regression tests are up to date, and is preferred for the testing.
 
 ```bash
-cd $ATS_BASE
-mkdir testing
-cd testing
-git clone -b master http://github.com/amanzi/ats-demos
+cd ${ATS_BASE}/repos/amanzi/src/physics/ats/testing/ats-regression-tests
 ```
 
--  run test
+-  run test. Note that some of the tests can only be ran with a single core (CPU).
 
 ```bash
-export PATH="path/to/ats:$PATH"
+export PATH=${ATS_DIR}/bin:${PATH}
 
-cd ats-demos
 cd 01_richards_steadystate
+mkdir test
+cd test
+
 # serial
-ats --xml_file=richards_steadystate.xml &> out.log
+ats --xml_file=../mfd.xml &> out.log
 
 # parallel
-mpirun -n 4 ats --xml_file=richards_steadystate.xml &> out.log
+mpirun -n 4 ats --xml_file=../mfd.xml &> out.log
 ```
+
+- The test is successful if ats is running and printing outputs on the screen. You will get a summary of runtime at the end.
