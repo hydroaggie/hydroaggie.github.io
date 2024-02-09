@@ -196,9 +196,9 @@ jobs:
         publish_dir: src/_build/html
 ```
 
-Note: 
-- the branch name should be the same as the one used by the repository (e.g., `main` not `master` in this case)
-- The only things that need to be modified is the build command and `publish_dir`. The dir is relative to the root dir under main branch. So if your book content is at the root dir, use the following instead:
+{: .important }
+> - The branch name should be the same as the one used by the repository (e.g., `main` not `master` in this case)
+> - The only things that need to be modified is the build command `jupyter-book build .` and `publish_dir`. The dir is relative to the root dir under main branch. So if your book content is at the root dir, use the following instead:
 
 ```yaml
 jupyter-book build .
@@ -212,8 +212,7 @@ Just add or modify the contents, rebuild the book and push it to Github.
 ```bash
 # cd into dir where the _toc.yml is
 cd my_book/
-jb build .
-ghp-import -n -p -f ./_build/html
+jb build . && ghp-import -n -p -f ./_build/html
 ```
 
 ## Notes

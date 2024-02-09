@@ -39,7 +39,7 @@ The steps follow [Install ATS on Linux](/blog/2021/Compile-ATS-Master-on-Linux).
 
 ## Modulefile
 Creating a module file is useful for managing different versions of ats on HPC. The instructions follow this [post](https://hpc.ncsu.edu/Documents/user_modules.php)
-- Create a modulefile
+- Create a fmodulefile
 
 ```bash
 $ mkdir -p ATS_ROOT/modulefiles

@@ -16,15 +16,16 @@ toc:
   sidebar: left
 ---
 
-This tutorial combines the contents from [this](https://forum.obsidian.md/t/zotero-zotfile-mdnotes-obsidian-dataview-workflow/15536) and [this](https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd) blog with customization.
+I have started using [Zotero](https://www.zotero.org/) as my primary literature manager after using Mendeley for many years (the only thing I miss from Mendeley is the search function). I like the flexibility and rich function of Zotero, which offers a wide selection of plugins. I also like to use the highlights and comments as I read papers inside Zotero.
+
+This year I started a new note-taking app, [Obsidian](https://obsidian.md/), which I really like. If you don't know what Obsidian is, check out this nice [article](https://waterprogramming.wordpress.com/2022/10/21/markdown-based-scientific-and-computational-note-taking-with-obsidian/) by Water Programming. Obsidian becomes my all-in-one place for my notes including meeting, research, and daily notes. Since I have been making reading notes in Zotero, I started thinking if it is possible to port my literature notes into Obsidian. I did a bit search online, and found many people have already figured out different ways to achieve this. This tutorial combines the contents from [this Obsidian post](https://forum.obsidian.md/t/zotero-zotfile-mdnotes-obsidian-dataview-workflow/15536) and [this Medium article](https://medium.com/@alexandraphelan/an-updated-academic-workflow-zotero-obsidian-cffef080addd) on the Zotero-Obsidian workflow with some customization.
+
 ## Pre-requisites:
-- Zotero (v6.0.27)
-- Obsidian (v1.4.13)
+- Zotero (v6.0+)
+- Obsidian (v1.4+)
 - Obsidian plugins: [Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration), Templater, Dataview
 - Zotero plugins: [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/installation/), Zotfile, 
 - (Optional) Zotero Browser Extension for Chrome/Firefox. This may be useful for downloading papers to Zotero.
-
-
 ## Setup
 
 ### Install Obsidian plugins

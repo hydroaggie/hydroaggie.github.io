@@ -6,7 +6,7 @@ description: A tutorial on how to use Rkernel in Jupyter Notebook
 tags:
   - R
   - jupyter
-categories: geek tutorial
+categories: tutorial
 giscus_comments: true
 related_posts: true
 toc:

@@ -10,7 +10,7 @@ related_posts: true
 toc:
   sidebar: left
 ---
-
+***Last updated: 02/09/2024***
 
 The following steps roughly follow the official guide [here](https://github.com/amanzi/amanzi/blob/master/INSTALL_ATS.md).
 
