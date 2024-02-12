@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Install PFLOTRAN on NERSC (Depreciated)
-date: 2019-08-15 
+title: Install PFLOTRAN on NERSC (Deprecated)
+date: 2019-08-15
 description: Documentation on how to install PFLOTRAN on NERSC Cori
-tags: code 
+tags:
+  - code
 categories: software
 giscus_comments: true
 related_posts: true

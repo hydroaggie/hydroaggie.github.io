@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Install ATS on NERSC (Depreciated)
-date: 2019-08-29 
+title: Install ATS on NERSC (Deprecated)
+date: 2019-08-29
 description: Documentation on how to install ATS v0.88 on NERSC
-tags: code 
+tags:
+  - code
 categories: software
 giscus_comments: true
 related_posts: true

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Create A Jupyter Kernel on HPC (Depreciated)
-date: 2019-07-26 
+title: Create A Jupyter Kernel on HPC (Deprecated)
+date: 2019-07-26
 description: Documentation on how to create a Jupyter Kernel
-tags: code 
+tags:
+  - code
 categories: software
 giscus_comments: true
 related_posts: true

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Install PFLOTRAN on Mac (Depreciated)
-date: 2019-08-01 
+title: Install PFLOTRAN on Mac (Deprecated)
+date: 2019-08-01
 description: Documentation on how to install PFLOTRAN on Mac
-tags: code 
+tags:
+  - code
 categories: software
 giscus_comments: true
 related_posts: true
