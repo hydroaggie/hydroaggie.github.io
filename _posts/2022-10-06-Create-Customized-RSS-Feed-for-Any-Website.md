@@ -20,10 +20,11 @@ For tutorials ([part1](https://www.fivefilters.org/2021/how-to-turn-a-webpage-in
 - Enter web page URL (e.g., https://www.nifa.usda.gov/grants/funding-opportunities)
 - Get links inside the HTML elements with this id or class value
 	- Go the the news website. Right click and select `inspect` (this applies to Chromium browser and Firefox)
-	- Search for keywords appearing in the news article in the inspect page (HTML). Usually it has the following format: `<div class="CLASS_NAME">`
+	- Search for keywords appearing in the news article in the inspect page (HTML). Usually it has the following format: `<div class="KEYWORD">` or `<a href=... class="KEYWORD" >` 
 	- Some examples:
-		- Use `post-title` as the class value for the above [website](https://www.nifa.usda.gov/grants/funding-opportunities). 
-		- Use `summary-list__items` for New Yorker contributor ([example](https://www.newyorker.com/contributors/peter-hessler))
+		- Use `post-title` as the class value for the above NIFA-USDA funding [website](https://www.nifa.usda.gov/grants/funding-opportunities). 
+		- Use `SummaryItemHedLink-civMjp jRfyII summary-item-tracking__hed-link summary-item__hed-link` for New Yorker contributor ([example](https://www.newyorker.com/contributors/peter-hessler))
+		- Use `c-card__link u-link-inherit` for [Nature Career Column](https://www.nature.com/nature/articles?type=career-column). This one works nicely. The key is to find the class value within `<a href=... class="KEYWORD" >` where the article title/abstract can be found.
 - Go back to the FiveFilters website. Enter the class value found above. Keep the rest of options unchanged.
 - Click `Preview` at the bottom. The results of the RSS feed should appear on the right. Make sure the results on the right look correct.
 - Right click `RSS Feed` button, and copy [link address](https://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.nifa.usda.gov%2Fgrants%2Ffunding-opportunities&in_id_or_class=post-title&max=5&order=document&guid=0).
