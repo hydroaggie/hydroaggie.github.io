@@ -2,7 +2,7 @@
 layout: post
 title: Install PFLOTRAN on NERSC
 date: 2019-08-15
-description: Documentation on how to install PFLOTRAN on NERSC Perlmutter
+description: Documentation on how to install PFLOTRAN on NERSC Perlmutter or similar HPC system
 tags:
   - code
 categories: software
@@ -15,7 +15,13 @@ toc:
 
 See this [documentation](https://www.pflotran.org/documentation/user_guide/how_to/installation/linux.html#linux-install) for installation on Linux machine.
 
-## Install Petsc
+## Setup environment
+By default, Perlmutter uses GPU. Make sure to switch to CPU environment.
+```bash
+module load cpu
+```
+
+## Install PETSc
 
 Download Petsc from Bitbucket, and save it into directory `petsc_v3.20.2`, and checkout the latest version `3.20.2`.
 
@@ -32,7 +38,7 @@ export PETSC_DIR=$PWD
 export PETSC_ARCH=perl-c-opt
 ```
 
-## Configure petsc
+## Configure PETSc
 
 - Use the recommended configuration. This will install a Fortran compiler, MPI, HDF5, and BLAS/LAPACK.
 
@@ -44,12 +50,12 @@ export PETSC_ARCH=perl-c-opt
 
 ```bash
 xxx=========================================================================xxx
- Configure stage complete. Now build PETSc libraries with (gnumake build):
+ # Configure stage complete. Now build PETSc libraries with (gnumake build):
    make PETSC_DIR=/global/cfs/cdirs/m1800/pin/pflotran-perl/petsc_v3.20.2 PETSC_ARCH=perl-c-opt all
 xxx=========================================================================xxx
 ```
 
-- Follow the prompt to build PETSC:
+- Follow the prompt to build PETSc:
 
 ```bash
 make PETSC_DIR=/global/cfs/cdirs/m1800/pin/pflotran-perl/petsc_v3.20.2 PETSC_ARCH=perl-c-opt all
@@ -58,9 +64,10 @@ make PETSC_DIR=/global/cfs/cdirs/m1800/pin/pflotran-perl/petsc_v3.20.2 PETSC_ARC
 After the build is complete, you may check if the build is successful using:
 
 ```bash
+# Now to check if the libraries are working do:
 make PETSC_DIR=/global/cfs/cdirs/m1800/pin/pflotran-perl/petsc_v3.20.2 PETSC_ARCH=perl-c-opt check
 ```
-## Download and compile pflotran
+## Download and compile PFLOTRAN
 
 ```bash
 git clone https://bitbucket.org/pflotran/pflotran pflotran
@@ -72,9 +79,10 @@ cd pflotran/src/pflotran
 make -j4 pflotran # use parallel thread to compile? You can also try -j8, -j16... if more cores are available
 ```
 
-After compilation is complete, a new file named `pflotran*` executable is generated at current directory. You can also move this executable to another directory, e.g. ` mkdir bin && cd bin && cp ../pflotran .`, then you can export this directory to `PATH`.
+After compilation is complete, a new file named `pflotran*` executable is generated at current directory. You can also move this executable to another directory, e.g. ` ./bin/pflotran*`, then you can export this directory to `PATH`.
 
 ```bash
+mkdir bin && cd bin && cp ../pflotran .
 export PATH=$PATH:/global/project/projectdirs/m1800/pin/pflotran/src/pflotran/bin
 ```
 ### Fast compilation (use with caution)
@@ -95,6 +103,37 @@ srun -n 1 pflotran -pflotranin $PFLOTRAN_DIR/regression_tests/default/543/543_fl
 ```
 
 Within seconds, the test model should finish, and the installation processes are done! 🎉
+
+## Create modulefile
+Use module is a great way to organize compiled codes. Here is a sample that I used for PFLOTRAN on NERSC.
+
+```bash
+#%Module1.0#####################################################################
+##
+## modules modulefile
+##
+proc ModulesHelp { } {
+    global mpi_bin
+
+    puts stderr "\tPFLOTRAN pflotran/5.0 repository, opt build"
+    puts stderr ""
+}
+
+module-whatis   "PFLOTRAN pflotran/5.0 repository, opt build"
+# #############################################################################
+
+module load cpu
+
+setenv PFLOTRAN_DIR /PATH/TO/PFLOTRAN_DIR
+setenv PETSC_DIR /PATH/TO/PETSC_DIR
+setenv PETSC_ARCH perl-c-opt
+
+prepend-path    PATH            $env(PFLOTRAN_DIR)/src/pflotran/bin
+prepend-path    PATH            $env(PETSC_DIR)/$env(PETSC_ARCH)/bin
+prepend-path    PYTHONPATH      $env(PFLOTRAN_DIR)/src/python
+
+```
+
 ## Realization dependent runs
 
 PFLOTRAN supports running multiple realizations at once. Must have realization dependent dataset.
@@ -151,3 +190,6 @@ cd ./src/pflotran
 make -j8 pflotran
 ```
 
+## Common issues
+1. `module: command not found`. This happened on an interactive node with `zsh` shell.
+	- To fix this, run `source $LMOD_PKG/init/zsh` prior to running any `module` command.
