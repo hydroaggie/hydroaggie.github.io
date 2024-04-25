@@ -295,6 +295,7 @@ Once you have a collection of notes, you can create a DataView query which lists
 
 # Advanced Tips
 
+- If the title of the paper contains colon (`:`), it will mess up the header formatting in the obsidian notes. The workaround is to replace it with something like `-`.
 - If you want to add more information in the template and are wondering which keywords to use, you can use `Zotero Data Explorer` to inspect all available keywords. In Obsidian, open command palallet and search for `Zotero Data Explorer`. Once opened, choose `Prompt For Selection` and the associated paper, you will see all meta information.
 - The annotations do not have internal links. However, you can add internal links in comments. Simply added comments after the highlights and keywords with internal links (e.g., `[[keyword]]`)
 - Obsidian does not auto-sync the literature notes. If new annotations are made in Zotero, the user has to manually pull updated by importing the same literature note again (refer to this [discussion](https://forums.zotero.org/discussion/comment/399431/#Comment_399431)).
