@@ -21,6 +21,8 @@ Watershed-workflow is now provided in a docker container.
 - (optional) Download docker image: 
 
 ```bash
+docker pull metsi/watershed-workflow
+# or
 docker pull ecoon/watershed_workflow-ats:latest
 # or 
 docker pull ecoon/watershed_workflow:latest
