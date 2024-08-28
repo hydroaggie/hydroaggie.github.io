@@ -1,13 +1,13 @@
 ---
 layout: about
 inline: false
-group: Graduate Students
-group_rank: 4
+group: Alumni
+group_rank: 5
 team_collaborator: false
 
 
 title: Jihad Othman
-description: PhD student
+description: MS student
 lastname: Othman
 publications: 'author^=*Othman'
 
@@ -15,7 +15,7 @@ teaser: >
     My research interests are groundwater-surface water interaction, the application of integrated hydrological models to study the impact of climate, land use, and landcover change on watershed hydrological and biogeochemical precesses.
 profile:
     name: Jihad Othman
-    position: Doctoral Student 
+    position: Master Student 
     align: right
     image: jihad_pic.jpg
 
@@ -30,11 +30,9 @@ profile:
         Logan, UT
 ---
 
-I am a PhD student in the Department of Civil Engineering and Environmental Engineering at Utah State University and Utah Water Research Lab. My research focuses on advancing integrated hydrological models to study the impact of climate, land use, and landcover change on watershed hydrological and biogeochemical processes.
-
-Prior to join USU, I was a Research Assistant at the American University of Beirut fro 2 years. 
+Jihad was a MS student in the Department of Civil Engineering and Environmental Engineering at Utah State University and Utah Water Research Lab. His research focused on advancing integrated hydrological models to study the watershed hydrological processes. Prior to join USU, Jihad was a Research Assistant at the American University of Beirut fro 2 years. 
 
 ## Short Bio
 
-I received my B.S. and M.S. in Geology and Hydrogeology from the Lebanese University, Lebanon, in 2017 and 2020, respectively. I started pursuing my doctoral degree at USU in 2022
+Jihad received his B.S. and M.S. in Geology and Hydrogeology from the Lebanese University, Lebanon, in 2017 and 2020, respectively. He started pursuing the MS degree at USU in Fall 2022 and he has completed the degree in Summer 2024. 
 
