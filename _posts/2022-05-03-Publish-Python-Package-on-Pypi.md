@@ -76,10 +76,14 @@ First, we need to install `MkDocs` and some plugins as specified in the `mkdocs.
 ```bash
 pip install mkdocs
 pip install mkdocs-material
-# plugins are optional 
+# plugins
 pip install mkdocstrings
 pip install mkdocs-git-revision-date-plugin
 pip install mkdocs-jupyter
+# updates
+pip install "mkdocstrings[python]"
+pip install jupyter_contrib_nbextensions
+
 ```
 
 ### Deploy the website
@@ -158,7 +162,7 @@ jobs:
 
 ## Trouble shooting
 1. Pip could not find the latest version even though it is updated on Pypi website.
-   - solution: update pip first using `pip install -U pip`, then install the package using `pip install -U PACKAGE_NAME`
+   - Solution: update pip first using `pip install -U pip`, then install the package using `pip install -U PACKAGE_NAME`
 ## Reference
 
 - My `modvis` python package: https://github.com/pinshuai/modvis

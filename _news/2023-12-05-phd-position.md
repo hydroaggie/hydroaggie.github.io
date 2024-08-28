@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PhD/post-Doc position in Arctic Hydrology
+title: PhD/post-Doc position in Arctic Hydrology (Closed)
 date: 2023-12-05 
 inline: false
 related_posts: false
