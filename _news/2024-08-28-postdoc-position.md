@@ -21,12 +21,12 @@ Groundwater’s contribution to streams in the form of low flows is critical to 
 
 **Qualifications:**
 
-•	PhD degree in Earth Science (such as hydrology, hydrogeology, geoscience, and environmental science) or other related engineering field (e.g., Civil and Environmental Engineering) at the time the program begins.
-•	Knowledge of fundamental hydrological processes in the subsurface.
-•	Expertise in Big Data, machine learning, and/or hydrologic modeling.
-•	Strong programming skills (e.g., Python and R).
-•	Strong written and verbal communication skills.
-•	U.S. work eligibility is required; non-U.S. scholars must have or be able to obtain a visa.
+- PhD degree in Earth Science (such as hydrology, hydrogeology, geoscience, and environmental science) or other related engineering field (e.g., Civil and Environmental Engineering) at the time the program begins.
+- Knowledge of fundamental hydrological processes in the subsurface.
+- Expertise in Big Data, machine learning, and/or hydrologic modeling.
+- Strong programming skills (e.g., Python and R).
+- Strong written and verbal communication skills.
+- U.S. work eligibility is required; non-U.S. scholars must have or be able to obtain a visa.
 
 **To Apply:**
 
