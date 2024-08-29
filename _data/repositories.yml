@@ -1,6 +1,8 @@
 github_users:
   - pinshuai
 
+repo_description_lines_max: 2
+
 github_repos:
   - environmental-modeling-workflows/watershed-workflow
   - pinshuai/modvis

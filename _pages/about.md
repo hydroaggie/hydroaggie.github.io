@@ -10,10 +10,9 @@ profile:
   image_circular: true # crops the image to make it circular
   address: >
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 Welcome to the Computational and Integrated Hydrology Group (CIHG), led by [Pin Shuai](/members/Pin_Shuai), at Utah State University! We are passionate about exploring the complex and dynamic hydrological system using novel techniques. Our research endeavors are driven by a commitment to advancing scientific knowledge, fostering innovation, and addressing pressing environmental challenges. 
