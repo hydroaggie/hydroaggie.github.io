@@ -1,14 +1,14 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: Blog
 nav: true
 nav_order: 1
 pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 10
   sort_field: date
   sort_reverse: true
   trail:
@@ -73,7 +73,8 @@ pagination:
 <div class="float-right">
 <i class="fa-solid fa-thumbtack fa-xs"></i>
 </div>
-<h3 class="card-title text-lowercase">{{ post.title }}</h3>
+<!-- <h3 class="card-title text-lowercase">{{ post.title }}</h3> -->
+<h3 class="card-title">{{ post.title | slice: 0, 1 | capitalize }}{{ post.title | slice: 1 }}</h3>
 <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}
