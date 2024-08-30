@@ -26,7 +26,8 @@ profile:
     cv: Shuai_CV.pdf
     address: >
 
-social: true  # includes social icons at the bottom of the page           
+social: true  # includes social icons at the bottom of the page
+latest_posts: false  # includes latest posts at the bottom of the page           
 ---
 
 Pin Shuai is currently an Assistant Professor in the <a href="https://engineering.usu.edu/directory/cee/faculty/shuai-pin"> Department of Civil and Environmental Engineering</a> at Utah State University and Utah Water Research Laboratory. He is a quantitative hydrogeologist by training. His research interests lie primarily in two areas. The first area is understanding of the hydrological, biogeochemical processes occurring at the aquatic-terrestrial interface under the impact of groundwater and surface water interactions. The second area is quantifying the flow and transport of heat, nutrients and contaminants from bedrock to canopy top in a watershed, and feedbacks between hydrology, land use, and climate change. He is also interested in leveraging machine learning to assist hydrologic modeling.
