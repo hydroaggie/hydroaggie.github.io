@@ -75,7 +75,6 @@ pagination:
 </div>
 <!-- <h3 class="card-title text-lowercase">{{ post.title }}</h3> -->
 <h3 class="card-title text-capitalize">{{ post.title }}</h3>
-<!-- <h3 class="card-title">{{ post.title | capitalize | prepend: post.title | slice: 1 }}</h3> -->
 <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}

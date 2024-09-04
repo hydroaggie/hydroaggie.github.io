@@ -30,7 +30,7 @@ To avoid building from scratch, start with a template. There are many templates 
 git clone https://github.com/your_github_name/your_github_name.github.io.git
 cd your_github_name.github.io
 ```
-- Local setup using Docker (**Recommended**). Follow the instructions [here](https://github.com/alshedivat/al-folio#local-setup-using-docker-recommended). Alternatively, you can [set up locally](https://github.com/alshedivat/al-folio#local-setup-legacy) by installing several packages (this may be challenging for new users).
+- Local setup using Docker (**Recommended**). Follow the instructions [here](https://github.com/alshedivat/al-folio/blob/master/INSTALL.md#local-setup-using-docker-recommended). Alternatively, you can [set up locally](https://github.com/alshedivat/al-folio#local-setup-legacy) by installing several packages (this may be challenging for new users).
 - Once the local setup is successful, you will see a prompt with the local server address on screen. 
 ```bash
  Auto-regeneration: enabled for 'Path/to/your_github_name.github.io'
