@@ -18,7 +18,7 @@ profile:
     name: Ehsan Ebrahimi
     position: Doctoral Student 
     align: right
-    image: ebrahimi-ehsan-400x600.jpg
+    image: Ehsan_Ebrhaimi.jpg
     role: 
     email: ehsan.ebrahimi@usu.edu
     github: 
