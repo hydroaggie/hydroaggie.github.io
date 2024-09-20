@@ -26,21 +26,27 @@ This year I started a new note-taking app, [Obsidian](https://obsidian.md/), whi
 - Obsidian plugins: [Zotero Integration](https://github.com/mgmeyers/obsidian-zotero-integration), Templater, Dataview
 - Zotero plugins: [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/installation/), Zotfile, 
 - (Optional) Zotero Browser Extension for Chrome/Firefox. This may be useful for downloading papers to Zotero.
+
 ## Setup
 
 ### Install Obsidian plugins
-For this workflow to work, you will need to install Zotero Integration, Templater, Dataview.
+For this workflow to work, you will need to install `Zotero Integration, Templater, Dataview` plugins.
 
 It may be difficult to find where the plugins are for the first time. 
 - Click the settings icon (ie. ) in the lower left corner of the app.
 - Click `Community plugins` on the left panel and select `browse`. This will open window with a list of plugins.
-- Search for `Zotero Integration`, click `install`
+- Search for the plugin (e.g., `Zotero Integration`), click `install`
 - Once installed, click `enable`. **This step is necessary to activate the plugin** 
 
 Once you have all the plugins installed, you need to change the settings for each.
-#### Zotero Integration
 
-Change settings in Obsidian...
+#### Zotero Integration Settings
+
+Change settings in the Zotero Integration plugin.
+- Go to `Settings --> Community plugins --> Zotero Integration`
+- Set `Zotero` as the Database
+- Set `Note Import Location`. This is where the notes will be stored in Obsidian. I use `literature` folder in my vault.
+- Under `Import Formats`, click `Add Import Format` and add `Output Path` for notes and `Image Output Path`. Choose `Template File` as the template file for Zotero notes. I will provide a template below. Choose the `Bibliography Style`. I use `APA` style.
 
 ### Install Zotero plugins
 You may need the following plugins: 
@@ -279,7 +285,11 @@ In the pop-up box, type in the author to search for literature. Once found, hit 
 
 Here is a screenshot shows the final markdown file in Obsidian. 
 
-![Obsidian note screenshot](../assets/img/obsidian_note.png)
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+		{% include figure.liquid loading="eager" path="assets/img/obsidian_note.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
 
 - The nice thing about the annotations is that each annotation has a link to the page number in the paper. When clicking on the link, it will bring you back to highlighted page of the PDF in Zotero. 
 - All snapshots are embeded under annotations, which make it extremely useful for storing key figures.
