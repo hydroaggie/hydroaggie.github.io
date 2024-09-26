@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Computational and Integrated Hydrology Group # the website title (if blank, full name will be used instead)
+title: Shuai Computational and Integrated Hydrology Group # the website title (if blank, full name will be used instead)
 first_name: Pin
 middle_name: 
 last_name: Shuai
 email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The CIHG research group at USU.
+  The SCI-Hy research group at USU.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -130,7 +130,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: HydroAggie # blog_name will be displayed in your blog page
+blog_name: The Invisible Water # blog_name will be displayed in your blog page
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
 blog_description: A blog for sharing thoughts
 permalink: /blog/:year/:title/
