@@ -1,6 +1,6 @@
 # Computational and Integrated Hydrology Group
 
-![Group Logo](assets/img/group-logo.png)
+![Group Logo](assets/img/logos/group-logo.png)
 
 Official group website repository for CIHG at Utah State University.
 
