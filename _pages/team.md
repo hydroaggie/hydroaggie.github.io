@@ -2,7 +2,7 @@
 layout: page
 title: Members
 permalink: /team.html
-description: A list of current and previous group members afflicated with the CIHG
+description: A list of current and previous group members afflicated with the SCI-Hy group at USU
 nav: true
 nav_order: 2
 ---
