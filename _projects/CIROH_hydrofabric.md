@@ -2,7 +2,7 @@
 layout: page
 title: Hydrofabric Enhancement
 description: "CIROH: Advance water management-hydrologic model coupling to improve hydrologic forecasting in managed watersheds"
-img: assets/img/CIROH_logo.png
+img: assets/img/NOAA-CIROH_logo.png
 importance: 1
 category: current
 ---

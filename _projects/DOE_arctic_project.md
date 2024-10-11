@@ -2,7 +2,7 @@
 layout: page
 title: Cold Region Hydro-biogeochemical Processes
 description: Dynamics of interconnected surface-subsurface flow and reactive transport processes across the hillslope-riparian zone-river corridor continuum of cold, high-latitude watersheds
-img: assets/img/DOE_ESS_Logo.png
+img: assets/img/doe-ess-logo.png
 importance: 2
 category: current
 ---
@@ -37,6 +37,10 @@ George W. Kling, University of Michigan (Co-Investigator)
 
 Ethan T. Coon, Oak Ridge National Laboratory (Co-Investigator)
 
+Neelarun Mukherjee, University of Texas at Austin (PhD Student)
+
+Devon Hill, Utah State University (PhD Student)
+
 **Duration**: 
 
 2023-2026
@@ -47,3 +51,7 @@ $1M
 
 <a href="https://ess.science.energy.gov/wp-content/uploads/2023/08/ESS-FY23-FOA-2849-Summary_rev-08-01-2023.pdf"> <b>External Link</b></a>
 
+## Updates
+---
+
+*07/01/2024*: Our team completed our first field compaign in the study site near Toolik Field Station in Alaska this summer. We collected soil and water samples and surveyed the groundwater table and thaw depth in the piezometers.
