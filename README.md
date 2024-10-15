@@ -1,8 +1,8 @@
-# Computational and Integrated Hydrology Group
+# Shuai Computational and Integrated Hydrology Group
 
 ![Group Logo](assets/img/logos/group-logo.png)
 
-Official group website repository for the SCI-Hy group at Utah State University.
+Official group website repository for the Shuai Computational and Integrated Hydrology Group (SCI-Hy) group at Utah State University.
 
 This is built from Jekyll using the [al-folio](https://github.com/alshedivat/al-folio) template. For more information on how to use the template to build a website, see my [blog post](https://hydroaggie.github.io/blog/2023/Create-Your-Personal-Website-Using-Github-Pages/).
 
