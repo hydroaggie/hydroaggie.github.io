@@ -4,8 +4,8 @@ title: Integrated Hydrologic Modeling
 description: "ExaSheds: Advancing Watershed System Science using Machine Learning-Assisted Simulation"
 img: assets/img/doe-ess-logo.png
 importance: 3
-category: past
-related_publications: jiang_knowledge-informed_2023, Coon2022
+category: Completed
+related_publications: true
 ---
 
 ## Summary
@@ -40,3 +40,10 @@ Pin Shuai, Utah State University (PI)
 $60,000
 
 <a href="https://exasheds.org/about/"> <b>External Link</b></a>
+
+## Updates
+---
+
+- *10/01/2024*: New publication out led by Dr. Alex Sun on the development of a deep neural operator learning approach for the parameter estimation in the Neversink Watershed {% cite Sun_BridgingHydrologicalEnsemble_2024 %}.
+- *09/01/2024*: New publication out led by Dr. Jiang on the development of a knowledge-informed deep learning technique for parameter estimation in the Neversink Watershed {% cite Jiang_OptimizingParameterLearning_2024 %}.
+- *07/01/2023*: New paper out led by Dr. Jiang on using knowledge-informed deep learning for hydrological model calibration in the Coal Creek Watershed in Colorado {% cite jiang_knowledge-informed_2023 %}.

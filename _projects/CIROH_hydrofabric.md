@@ -4,7 +4,7 @@ title: Hydrofabric Enhancement
 description: "CIROH: Advance water management-hydrologic model coupling to improve hydrologic forecasting in managed watersheds"
 img: assets/img/NOAA-CIROH_logo.png
 importance: 1
-category: current
+category: Active
 ---
 
 ## Summary
@@ -23,7 +23,7 @@ Human activities such as water diversion, reservoir management, and irrigation s
 
 **Funding Agency**: 
 
-U.S. Geological Survey through The University of Alabama (<a href="https://ciroh.ua.edu/"> CIROH</a>)
+U.S. Geological Survey (USGS) through the Cooperative Institute for Research to Operations in Hydrology (<a href="https://ciroh.ua.edu/">CIROH</a>) with The University of Alabama. 
 
 **Team**: 
 
