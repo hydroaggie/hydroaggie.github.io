@@ -36,3 +36,7 @@ Jihad was a MS student in the Department of Civil Engineering and Environmental 
 
 Jihad received his B.S. and M.S. in Geology and Hydrogeology from the Lebanese University, Lebanon, in 2017 and 2020, respectively. He started pursuing the MS degree at USU in Fall 2022 and he has completed the degree in Summer 2024. 
 
+## Publication
+
+Othman, Jihad, "*Quantitative Evaluation of Baseflow Separation Methods Using an Integrated Hydrologic Model: A Case Study in a Snow-Dominated Watershed*" (2024). All Graduate Reports and Creative Projects, Fall 2023 to Present. 60.
+[https://digitalcommons.usu.edu/gradreports2023/60](https://digitalcommons.usu.edu/gradreports2023/60)
