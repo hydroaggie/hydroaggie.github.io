@@ -9,9 +9,13 @@ nav_order: 9
 
 I am always looking for passionate and talented students to join our group. 
 
-## Opportunities
+## Current Opportunities
 
-:loudspeaker: [**New Postdoc positions in Subsurface Hydrology**](/news/2024-08-28-postdoc-position) :point_left: Click here for more information.
+:loudspeaker: [**New Postdoc positions in Subsurface Hydrology**](/news/2024-08-28-postdoc-position) :point_left: 
+
+:loudspeaker: [**New PhD positions in Computational Hydrology**](/news/2024-12-10-PhD-position) :point_left: 
+
+## General inquiries
 
 For inquiries, please contact [Dr. Pin Shuai](/members/Pin_Shuai) with your **CV, unofficial transcripts and a one-page personal statement**. In your one-page personal statement, please address the following questions: 1) Why are you interested in joining our group? 2) What qualities make you a strong candidate? 3) What quantitative skills, such as programming and modeling, do you possess?
 
