@@ -3,7 +3,7 @@ layout: page
 permalink: /prospective_students/
 title: Prospective Students
 description: Information regarding prospective students.
-nav: false
+nav: true
 nav_order: 4
 ---
 
