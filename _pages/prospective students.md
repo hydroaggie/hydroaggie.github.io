@@ -4,14 +4,14 @@ permalink: /prospective_students/
 title: Prospective Students
 description: Information regarding prospective students.
 nav: false
-nav_order: 9
+nav_order: 4
 ---
 
 I am always looking for passionate and talented students to join our group. 
 
 ## Current Opportunities
 
-:loudspeaker: [**New Postdoc positions in Subsurface Hydrology**](/news/2024-08-28-postdoc-position) :point_left: 
+:loudspeaker: [**New Postdoc positions in Subsurface Hydrology**](/news/2025-02-05-postdoc-position) :point_left: 
 
 :loudspeaker: [**New PhD positions in Computational Hydrology**](/news/2024-12-10-PhD-position) :point_left: 
 
