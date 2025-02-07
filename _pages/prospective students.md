@@ -26,7 +26,7 @@ I particularly welcome students with a tech-savvy inclination, as the work often
 ## Other notes
 
 - For PhD applicants without a MS degree, our department requires students to obtain a MS degree as the first step toward a PhD degree. 
-- International students typically require proof of English proficiency such as TOEFL or IELTS.
+- International students typically require proof of English proficiency such as TOEFL or IELTS. The English proficiency requirement can be found on the [USU Graduate School website](https://gradschool.usu.edu/admissions/policies).
 - While the GRE is not mandatory for applications, students are encouraged to take the exam and provide their scores as supplementary information for scholarship consideration.
 
 ## How to apply?
