@@ -3,15 +3,15 @@ layout: page
 permalink: /prospective_students/
 title: Prospective Students
 description: Information regarding prospective students.
-nav: false
-nav_order: 9
+nav: true
+nav_order: 4
 ---
 
 I am always looking for passionate and talented students to join our group. 
 
 ## Current Opportunities
 
-:loudspeaker: [**New Postdoc positions in Subsurface Hydrology**](/news/2024-08-28-postdoc-position) :point_left: 
+:loudspeaker: [**New Postdoc positions in Subsurface Hydrology**](/news/2025-02-05-postdoc-position) :point_left: 
 
 :loudspeaker: [**New PhD positions in Computational Hydrology**](/news/2024-12-10-PhD-position) :point_left: 
 
@@ -26,7 +26,7 @@ I particularly welcome students with a tech-savvy inclination, as the work often
 ## Other notes
 
 - For PhD applicants without a MS degree, our department requires students to obtain a MS degree as the first step toward a PhD degree. 
-- International students typically require proof of English proficiency such as TOEFL or IELTS.
+- International students typically require proof of English proficiency such as TOEFL or IELTS. The English proficiency requirement can be found on the [USU Graduate School website](https://gradschool.usu.edu/admissions/policies).
 - While the GRE is not mandatory for applications, students are encouraged to take the exam and provide their scores as supplementary information for scholarship consideration.
 
 ## How to apply?
