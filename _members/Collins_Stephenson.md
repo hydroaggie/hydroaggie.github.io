@@ -7,18 +7,18 @@ team_collaborator: false
 
 
 title: Collins Stephenson
-description: MS student
+description: MS Student
 lastname: Stephenson
 publications: 'author^=*Stephenson'
 
 teaser: >
-    Collins is a MS student working on the effect of canal seepage on subsurface hydrological and thermal processes in Northern Utah.
+    Collins is a graduate research assistant at Utah State University. His research focus is studying the effect of canal seepage on subsurface hydrological and thermal processes in Northern Utah.
 
 profile:
     name: Collins Stephenson
-    position: Master Student 
+    position: Master's Student 
     align: right
-    image: usu_Ablock.jpg
+    image: collins_pic.jpg
     role: 
     email: collins.stephenson@usu.edu
     github: 
@@ -30,9 +30,9 @@ profile:
         Logan, UT
 ---
 
-Collins is a MS student working on the effect of canal seepage on subsurface hydrological and thermal processes in Northern Utah. He is interested in the interaction between surface water and groundwater and how it affects the thermal regime of the subsurface. He is also interested in the use of numerical models to simulate these processes.
+Collins is a MS student at the Utah Water Research Laboratory, Utah State University. Collins's research is focused on the effect that canal seepage has on subsurface hydrological and thermal processes near Hyrum, Utah. Collins is also working on numerical modeling of the canal-shallow aquifer-river system to further study the affect of changing canal seepage inputs on the subsurface hydrological and thermal processes in this system.
 
 ## Short Bio
 
-
+Collins received his B.S. degree in Civil and Environmental Engineering from Utah State University, Logan, UT. Collins begin pursuing his Master's degree at USU in August, 2024. When he is not at the lab or the classroom, Collins enjoys spending time in the canyons near USU and enjoying music in all mediums.
 
