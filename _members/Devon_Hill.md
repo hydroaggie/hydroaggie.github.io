@@ -2,37 +2,36 @@
 layout: about
 inline: false
 group: Graduate Students
-group_rank: 4
+group_rank: 5
 team_collaborator: false
 
-
-title: Collins Stephenson
-description: MS Student
-lastname: Stephenson
-publications: 'author^=*Stephenson'
+title: Devon Hill
+description: PhD Student
+lastname: Hill
+publications: 'author^=*Hill'
 
 teaser: >
-    Collins is a graduate research assistant at Utah State University. His research focus is studying the effect of canal seepage on subsurface hydrological and thermal processes in Northern Utah.
+    Investigating surface-subsurface flow and reactive transport processes in high-latitude watersheds.
 
 profile:
-    name: Collins Stephenson
-    position: Master's Student 
+    name: Devon Hill
+    position: PhD Student 
     align: right
-    image: collins_pic.jpg
+    image: devon_pic.jpg
     role: 
-    email: collins.stephenson@usu.edu
+    email: devon.hill@usu.edu
     github: 
-    orcid: 
+    orcid: 0009-0007-5155-4299
     website: 
     address: >
         Department of Civil and Environmental Engineering<br />
         Utah Water Research Laboratory<br />
-        Logan, UT
+        Utah State University, Logan, UT
 ---
 
-Collins is a MS student at the Utah Water Research Laboratory, Utah State University. Collins's research is focused on the effect that canal seepage has on subsurface hydrological and thermal processes near Hyrum, Utah. Collins is also working on numerical modeling of the canal-shallow aquifer-river system to further study the affect of changing canal seepage inputs on the subsurface hydrological and thermal processes in this system.
+Devon Hill is a PhD student at the Utah Water Research Laboratory at Utah State University. His research focuses on surface-subsurface hydrologic connectivity and reactive transport dynamics across the hillslope–riparian zone–river corridor continuum in cold, high-latitude watersheds. A major component of his work involves adapting and calibrating hydrologic and transport models using data from the Imnavait Creek watershed in Alaska. Ultimately, he aims to implement a 3D watershed model using ATS and integrate novel instream processes to enhance hydrologic simulations.
 
 ## Short Bio
 
-Collins received his B.S. degree in Civil and Environmental Engineering from Utah State University, Logan, UT. Collins begin pursuing his Master's degree at USU in August, 2024. When he is not at the lab or the classroom, Collins enjoys spending time in the canyons near USU and enjoying music in all mediums.
+Devon earned both his BS and MS degrees in Civil and Environmental Engineering from Utah State University. Research for his MS degree focused on surface and groundwater interaction in mountainous karst. He began his PhD studies at USU in 2024. His MS and PhD research have each included their share of field work and modeling. Outside of research, he enjoys running, roller skating, and wakeboarding.
 
