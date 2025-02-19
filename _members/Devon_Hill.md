@@ -6,7 +6,7 @@ group_rank: 5
 team_collaborator: false
 
 title: Devon Hill
-description: PhD Student
+description: PhD Student 
 lastname: Hill
 publications: 'author^=*Hill'
 
@@ -15,7 +15,7 @@ teaser: >
 
 profile:
     name: Devon Hill
-    position: PhD Student 
+    position: PhD Student (co-advised with Dr. Beth Neilson)
     align: right
     image: devon_pic.jpg
     role: 
