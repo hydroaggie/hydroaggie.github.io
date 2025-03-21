@@ -57,15 +57,10 @@ xxx=========================================================================xxx
 - Follow the prompt to build PETSc:
 
 ```bash
-make PETSC_DIR=/global/cfs/cdirs/m1800/pin/pflotran-perl/petsc_v3.20.2 PETSC_ARCH=perl-c-opt all
+ make PETSC_DIR=/uufs/chpc.utah.edu/common/home/shuai-group1/pflotran/petsc_v3.21.4 PETSC_ARCH=notchpeak-gcc-8.5.0 all
 ```
 
-After the build is complete, you may check if the build is successful using:
 
-```bash
-# Now to check if the libraries are working do:
-make PETSC_DIR=/uufs/chpc.utah.edu/common/home/shuai-group1/pflotran/petsc_v3.21.4 PETSC_ARCH=notchpeak-gcc-8.5.0 all
-```
 ## Download and compile PFLOTRAN
 
 ```bash
@@ -83,7 +78,6 @@ After compilation is complete, a new file named `pflotran*` executable is genera
 
 ```bash
 mkdir bin && cd bin && cp ../pflotran .
-export PATH=$PATH:/global/project/projectdirs/m1800/pin/pflotran/src/pflotran/bin
 ```
 ### Fast compilation (use with caution)
 
@@ -134,24 +128,6 @@ prepend-path    PYTHONPATH      $env(PFLOTRAN_DIR)/src/python
 
 ```
 
-## Realization dependent runs
-
-PFLOTRAN supports running multiple realizations at once. Must have realization dependent dataset.
-
-- run single realization
-
-```bash
-srun -n 32 pflotran pflotran.in -realization_id 1
-```
-
-- run all realization
-
-```bash
-srun -n 128 pflotran pflotran.in -stochastic -num_realizations 4 -num_groups 4
-```
-
-Note: `# of realizations per groups` equals `num_realizations/num_groups`; `# of cores per simulation = # of cores/num_groups`; in this case, 32 cores are used for one realization.
-
 ## Update PFLOTRAN
 
 -  make sure `PETSC_DIR` and `PETSC_ARCH` are in your environment
@@ -173,21 +149,6 @@ git pull
 cd pflotran/src/pflotran
 make -j4 pflotran
 # make pflotran fast=1
-```
-
-### Automatically update
-
-use the following bash script to automatically update PFLOTRAN to the latest on master branch.
-
-```bash
-#! /bin/bash
-
-echo "<<<<<<<<<<<<<<<<<<update pflotran repo<<<<<<<<<<<<<<<<<<"
-git pull
-
-echo "<<<<<<<<<<<<<<<<<<compile pflotran<<<<<<<<<<<<<<<<<<<<<<<"
-cd ./src/pflotran
-make -j8 pflotran
 ```
 
 ## Common issues
