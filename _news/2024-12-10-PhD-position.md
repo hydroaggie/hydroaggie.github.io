@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PhD position in Computational Hydrology
+title: PhD position in Computational Hydrology (Closed)
 date: 2024-12-10 
 inline: false
 related_posts: false
