@@ -27,7 +27,7 @@ which cmake
 
 ```bash
 # get the root directory of mpi
-which mpicc 
+which mpicc       
 
 # e.g.
 /uufs/chpc.utah.edu/sys/spack/v019/linux-rocky8-x86_64/gcc-11.2.0/openmpi-4.1.4-fvjpa3zslc4266fazcxbv6ntjgojf6rx/bin/mpicc
@@ -82,17 +82,25 @@ setenv AMANZI_TPLS_DIR /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanz
 
 setenv AMANZI_TPLS_BUILD_DIR /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/amanzi_tpls-build-master-Release
 
+# add below for watershed-workflow
+setenv WATERSHED_WORKFLOW_DIR /uufs/chpc.utah.edu/common/home/u6046326/shuai-group1/watershed-workflow
+setenv SEACAS_DIR /uufs/chpc.utah.edu/common/home/u6046326/shuai-group1/seacas
+
 setenv AMANZI_TPLS_BUILD_TYPE opt
 setenv AMANZI_TRILINOS_BUILD_TYPE opt
 setenv AMANZI_BUILD_TYPE opt
-## (IMPORTANT!) set PATH and PYTHONPATH so the system can find ats
-prepend-path    PATH            /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/amanzi_tpls-install-master-Release/bin
-prepend-path    PATH            /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/amanzi-install-master-Release/bin
 
-prepend-path    PYTHONPATH      /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/amanzi_tpls-install-master-Release/SEACAS/lib
-prepend-path    PYTHONPATH      /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/repos/amanzi/tools/amanzi_xml
-prepend-path    PYTHONPATH      /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/repos/amanzi/src/physics/ats/tools/utils
-prepend-path    PYTHONPATH      /uufs/chpc.utah.edu/common/home/u6046326/github/ats-amanzi-Jul2023/repos/amanzi/src/physics/ats/tools/meshing/meshing_ats
+## (IMPORTANT!) set PATH and PYTHONPATH so the system can find ats
+prepend-path    PATH            $env(AMANZI_TPLS_DIR)/bin
+prepend-path    PATH            $env(AMANZI_DIR)/bin
+# prepend-path    PYTHONPATH      $env(AMANZI_TPLS_DIR)/SEACAS/lib
+prepend-path    PYTHONPATH      $env(AMANZI_SRC_DIR)/tools/amanzi_xml
+prepend-path    PYTHONPATH      $env(ATS_SRC_DIR)/tools/utils
+prepend-path    PYTHONPATH      $env(ATS_SRC_DIR)/tools/meshing/meshing_ats
+prepend-path    PYTHONPATH      $env(ATS_SRC_DIR)/tools/input_converters
+prepend-path    PYTHONPATH      $env(WATERSHED_WORKFLOW_DIR)/bin
+prepend-path    PYTHONPATH      $env(SEACAS_DIR)/lib
+
 ```
 
 - Save the file. Put the following in `.bash_profile` or similar so the custom module is added when login. **No slash after modulefiles!**

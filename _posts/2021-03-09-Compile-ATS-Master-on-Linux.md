@@ -83,9 +83,14 @@ export PATH=${AMANZI_TPLS_DIR}/bin:${PATH}
 ```bash
 # clone amanzi, ats and other repos
 git clone -b master --recursive http://github.com/amanzi/amanzi $AMANZI_SRC_DIR
+git checkout 8fde938bc
+# for specific hash tag
+
 
 # (optional) when the previous clone does not download ats automatically
 git clone -b master http://github.com/amanzi/ats $ATS_SRC_DIR
+git checkout e45b24ac
+
 ```
 
 ## Edit bootstrap

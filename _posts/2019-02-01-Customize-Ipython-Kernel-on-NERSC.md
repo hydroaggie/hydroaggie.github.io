@@ -24,9 +24,11 @@ module load python
 - In terminal, type `conda env list` to see a list of environments, the current environment is indicated with an asterisk(`*`). 
 
 - create new environment with some packages
+
 ```bash
 conda create -n <my_env> python ipykernel r-essentials
 ```
+
 note: this will create both python and R kernels. You can create just R kernel using `conda create -n <my_env> r-essentials`
 
 - generate kernel spec file so that kernel can be found in Jupyter
@@ -114,7 +116,9 @@ source activate <my_env>
 }
   ```
   - save this file
+
 ## Choose your customized kernel
+
   Open [Jupyterhub](https://jupyter-dev.nersc.gov/user/pshuai/tree/global/project/projectdirs/m1800/jupyter/reach_scale_model/notebook) on Nersc, and switch current kernel to `Python [conda env:my_env]`. Then you should be able to import newly installed package on the kernel. 
 
 ---
