@@ -11,7 +11,11 @@ toc:
   sidebar: left
 ---
 
-This post follows Ethan's [documentation](https://ecoon.github.io/watershed-workflow/build/html/install.html) with few edits. It has been tested on Mac and Linux (i.e. NERSC).
+*Last updated: 2025-03-26*
+
+For up to date guide, please refer to Zhi's blog post [here](https://github.com/ZhiLiHydro/ZhiLiHydro.github.io/blob/master/_posts/2022-04-20-blog-post-2.md).
+
+This post follows Ethan's [documentation](https://ecoon.github.io/watershed-workflow/build/html/install.html) with a few edits. It has been tested on Mac (Intel chip, amd64) and Linux (i.e. NERSC).
 
 ## Docker installation (Recommended)
 
@@ -165,90 +169,120 @@ $ export PYTHONPATH=`pwd`:`pwd`/workflow_tpls:`pwd`/workflow:${PYTHONPATH}
 $ export PYTHONPATH="${PYTHONPATH}:/path/to/seacas/install/lib" 
 ```
 
-## Install Exodus II (on NERSC)
+## Install Watershed Workflow on CHPC
+Request an interactive node. otherwise it's going to warn you about the computational resources.
 
-Follow most of the steps above but with a few changes.
-
-### Configure modules
-
+- Login to CHPC and load the following modules. 
 ```bash
-module load python
-module load cmake
-module swap PrgEnv-intel PrgEnv-gnu
-
-export CRAYPE_LINK_TYPE=dynamic # important!
+module load gcc/11.2.0 openmpi/4.1.4 cmake/3.26.0
 ```
 
-Loaded modules
-
 ```bash
-Currently Loaded Modulefiles:
-  1) modules/3.2.11.4
-  2) altd/2.0
-  3) darshan/3.1.7
-  4) gcc/8.3.0
-  5) craype-haswell
-  6) craype-hugepages2M
-  7) craype-network-aries
-  8) craype/2.6.2
-  9) cray-mpich/7.7.10
- 10) cray-libsci/19.06.1
- 11) udreg/2.3.2-7.0.1.1_3.33__g8175d3d.ari
- 12) ugni/6.0.14.0-7.0.1.1_7.35__ge78e5b0.ari
- 13) pmi/5.0.14
- 14) dmapp/7.1.1-7.0.1.1_4.49__g38cf134.ari
- 15) gni-headers/5.0.12.0-7.0.1.1_6.29__g3b1768f.ari
- 16) xpmem/2.2.20-7.0.1.1_4.11__g0475745.ari
- 17) job/2.2.4-7.0.1.1_3.37__g36b56f4.ari
- 18) dvs/2.12_2.2.157-7.0.1.1_9.2__g083131db
- 19) alps/6.6.58-7.0.1.1_6.5__g437d88db.ari
- 20) rca/2.2.20-7.0.1.1_4.48__g8e3fb5b.ari
- 21) atp/2.1.3
- 22) PrgEnv-gnu/6.0.5
- 23) python/3.7-anaconda-2019.10
- 24) cmake/3.14.4
+$ salloc -N 1 -n 1 -t 1:00:00 -A notchpeak
 ```
 
 
+### Install conda environment and packages
 
-### Configure Exodus
-
-Change the following in `watershed-workflow/workflow_tpls/configure-seacas.sh`
-
-```bash
-CC=`which cc`  # `which gcc` for Linux
-CXX=`which CC`  # `which g++` for Linux
-FC=`which ftn`
-
-CONDA_PREFIX=/path/to/.conda/envs/watershed
-SEACAS_SRC_DIR=/path/to/seacas/repo
-...
-```
-
-### Change python version
-
-May need to change python version from 2.7 to 3.7 or higher.
+Note that `'shapely<2'` is only compatible with certain python versions like `python=3.10`. For an updated package list, see [here](https://github.com/environmental-modeling-workflows/watershed-workflow/blob/master/environments/create_envs.py). **Must install all packages in one go to avoid potential conflicts**
 
 ```bash
-$ cd seacas/build
-$ vi CMakeCache.txt
+mamba create -n watershed_workflow
 
-//Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/common/software/python/3.7-anaconda-2019.10/bin/python
+conda activate watershed_workflow
 
-//Default version of Python to find (must be 2.6 or greater
-PythonInterp_FIND_VERSION:STRING=3.7 # change this!
+mamba install -c conda-forge 'shapely<2' python=3.10 ipykernel ipython jupyterlab matplotlib scipy pandas meshpy fiona rasterio cartopy descartes pyproj requests sortedcontainers attrs libarchive pytest  geopandas netcdf4 h5py tqdm cftime nbmake ipympl # must install all together to avoid conflicts
 ```
 
-then reinstall
+- Check if successful
 
 ```bash
-make install
+$ python -c 'import numpy, matplotlib, scipy, rasterio, fiona, shapely, cartopy, meshpy.triangle; print("SUCCESS")'
 ```
 
-`libexodus.so` should be inside `seacas/install/lib`.
+### Install Exodus as part of SEACAS
 
+See SEACAS [repo](https://github.com/sandialabs/seacas) and installation guide.
 
+```bash
+# download seacas
+git clone https://github.com/sandialabs/seacas.git
+
+# configure
+cd seacas
+export ACCESS=`pwd`
+
+#install TPLs. This will take 30~60 minutes
+CGNS=NO MATIO=NO FMT=NO CATCH2=NO ./install-tpl.sh
+
+# build exodus
+mkdir build
+cd build
+../cmake-exodus
+make && make install
+```
+
+Note, only NetCDF is required for Exodus.
+
+- Check if successful
+
+```bash
+export PYTHONPATH=${ACCESS}/lib; python -c 'import exodus; print("SUCCESS")'
+```
+
+### Install watershed-workflow
+
+- Download the repo and install as a package
+
+```bash
+cd ~
+git clone https://github.com/environmental-modeling-workflows/watershed-workflow.git
+git checkout v1.5
+cd watershed-workflow
+python -m pip install -e .
+```
+
+- Export the Python path
+
+Open `~/.custom.sh` and add the following line. 
+```bash
+export PYTHONPATH="/uufs/chpc.utah.edu/common/home/u6046326/shuai-group1/watershed-workflow/bin:/uufs/chpc.utah.edu/common/home/u6046326/shuai-group1/seacas/lib:${PYTHONPATH}"
+```
+
+- Source `~/.custom.sh` to make the changes effective.
+
+```bash
+source ~/.custom.sh
+```
+
+- Check if successful
+
+```bash
+cd watershed-workflow
+pytest watershed_workflow/test
+```
+
+### Install aditional packages
+
+This will install additional packages for writing ATS model xml files and visualization.
+
+```bash
+git clone https://github.com/amanzi/amanzi
+cd amanzi/tools/amanzi_xml
+python -m pip install -e .
+```
+
+```bash
+git clone https://github.com/ecoon/ats_input_spec
+cd ats_input_spec
+python -m pip install -e .
+```
+
+```bash
+git clone https://github.com/pinshuai/modvis 
+cd modvis
+python -m pip install -e .
+```
 
 ## Common issues
 
