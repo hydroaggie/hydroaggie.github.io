@@ -33,6 +33,8 @@ Enrique Triana, RTI International (Co-PI)
 
 [Ehsan Ebrahimi](/members/Ehsan_Ebrahimi), Utah State University (PhD student)
 
+Sophia Bakar, RTI International (Intern)
+
 **Duration**: 
 
 2023-2025

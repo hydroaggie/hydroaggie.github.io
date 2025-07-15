@@ -39,7 +39,7 @@ Ethan T. Coon, Oak Ridge National Laboratory (Co-Investigator)
 
 Neelarun Mukherjee, University of Texas at Austin (PhD Student)
 
-Devon Hill, Utah State University (PhD Student)
+[Devon Hill](/members/Devon_Hill), Utah State University (PhD Student)
 
 **Duration**: 
 

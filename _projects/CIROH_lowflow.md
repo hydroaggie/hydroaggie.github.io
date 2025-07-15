@@ -11,7 +11,7 @@ category: Active
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/lowflow.jpg" title="Logan River" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/lowflow.jpeg" title="Logan River" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -31,6 +31,8 @@ through the Cooperative Institute for Research to Operations in Hydrology (<a hr
 [Pin Shuai](/members/Pin_Shuai), Utah State University (PI)
 
 Mukesh Kumar, The University of Alabama (Co-PI)
+
+Yanan Duan, The University of Alabama (Postdoc)
 
 **Duration**: 
 
