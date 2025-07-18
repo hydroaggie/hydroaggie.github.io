@@ -1,6 +1,6 @@
 # Shuai Computational and Integrated Hydrology Group
 
-![Group Logo](assets/img/logos/group-logo.png)
+![Group Logo](assets/img/team/group-logo.png)
 
 Official group website repository for the Shuai Computational and Integrated Hydrology Group (SCI-Hy) group at Utah State University.
 
