@@ -2,7 +2,7 @@
 layout: page
 title: Low-flow Prediction
 description: "CIROH: Improving low-flow estimates in the NextGen Framework through improved subsurface conceptualization and parameterization"
-img: assets/img/NOAA-CIROH_logo.png
+img: assets/img/logos/NOAA-CIROH_logo.png
 importance: 1
 category: Active
 ---
@@ -11,7 +11,7 @@ category: Active
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/lowflow.jpeg" title="Logan River" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/lowflow.jpeg" title="Logan River" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">

@@ -287,7 +287,7 @@ Here is a screenshot shows the final markdown file in Obsidian.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-		{% include figure.liquid loading="eager" path="assets/img/obsidian_note.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+		{% include figure.liquid loading="eager" path="assets/img/blog/obsidian_note.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 

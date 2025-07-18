@@ -2,7 +2,7 @@
 layout: page
 title: Cold Region Hydro-biogeochemical Processes
 description: Dynamics of interconnected surface-subsurface flow and reactive transport processes across the hillslope-riparian zone-river corridor continuum of cold, high-latitude watersheds
-img: assets/img/doe-ess-logo.png
+img: assets/img/logos/doe-ess-logo.png
 importance: 2
 category: Active
 ---
@@ -10,7 +10,7 @@ category: Active
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Imnavait.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/Imnavait.jpg" title="example image" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">

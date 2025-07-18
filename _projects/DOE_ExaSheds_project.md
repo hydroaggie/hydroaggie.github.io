@@ -2,7 +2,7 @@
 layout: page
 title: Integrated Hydrologic Modeling
 description: "ExaSheds: Advancing Watershed System Science using Machine Learning-Assisted Simulation"
-img: assets/img/doe-ess-logo.png
+img: assets/img/logos/doe-ess-logo.png
 importance: 3
 category: Completed
 related_publications: true
@@ -12,7 +12,7 @@ related_publications: true
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Neversink.png" title="ExaSheds Logo" class="img-fluid rounded z-depth-1" zoomable=true %}
+        {% include figure.liquid path="assets/img/projects/Neversink.png" title="ExaSheds Logo" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
