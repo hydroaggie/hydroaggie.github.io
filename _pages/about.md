@@ -6,8 +6,8 @@ subtitle: A research group affiliated with the <a href="https://engineering.usu.
 
 profile:
   align: right
-  image: group-logo.png
-  image_circular: false # if true, crops the image to make it circular
+  image: group-logo-square.png
+  image_circular: true # if true, crops the image to make it circular
   address: >
 
 news: true # includes a list of news items
