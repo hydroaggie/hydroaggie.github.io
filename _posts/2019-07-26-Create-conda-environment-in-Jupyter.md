@@ -17,6 +17,10 @@ This will show how to create customized conda environment on Mac/Linux. The proc
 
 Refer to the [user guide](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 
+### Install Mamba (recommended)
+
+Mamba is a fast, drop-in replacement for conda. It can greatly speed up the environment creation process. Refer to the [documentation](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html) for installation instructions. After installing, you can use `mamba` in place of `conda` for most commands.
+
 ## Create new conda env
 
 ### Python
@@ -29,14 +33,19 @@ This example shows how to create new environment called `my_env` while specify t
 $ conda create --name ENV_NAME -c conda-forge PACKAGES
 
 # for example, specify python version to 3.6.5
-$ conda create --name my_env -c conda-forge python=3.6.5 jupyterlab=3 ipykernel ipywidgets jupyterlab_widgets ipyleaflet numpy pandas scipy scikit-learn matplotlib seaborn tqdm shapely rasterio PyShp geopandas h5py xarray rioxarray plotly jupyterlab-git cartopy
+$ conda create --name my_env -c conda-forge python=3.6.5 jupyterlab=3 
 
-# for jupyter env
-$ conda create --name jupyter -c conda-forge python jupyterlab ipykernel ipywidgets jupyterlab_widgets ipyleaflet jupyterlab-git
+# for jupyter env (a typical base environment for running python)
+$ conda create --name jupyter -c conda-forge python jupyterlab ipykernel ipywidgets jupyterlab_widgets jupyterlab-git numpy pandas scipy scikit-learn matplotlib seaborn tqdm geopandas h5py
 
 # for geo/vis/plot
 $ conda create --name geo -c conda-forge python ipykernel ipywidgets numpy pandas matplotlib seaborn scipy scikit-learn tqdm shapely rasterio PyShp geopandas h5py netcdf4 xarray rioxarray utm cartopy panel nco jupyter_contrib_nbextensions
 ```
+
+> ##### TIP
+>
+> It is recommended to include all the essential packages during environment creation to avoid issues such as package incompatibility later.
+{: .block-tip }
 
 
 ## Create kernel spec file for Jupyter (must do this inside the activated env!)
