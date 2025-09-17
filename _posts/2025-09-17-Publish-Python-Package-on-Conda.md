@@ -43,7 +43,8 @@ The only thing that's needed for creating the conda package is a `meta.yaml` fil
 
 To fill the `meta.yaml` file, we can use `grayskull` to generate a template based on the package on Pypi.
 
-```grayskull pypi <package_name>
+```
+grayskull pypi <package_name>
 ```
 
 Open the template and change the following fields:
