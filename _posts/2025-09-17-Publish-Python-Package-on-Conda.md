@@ -30,6 +30,8 @@ conda install grayskull
 
 ## Download Pypi package locally
 
+This assumes that you have already published your package on Pypi. If not, please refer to my previous [post](https://hydroaggie.github.io/blog/2022/Publish-Python-Package-on-Pypi/) on how to publish a python package on Pypi.
+
 You can download the package from Pypi using:
 
 ```
