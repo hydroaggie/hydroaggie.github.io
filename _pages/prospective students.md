@@ -11,9 +11,7 @@ I am always looking for passionate and talented students to join our group.
 
 ## Current Opportunities
 
-:loudspeaker: [**New Postdoc positions in Subsurface Hydrology**](/news/2025-02-05-postdoc-position) :point_left: 
-
-:loudspeaker: [**New PhD positions in Computational Hydrology**](/news/2024-12-10-PhD-position) :point_left: 
+Please check the [News](/news) page for current openings.
 
 ## General inquiries
 

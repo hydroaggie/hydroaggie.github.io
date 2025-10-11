@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Post-Doc position on ML/AI Application in Hydrology
+title: Post-Doc position on ML/AI Application in Hydrology (Closed)
 date: 2025-06-19 
 inline: false
 related_posts: false
