@@ -46,7 +46,7 @@ which mpiftn
 # EDIT THESE!
 export ATS_BASE=/PATH/TO/ATS_ROOT # root dir for the installation
 export ATS_BUILD_TYPE=Release # other options: Debug, RelWithDebInfo (release with debug info)
-export ATS_VERSION=master # the branch for both amanzi and ats
+export ATS_VERSION=master # the branch for both amanzi and ats; for release version, use e.g. 1.6.0
 export OPENMPI_DIR=/PATH/TO/MPI_DIR # this is important to include only the directory instead of /MPI_DIR/bin if mpirun exists inside /MPI_DIR/bin
 # END EDIT THESE!
 
@@ -208,3 +208,45 @@ mpirun -n 4 ats --xml_file=../mfd.xml &> out.log
 ```
 
 - The test is successful if ats is running and printing outputs on the screen. You will get a summary of runtime at the end.
+
+## Recompile ATS
+
+- If you need to recompile ATS after a minor change to the source code, just go to the build directory and run `make install`
+
+```bash
+cd $AMANZI_BUILD_DIR
+make install
+```
+
+> ##### WARNING
+>
+> This is not a clean build. If you have changed the CMakeLists.txt or other configuration files, it is recommended to do a clean install by deleting the build directory and re-running the bootstrap script.
+{: .block-warning }
+
+## Tips
+
+- To build ATS with a specific commit on the master branch, use `ATS_VERSION=master` in the `set_env.sh` file. Then after cloning the repo, checkout to the specific commit. You may want to do the same for the amanzi repo so both commits are compatible.
+
+```bash
+cd $ATS_SRC_DIR
+git reset --hard <commit-hash>
+```
+
+## Troubleshooting
+
+- If you are installing ATS from a specific commit on Master branch, it is possible that the commit does not have a tag associated with it. You may encounter a cmake error like this:
+
+```
+CMake Error at src/physics/ats/tools/cmake/ATSVersion.cmake:100 (STRING):
+  STRING sub-command REPLACE requires at least four arguments.
+Call Stack (most recent call first):
+  src/physics/ats/CMakeLists.txt:24 (include)
+```
+
+This is because the script is trying to extract the version number from the tag. If there is no tag, it will fail. To fix this, you can set a dummy tag in the ATS git repo. 
+
+```bash
+cd ${ATS_SRC_DIR}
+git tag v1.5.1
+```
+
