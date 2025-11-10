@@ -18,7 +18,7 @@ profile:
     name: Tarun Agrawal
     position: PostDoctoral Fellow
     align: right
-    image: Ehsan_Ebrhaimi.jpg
+    image: tarun.JPG
     role: 
     email: tarun.agrawal@usu.edu
     github: 
@@ -30,7 +30,7 @@ profile:
         Logan, UT
 ---
 
-I am a postdoctoral researcher at Utah Water Research Laboratory, Utah State University. My research focuses on baseflow water management modeling and working on the USGS-funded [CIROH project](/projects/CIROH_hydrofabric) to extend the current hydrofabric by incorporating the water management infrastructure for water allocation purposes.
+I am a postdoctoral researcher at Utah Water Research Laboratory, Utah State University. My research focuses on baseflow water management modeling and working on the USGS-funded [CIROH project](/projects/CIROH_hydrofabric) to improve catchment paramters estimation at hydrofabric scale.
 
 ## Short Bio
 
