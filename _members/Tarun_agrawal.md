@@ -1,7 +1,7 @@
 ---
 layout: about
 inline: false
-group: PostDoctoral Fellow
+group: Postdoctoral Fellow
 group_rank: 3
 team_collaborator: false
 
