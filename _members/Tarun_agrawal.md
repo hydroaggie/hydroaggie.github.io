@@ -1,13 +1,13 @@
 ---
 layout: about
 inline: false
-group: PostDoctoral Fellow
-group_rank: 4
+group: Postdoctoral Fellow
+group_rank: 3
 team_collaborator: false
 
 
 title: Tarun Agrawal
-description: PostDoctoral Fellow
+description: Postdoctoral Fellow
 lastname: Agrawal
 publications: 'author^=*Agrawal'
 
@@ -16,9 +16,9 @@ teaser: >
 
 profile:
     name: Tarun Agrawal
-    position: PostDoctoral Fellow
+    position: Postdoctoral Fellow
     align: right
-    image: tarun.JPG
+    image: tarun_ag.jpg
     role: 
     email: tarun.agrawal@usu.edu
     github: 
@@ -30,7 +30,7 @@ profile:
         Logan, UT
 ---
 
-I am a postdoctoral researcher at Utah Water Research Laboratory, Utah State University. My research focuses on baseflow water management modeling and working on the USGS-funded [CIROH project](/projects/CIROH_hydrofabric) to improve catchment paramters estimation at hydrofabric scale.
+I am a postdoctoral researcher at the Utah Water Research Laboratory at Utah State University. My research focuses on improving subsurface parameterization using ML approach, and I am currently working on the NOAA-funded [CIROH project](/projects/CIROH_lowflow) to improve catchment subsurface parameter estimation at the hydrofabric scale across CONUS.
 
 ## Short Bio
 
