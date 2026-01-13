@@ -12,6 +12,8 @@ toc:
   sidebar: left
 ---
 
+*Last updated: 2025-12-10*
+
 See this [documentation](https://www.pflotran.org/documentation/user_guide/how_to/installation/linux.html#linux-install) for installation on Linux machine.
 
 ## Setup environment
@@ -22,12 +24,12 @@ module load gcc/11.2.0 openmpi/4.1.4 cmake/3.26.0
 
 ## Install PETSc
 
-Download Petsc from Bitbucket, and save it into directory `petsc_v3.20.2`, and checkout the latest version `3.20.2`.
+Download Petsc from Bitbucket, and save it into directory `petsc_v3.24.0`, and checkout the latest version `3.24.0`.
 
 ```bash
-git clone https://gitlab.com/petsc/petsc.git petsc_v3.20.2
-cd petsc_v3.20.2
-git checkout v3.20.2
+git clone https://gitlab.com/petsc/petsc.git petsc_v3.24.0
+cd petsc_v3.24.0
+git checkout v3.24.0
 ```
 
 Set current dir as `PETSC_DIR`, define `--PETSC_ARCH` to any name, and a subdir with the same name will be created under the `PETSC_DIR` (eg.`petsc_v3.20.2/notchpeak-gcc-8.5.0`)
@@ -42,7 +44,7 @@ export PETSC_ARCH=notchpeak-gcc-8.5.0
 - Use the recommended configuration. This will install a Fortran compiler, MPI, HDF5, and BLAS/LAPACK.
 
 ```bash
-./configure --COPTFLAGS='-O3' --CXXOPTFLAGS='-O3' --FOPTFLAGS='-O3 -Wno-unused-function -fallow-argument-mismatch' --with-debugging=no --download-mpich=yes --download-hdf5=yes --download-hdf5-fortran-bindings=yes --download-fblaslapack=yes --download-metis=yes --download-parmetis=yes
+./configure --CC=$CC --CXX=$CXX --FC=$FC --F77=$F77 --COPTFLAGS='-O3' --CXXOPTFLAGS='-O3' --FOPTFLAGS='-O3 -Wno-unused-function -fallow-argument-mismatch' --with-debugging=no --download-mpich=yes --download-hdf5=yes --download-hdf5-fortran-bindings=yes --download-fblaslapack=yes --download-metis=yes --download-parmetis=yes --download-hdf5-configure-arguments="--with-zlib=yes"
 ```
 
 - After configure, you will see something similar to the following message:
