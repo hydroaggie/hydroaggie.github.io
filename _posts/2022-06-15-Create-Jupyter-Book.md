@@ -21,6 +21,7 @@ Jupyter Book is used to build an open source, interactive book using Jupyter Not
 ## Pre-requisite:
 - Github account
 - Git, Python
+
 ## Install Jupyter Book
 - From the [official website](https://jupyterbook.org/en/stable/start/overview.html):
 
@@ -45,7 +46,7 @@ $ pip install -U cookiecutter jupyter-book
 $ jupyter-book create --cookiecutter PATH/TO/BOOK
 
 # then following the screen prompt to answer the following questions:
-author_name [Captain Jupyter]: Tomas Beuzen
+author_name [Captain Jupyter]: 
 github_username [tomasbeuzen]:
 book_name [My Book]:
 book_slug [my_book]:

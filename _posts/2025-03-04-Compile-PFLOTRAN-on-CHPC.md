@@ -12,14 +12,14 @@ toc:
   sidebar: left
 ---
 
-*Last updated: 2025-12-10*
+*Last updated: 2026-1-15*
 
 See this [documentation](https://www.pflotran.org/documentation/user_guide/how_to/installation/linux.html#linux-install) for installation on Linux machine.
 
 ## Setup environment
 Login to CHPC and load the following modules. 
 ```bash
-module load gcc/11.2.0 openmpi/4.1.4 cmake/3.26.0
+module load gcc/8.5.0 cmake/3.26.0
 ```
 
 ## Install PETSc
@@ -44,37 +44,41 @@ export PETSC_ARCH=notchpeak-gcc-8.5.0
 - Use the recommended configuration. This will install a Fortran compiler, MPI, HDF5, and BLAS/LAPACK.
 
 ```bash
-./configure --CC=$CC --CXX=$CXX --FC=$FC --F77=$F77 --COPTFLAGS='-O3' --CXXOPTFLAGS='-O3' --FOPTFLAGS='-O3 -Wno-unused-function -fallow-argument-mismatch' --with-debugging=no --download-mpich=yes --download-hdf5=yes --download-hdf5-fortran-bindings=yes --download-fblaslapack=yes --download-metis=yes --download-parmetis=yes --download-hdf5-configure-arguments="--with-zlib=yes"
+./configure --CC=$CC --CXX=$CXX --FC=$FC --F77=$F77 --COPTFLAGS='-O3' --CXXOPTFLAGS='-O3' --FOPTFLAGS='-O3 -Wno-unused-function' --with-debugging=no --download-mpich=yes --download-hdf5=yes --download-hdf5-fortran-bindings=yes --download-fblaslapack=yes --download-metis=yes --download-parmetis=yes --download-hdf5-configure-arguments="--with-zlib=yes"
 ```
+
+This will download and install `mpich-4.3.2rc2` and `hdf5_1.14.6`. 
 
 - After configure, you will see something similar to the following message:
 
 ```bash
 xxx=========================================================================xxx
  # Configure stage complete. Now build PETSc libraries with (gnumake build):
-   make PETSC_DIR=/uufs/chpc.utah.edu/common/home/shuai-group1/pflotran/petsc_v3.21.4 PETSC_ARCH=notchpeak-gcc-8.5.0 all
+   make PETSC_DIR=/uufs/chpc.utah.edu/common/home/shuai-group1/pflotran/petsc_v3.24.0 PETSC_ARCH=notchpeak-gcc-8.5.0 all
 xxx=========================================================================xxx
 ```
 
 - Follow the prompt to build PETSc:
 
 ```bash
- make PETSC_DIR=/uufs/chpc.utah.edu/common/home/shuai-group1/pflotran/petsc_v3.21.4 PETSC_ARCH=notchpeak-gcc-8.5.0 all
+ make PETSC_DIR=/uufs/chpc.utah.edu/common/home/shuai-group1/pflotran/petsc_v3.24.0 PETSC_ARCH=notchpeak-gcc-8.5.0 all
 ```
-
 
 ## Download and compile PFLOTRAN
 
 ```bash
-git clone https://bitbucket.org/pflotran/pflotran pflotran_v6.0
-cd pflotran_v6.0
+git clone https://bitbucket.org/pflotran/pflotran pflotran_master
+cd pflotran_master
 # optional. To checkout a specific version
-# cd pflotran && git checkout maint/v5.0
-git checkout v6.0
+# git checkout v6.0
 
-cd src/pflotran
-make -j4 pflotran # use parallel thread to compile? You can also try -j8, -j16... if more cores are available
+cd src/pflotran && make -j4 pflotran # use parallel thread to compile? You can also try -j8, -j16... if more cores are available
 ```
+
+> ##### WARNING
+>
+> The pflotran version has to be compatible with the PETSc version used. E.g., PFLOTRAN v6.0 is compatible with PETSc v3.21.4, while current PFLOTRAN master branch is compatible with PETSc v3.24.x.
+{: .block-warning }
 
 After compilation is complete, a new file named `pflotran*` executable is generated at current directory. You can also move this executable to another directory, e.g. ` ./bin/pflotran*`, then you can export this directory to `PATH`.
 
@@ -94,8 +98,8 @@ make pflotran fast=1
 Do a regression test to see if pflotran if working. First, request an interactive node to run the regression test.
 
 ```bash
-salloc -N 1 -C cpu -q interactive -t 01:00:00 -L SCRATCH -A m1800
-srun -n 1 pflotran -pflotranin $PFLOTRAN_DIR/regression_tests/default/543/543_flow.in # need to use one core to run this example
+salloc -N 1 -n 2 -t 30 -A notchpeak-shared-short -p notchpeak-shared-short
+mpirun -np 1 pflotran -pflotranin $PFLOTRAN_DIR/regression_tests/default/543/543_flow.in # need to use one core to run this example
 ```
 
 Within seconds, the test model should finish, and the installation processes are done! 🎉
@@ -156,3 +160,10 @@ make -j4 pflotran
 ## Common issues
 1. `module: command not found`. This happened on an interactive node with `zsh` shell.
 	- To fix this, run `source $LMOD_PKG/init/zsh` prior to running any `module` command.
+
+2. `HDF5 error`. This happened when running MPICH on NFS file system on CHPC. PFLOTRAN would run, but the resulting HDF5 file has no coordinate information (i.e., no meshes visible in ParaView).
+  - To fix this, set the environment variable `HDF5_DO_MPI_FILE_SYNC=FALSE` before running PFLOTRAN.
+
+```bash
+export HDF5_DO_MPI_FILE_SYNC=FALSE
+```
