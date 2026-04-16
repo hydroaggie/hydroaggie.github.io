@@ -601,12 +601,7 @@ ninja.data = [{
           section: "News",},{id: "news-welcome-collins-stephenson-a-new-ms-student-to-our-group-clap",
           title: 'Welcome Collins Stephenson, a new MS student, to our group! :clap:',
           description: "",
-          section: "News",},{id: "news-phd-position-in-computational-hydrology-closed",
-          title: 'PhD position in Computational Hydrology (Closed)',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/2024-12-10-PhD-position/";
-            },},{id: "news-post-doc-position-on-ml-ai-application-in-hydrology-closed",
+          section: "News",},{id: "news-post-doc-position-on-ml-ai-application-in-hydrology-closed",
           title: 'Post-Doc position on ML/AI Application in Hydrology (Closed)',
           description: "",
           section: "News",handler: () => {
@@ -614,7 +609,12 @@ ninja.data = [{
             },},{id: "news-new-article-led-by-ehsan-ebrahimi-was-published-in-environmental-modeling-amp-amp-software",
           title: 'New article led by Ehsan Ebrahimi was published in Environmental Modeling &amp;amp;amp; Software...',
           description: "",
-          section: "News",},{id: "projects-hydrofabric-enhancement",
+          section: "News",},{id: "news-phd-position-in-groundwater-hydrology-and-machine-learning",
+          title: 'PhD Position in Groundwater Hydrology and Machine Learning',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-04-16-PhD-position/";
+            },},{id: "projects-hydrofabric-enhancement",
           title: 'Hydrofabric Enhancement',
           description: "CIROH: Advance water management-hydrologic model coupling to improve hydrologic forecasting in managed watersheds",
           section: "Projects",handler: () => {
