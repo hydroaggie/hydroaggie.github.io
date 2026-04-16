@@ -9,7 +9,7 @@ children:
       permalink: /teaching/
     - title: divider
     - title: Group Handbook
-      permalink: /group_handbook/
+      permalink: https://groundwater.usu.edu/group_handbook/intro.html
     - title: divider
     - title: Repositories
       permalink: /repositories/
