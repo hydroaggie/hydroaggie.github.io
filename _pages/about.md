@@ -14,6 +14,16 @@ news: true # includes a list of news items
 latest_posts: true # includes a list of latest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: true
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
 Welcome to the Shuai Computational and Integrated Hydrology (**SCI-Hy**) group at Utah State University, led by [Pin Shuai](/members/Pin_Shuai)! We investigate the complex and dynamic hydrological system through innovative computational and field-based approaches. Our work is driven by a commitment to advancing scientific knowledge, fostering innovation, and addressing pressing environmental challenges.
