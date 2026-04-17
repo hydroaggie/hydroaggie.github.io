@@ -5,6 +5,7 @@ description: "CIROH: Advance water management-hydrologic model coupling to impro
 img: assets/img/logos/NOAA-CIROH_logo.png
 importance: 1
 category: Active
+related_publications: true
 ---
 
 ## Summary
@@ -44,4 +45,9 @@ Sophia Bakar, RTI International (Intern)
 $340,000
 
 <a href="https://ciroh.ua.edu/research-projects/advance-water-management-hydrologic-model-coupling-to-improve-hydrologic-forecasting-in-managed-watersheds/"> <b>External Link</b></a>
+
+## Updates
+---
+
+- *05/01/2026*: New publication out by Ebrahimi et al. on the development of an extended hydrofabric as a standardized geospatial database for reproducible water management modeling {% cite ebrahimiExtendedHydrofabricStandardized2026 %}.
 

@@ -5,8 +5,8 @@ nav: true
 nav_order: 99
 dropdown: true
 children: 
-    - title: Teaching
-      permalink: /teaching/
+    - title: Prospective Students
+      permalink: /prospective_students/
     - title: divider
     - title: Group Handbook
       permalink: https://groundwater.usu.edu/group_handbook/intro.html

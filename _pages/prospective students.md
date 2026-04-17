@@ -3,8 +3,7 @@ layout: page
 permalink: /prospective_students/
 title: Prospective Students
 description: Information regarding prospective students.
-nav: true
-nav_order: 4
+nav: false
 ---
 
 I am always looking for passionate and talented students to join our group. 
