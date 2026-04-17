@@ -44,19 +44,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gallery/";
           },
-        },{id: "nav-prospective-students",
-          title: "Prospective Students",
-          description: "Information regarding prospective students.",
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "A collection of courses taught over the years.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/prospective_students/";
+            window.location.href = "/teaching/";
           },
-        },{id: "dropdown-teaching",
-              title: "Teaching",
+        },{id: "dropdown-prospective-students",
+              title: "Prospective Students",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/teaching/";
+                window.location.href = "/prospective_students/";
               },
             },{id: "dropdown-group-handbook",
               title: "Group Handbook",
