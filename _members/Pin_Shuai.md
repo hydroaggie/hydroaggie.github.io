@@ -41,6 +41,8 @@ During his PhD, he has focused on groundwater-surface water interactions under d
 
 In his spare time, Pin enjoys hiking, camping, skiing, and spending time with his family.
 
+ <a href="https://www.name-coach.com/pin-shuai"> Want to know how to pronouce my name?</a>
+
 ## Short Bio
 
 Pin received his PhD in geology with focus on hydrogeology from Texas A&M University (USA) in 2017, and his MS and BS in water resources engineering from Wuhan University (China) in 2013 and 2011, respectively. 
