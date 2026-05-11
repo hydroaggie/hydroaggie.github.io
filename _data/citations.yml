@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-24'
+  last_updated: '2026-05-11'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
     citations: 2
@@ -34,7 +34,7 @@ papers:
     title: Towards Trustworthy and Interpretable Deep Learning-assisted Ecohydrological Models
     year: '2021'
   Md_6je0AAAAJ:5qfkUJPXOUwC:
-    citations: 0
+    citations: 1
     title: Evaluating post-fire watershed response to varying burn severity and precipitation regimes using fully-distributed and integrated hydrologic models
     year: '2025'
   Md_6je0AAAAJ:7T2F9Uy0os0C:
@@ -51,7 +51,7 @@ papers:
     year: '2019'
   Md_6je0AAAAJ:9pM33mqn1YgC:
     citations: 0
-    title: 'Extended Hydrofabric: A Standardized Geospatial Database for Reproducible Water Management Modeling in the United States'
+    title: 'Extended Hydrofabric: A standardized geospatial database for reproducible water management modeling in the United States'
     year: '2026'
   Md_6je0AAAAJ:AvfA0Oy_GE0C:
     citations: 0
@@ -62,7 +62,7 @@ papers:
     title: High-performance simulation of dynamic hydrologic exchange and implications for surrogate flow and reactive transport modeling in a large river corridor
     year: '2020'
   Md_6je0AAAAJ:BwyfMAYsbu0C:
-    citations: 45
+    citations: 46
     title: The effects of spatial and temporal resolution of gridded meteorological forcing on watershed hydrological responses
     year: '2022'
   Md_6je0AAAAJ:ClCfbGk0d_YC:
@@ -106,7 +106,7 @@ papers:
     title: Data and scripts associated with the manuscript evaluating the hydrologic responses of the Pacific Northwest watersheds to wildfires (v2)
     year: '2023'
   Md_6je0AAAAJ:ML0RJ9NH7IQC:
-    citations: 19
+    citations: 21
     title: Estimating watershed subsurface permeability from stream discharge data using deep neural networks
     year: '2021'
   Md_6je0AAAAJ:MLfJN-KU85MC:
