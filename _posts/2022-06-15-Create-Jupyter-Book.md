@@ -10,7 +10,7 @@ tags:
 categories: geek
 giscus_comments: true
 related_posts: true
-featured: true
+featured: false
 toc:
   sidebar: left
 ---
