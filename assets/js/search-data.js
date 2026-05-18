@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/repositories/";
               },
-            },{id: "post-publish-a-python-package-on-conda",
+            },{id: "post-academic-use-cases-with-claude",
+        
+          title: "Academic Use Cases with Claude",
+        
+        description: "A collection of use cases for academics using Claude Code.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/Academic-Usecase-with-Claude/";
+          
+        },
+      },{id: "post-publish-a-python-package-on-conda",
         
           title: "Publish A Python Package on Conda",
         
