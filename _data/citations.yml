@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-11'
+  last_updated: '2026-05-27'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
     citations: 2
@@ -22,7 +22,7 @@ papers:
     title: Quantifying Km-scale Hydrological Exchange Flows under Dynamic Flows and Their Influences on River Corridor Biogeochemistry
     year: '2017'
   Md_6je0AAAAJ:2osOgNQ5qMEC:
-    citations: 84
+    citations: 85
     title: Vulnerability of low-arsenic aquifers to municipal pumping in Bangladesh
     year: '2016'
   Md_6je0AAAAJ:35r97b3x0nAC:
@@ -62,7 +62,7 @@ papers:
     title: High-performance simulation of dynamic hydrologic exchange and implications for surrogate flow and reactive transport modeling in a large river corridor
     year: '2020'
   Md_6je0AAAAJ:BwyfMAYsbu0C:
-    citations: 46
+    citations: 45
     title: The effects of spatial and temporal resolution of gridded meteorological forcing on watershed hydrological responses
     year: '2022'
   Md_6je0AAAAJ:ClCfbGk0d_YC:
@@ -82,7 +82,7 @@ papers:
     title: High-resolution Modeling of Hydrologic Exchange Flows in the Columbia River Subbasin at the Hanford Reach
     year: '2019'
   Md_6je0AAAAJ:HbR8gkJAVGIC:
-    citations: 11
+    citations: 12
     title: Bridging hydrological ensemble simulation and learning using deep neural operators
     year: '2024'
   Md_6je0AAAAJ:ILKRHgRFtOwC:
@@ -114,7 +114,7 @@ papers:
     title: Quantifying Hydrological Disturbance using Geophysical Imaging and an ATS-flow Model during an Ecosystem-scale Coastal Flooding Experiment
     year: '2022'
   Md_6je0AAAAJ:NJ774b8OgUMC:
-    citations: 155
+    citations: 158
     title: 'Denitrification in the banks of fluctuating rivers: The effects of river stage amplitude, sediment hydraulic conductivity and dispersivity, and ambient groundwater flow'
     year: '2017'
   Md_6je0AAAAJ:PVjk1bu6vJQC:
@@ -122,7 +122,7 @@ papers:
     title: 'Data and scripts associated with" Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado"'
     year: '2023'
   Md_6je0AAAAJ:PoWvk5oyLR8C:
-    citations: 1
+    citations: 2
     title: "River\u2013aquifer interactions enhancing evapotranspiration in a semiarid riparian zone: A modelling study"
     year: '2024'
   Md_6je0AAAAJ:Ri6SYOTghG4C:
@@ -262,7 +262,7 @@ papers:
     title: Purpose-built modeling to inform climate impact mitigation.
     year: '2024'
   Md_6je0AAAAJ:kuK5TVdYjLIC:
-    citations: 41
+    citations: 43
     title: 'Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado'
     year: '2023'
   Md_6je0AAAAJ:lmc2jWPfTJgC:
@@ -314,7 +314,7 @@ papers:
     title: Hyporheic Zone Residence Time Distributions in Regulated River Corridors
     year: '2017'
   Md_6je0AAAAJ:u-x6o8ySG0sC:
-    citations: 49
+    citations: 50
     title: Groundwater flow, nutrient, and stable isotope dynamics in the parafluvial-hyporheic zone of the regulated Lower Colorado River (Texas, USA) over the course of a small flood
     year: '2016'
   Md_6je0AAAAJ:uWiczbcajpAC:
