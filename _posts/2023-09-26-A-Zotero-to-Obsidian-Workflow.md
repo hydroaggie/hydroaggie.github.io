@@ -108,11 +108,13 @@ dateread:
 > [!Cite]
 > {{bibliography}}
 
+{% persist "notes" %}{% if isFirstImport %}
 >[!Synthesis]
 >**Contribution**:: 
 >
 >**Related**:: {% for relation in relations | selectattr("citekey") %} [[@{{relation.citekey}}]]{% if not loop.last %}, {% endif%} {% endfor %}
 >
+{% endif %}{% endpersist %}
 
 > [!Link] 
 > {%- for attachment in attachments | filterby("path", "endswith", ".pdf") %}
@@ -296,7 +298,7 @@ Here is a screenshot shows the final markdown file in Obsidian.
 - The nice thing about the annotations is that each annotation has a link to the page number in the paper. When clicking on the link, it will bring you back to highlighted page of the PDF in Zotero. 
 - All snapshots are embeded under annotations, which make it extremely useful for storing key figures.
 
-- Add additional notes. You may add additional notes under `Synthesis` which may include the main contribution of the paper, the impression of the paper and other notes. **Any edits added outside of Synthesis and Annotations will be overriden when the same note is imported again!**. See the Tips below on how to create a customized note section that prevents override.
+- Add additional notes. You may add additional notes under `Synthesis` which may include the main contribution of the paper, the impression of the paper and other notes. **Any edits added outside of `persist` blocks (i.e., outside of Synthesis and Annotations) will be overridden when the same note is imported again.**
 
 ### Create table using Dataview
 Once you have a collection of notes, you can create a DataView query which lists all papers and their key information in a table. This may be helpful for writting literature review.
