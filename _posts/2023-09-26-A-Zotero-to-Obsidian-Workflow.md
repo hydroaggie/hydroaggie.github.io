@@ -94,10 +94,12 @@ I will breakdown into different sections:
 ```
 {% raw %}
 ---
-cssclass: literature-note
+cssclasses:
+  - literature-note
 category: literaturenote
 title: {{title}}
-tags: {% if allTags %}{{allTags}}{% endif %}
+tags:{% for t in tags %}
+  - {{t.tag | replace(" ", "-")}}{% endfor %}
 citekey: {{citekey}}
 status: unread
 dateread:
