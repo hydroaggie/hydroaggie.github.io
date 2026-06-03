@@ -2,6 +2,7 @@
 layout: post
 title: Academic Use Cases with Claude
 date: 2026-04-23
+last_updated: 2026-06-03
 description: A collection of use cases for academics using Claude Code.
 tags:
   - claude
@@ -132,6 +133,15 @@ This requires a customized MCP that connects to the codebase. Without an MCP, Cl
 I do not have experience with this, so I just ask Claude to build the MCP for me using existing examples. I mostly followed the `pywrdrb-mcp` [example](https://waterprogramming.wpcomstaging.com/2026/03/03/a-beginners-guide-for-the-llm-curious-part-2-custom-model-context-protocol-to-improve-llm-supported-code-development/) and adopted their [repo](https://github.com/Pywr-DRB/pywrdrb-mcp) structure.
 
 In the end, I built a custom MCP—`ats-mcp`—which I can use to ask questions about the ATS codebase, including source code, documentation, test cases, and demo examples across multiple repositories.
+
+## USGS Water Data Retrieval
+
+Retrieve USGS water data using the [USGS Water Data MCP](https://github.com/pinshuai/usgs-water-mcp). This MCP uses the USGS Water Data API to retrieve water data such as streamflow, groundwater levels, and water quality parameters based on user queries. For example, if I want to retrieve streamflow data for a specific location and time period, I can ask Claude:
+
+```
+Plot the streamflow for the Logan River in Utah for the last year.
+```
+
 
 ## Other Applications
 
