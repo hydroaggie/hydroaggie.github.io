@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-27'
+  last_updated: '2026-06-05'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
     citations: 2
@@ -62,7 +62,7 @@ papers:
     title: High-performance simulation of dynamic hydrologic exchange and implications for surrogate flow and reactive transport modeling in a large river corridor
     year: '2020'
   Md_6je0AAAAJ:BwyfMAYsbu0C:
-    citations: 45
+    citations: 47
     title: The effects of spatial and temporal resolution of gridded meteorological forcing on watershed hydrological responses
     year: '2022'
   Md_6je0AAAAJ:ClCfbGk0d_YC:
@@ -82,7 +82,7 @@ papers:
     title: High-resolution Modeling of Hydrologic Exchange Flows in the Columbia River Subbasin at the Hanford Reach
     year: '2019'
   Md_6je0AAAAJ:HbR8gkJAVGIC:
-    citations: 12
+    citations: 14
     title: Bridging hydrological ensemble simulation and learning using deep neural operators
     year: '2024'
   Md_6je0AAAAJ:ILKRHgRFtOwC:
@@ -114,7 +114,7 @@ papers:
     title: Quantifying Hydrological Disturbance using Geophysical Imaging and an ATS-flow Model during an Ecosystem-scale Coastal Flooding Experiment
     year: '2022'
   Md_6je0AAAAJ:NJ774b8OgUMC:
-    citations: 158
+    citations: 157
     title: 'Denitrification in the banks of fluctuating rivers: The effects of river stage amplitude, sediment hydraulic conductivity and dispersivity, and ambient groundwater flow'
     year: '2017'
   Md_6je0AAAAJ:PVjk1bu6vJQC:
@@ -130,7 +130,7 @@ papers:
     title: Effects of canal seepage on subsurface flow and thermal processes in a canal-aquifer-river system
     year: '2025'
   Md_6je0AAAAJ:S16KYo8Pm5AC:
-    citations: 7
+    citations: 8
     title: 'Optimizing parameter learning and calibration in an integrated hydrological model: Impact of observation length and information'
     year: '2024'
   Md_6je0AAAAJ:SpbeaW3--B0C:
