@@ -2,7 +2,7 @@
 layout: page
 title: Bear River Water Management Modeling
 description: "Advance the representation of groundwater in a water management system model for the Bear River Watershed"
-img: assets/img/logos/usgs-logo.png
+img: assets/img/projects/BearRiver.jpeg
 importance: 1
 category: Active
 ---

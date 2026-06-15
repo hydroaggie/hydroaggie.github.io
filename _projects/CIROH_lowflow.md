@@ -2,7 +2,7 @@
 layout: page
 title: Low-flow Prediction
 description: "CIROH: Improving low-flow estimates in the NextGen Framework through improved subsurface conceptualization and parameterization"
-img: assets/img/logos/NOAA-CIROH_logo.png
+img: assets/img/projects/lowflow.jpeg
 importance: 1
 category: Active
 ---
