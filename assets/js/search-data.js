@@ -624,7 +624,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-06-19-postdoc-position/";
-            },},{id: "news-new-article-led-by-ehsan-ebrahimi-was-published-in-environmental-modeling-amp-amp-software",
+            },},{id: "news-welcome-tarun-agrawal-a-new-postdoc-to-our-group",
+          title: 'Welcome Tarun Agrawal, a new postdoc, to our group!',
+          description: "",
+          section: "News",},{id: "news-new-article-led-by-ehsan-ebrahimi-was-published-in-environmental-modeling-amp-amp-software",
           title: 'New article led by Ehsan Ebrahimi was published in Environmental Modeling &amp;amp;amp; Software...',
           description: "",
           section: "News",},{id: "news-phd-position-in-groundwater-hydrology-and-machine-learning",
@@ -632,7 +635,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-04-16-PhD-position/";
-            },},{id: "projects-hydrofabric-enhancement",
+            },},{id: "news-congratulations-to-ehsan-ebrahimi-for-receiving-the-inaugural-early-career-paper-award-at-the-2026-ciroh-developers-conference",
+          title: 'Congratulations to Ehsan Ebrahimi for receiving the inaugural Early Career Paper Award at...',
+          description: "",
+          section: "News",},{id: "projects-hydrofabric-enhancement",
           title: 'Hydrofabric Enhancement',
           description: "CIROH: Advance water management-hydrologic model coupling to improve hydrologic forecasting in managed watersheds",
           section: "Projects",handler: () => {
