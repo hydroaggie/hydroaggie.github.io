@@ -41,6 +41,8 @@ Now you can view and edit your LaTeX file and make any changes. After you are do
 
 To view the compiled PDF, you can either click on the `View LaTeX PDF` button on the top right panel or use the keyboard shortcut `Cmd + Option + V` (Mac) or `Ctrl + Alt + V` (Windows/Linux). This will open a new tab in VSCode showing the compiled PDF.
 
+{% include figure.liquid loading="eager" path="assets/img/blog/latex_vscode.png" caption="An example of using LaTeX in VSCode with side-by-side editor and PDF preview." class="img-fluid rounded z-depth-1" %}
+
 To jump from a specific line in the LaTeX file to the corresponding location in the PDF, you can use the `SyncTeX` feature. Simply place your cursor on the line you want to jump from and press `Cmd + Option + J` (Mac) or `Ctrl + Alt + J` (Windows/Linux). This will synchronize the LaTeX file with the PDF and take you to the corresponding location. To do the reverse, you can click on the PDF and press `Cmd + Click` (Mac) or `Ctrl + Click` (Windows/Linux) to jump back to the LaTeX file.
 
 ## Configuring LaTeX-Workshop to make it more like Overleaf
