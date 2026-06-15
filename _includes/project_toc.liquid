@@ -1,0 +1,8 @@
+{% if page.toc_sections %}
+  <nav class="project-toc" aria-label="Page sections">
+    <span class="project-toc-label">Jump to:</span>
+    {% for section in page.toc_sections %}
+      <a href="#{{ section.id }}" class="project-toc-link">{{ section.label }}</a>
+    {% endfor %}
+  </nav>
+{% endif %}

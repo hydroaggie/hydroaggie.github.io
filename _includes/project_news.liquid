@@ -1,0 +1,51 @@
+{% if page.updates %}
+  <div class="project-news">
+    {% assign updates = page.updates | sort: "date" | reverse %}
+    {% assign last_group = "" %}
+    {% for u in updates %}
+      {% assign group = u.date | date: "%B %Y" %}
+      {% if group != last_group %}
+        {% if last_group != "" %}</div>{% endif %}
+        <div class="news-group-block">
+          <h4 class="news-group">{{ group }}</h4>
+        {% assign last_group = group %}
+      {% endif %}
+
+      {% assign idx = forloop.index0 | modulo: 2 %}
+      <div class="news-entry">
+        {% if u.img %}
+          {% if idx == 0 %}
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+                {% include figure.liquid path=u.img class="img-fluid rounded z-depth-1" zoomable=true %}
+              </div>
+              <div class="col-md-6 news-body">
+                {% if u.title %}<h5 class="news-entry-title">{{ u.title }}</h5>{% endif %}
+                {{ u.text | markdownify }}
+              </div>
+            </div>
+          {% else %}
+            <div class="row align-items-center g-4">
+              <div class="col-md-6 news-body">
+                {% if u.title %}<h5 class="news-entry-title">{{ u.title }}</h5>{% endif %}
+                {{ u.text | markdownify }}
+              </div>
+              <div class="col-md-6">
+                {% include figure.liquid path=u.img class="img-fluid rounded z-depth-1" zoomable=true %}
+              </div>
+            </div>
+          {% endif %}
+        {% else %}
+          <div class="news-body">
+            {% if u.title %}<h5 class="news-entry-title">{{ u.title }}</h5>{% endif %}
+            {{ u.text | markdownify }}
+          </div>
+        {% endif %}
+      </div>
+
+    {% endfor %}
+    {% if last_group != "" %}</div>{% endif %}
+  </div>
+{% else %}
+  <p class="text-muted">No updates yet.</p>
+{% endif %}
