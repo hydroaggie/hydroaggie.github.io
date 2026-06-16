@@ -7,6 +7,12 @@ nav: true
 nav_order: 2
 display_categories: [Active,Completed]
 horizontal: false
+_styles: |
+  .projects .card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
 ---
 
 <!-- pages/projects.md -->

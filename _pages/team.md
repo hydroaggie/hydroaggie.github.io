@@ -5,6 +5,23 @@ permalink: /team.html
 description: A list of current and previous group members afflicated with the SCI-Hy group at USU
 nav: true
 nav_order: 2
+_styles: |
+  .card .row.no-gutters {
+    align-items: center;
+  }
+  .card .col-sm-4,
+  .card .col-md-3 {
+    padding: 0.75rem;
+  }
+  .card img.card-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 0.5rem;
+    padding-top: 0;
+  }
 ---
 
 {% assign groups = site.members | sort: "group_rank" | map: "group" | uniq %}
