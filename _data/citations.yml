@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-05'
+  last_updated: '2026-06-19'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
     citations: 2
@@ -22,7 +22,7 @@ papers:
     title: Quantifying Km-scale Hydrological Exchange Flows under Dynamic Flows and Their Influences on River Corridor Biogeochemistry
     year: '2017'
   Md_6je0AAAAJ:2osOgNQ5qMEC:
-    citations: 85
+    citations: 86
     title: Vulnerability of low-arsenic aquifers to municipal pumping in Bangladesh
     year: '2016'
   Md_6je0AAAAJ:35r97b3x0nAC:
@@ -62,7 +62,7 @@ papers:
     title: High-performance simulation of dynamic hydrologic exchange and implications for surrogate flow and reactive transport modeling in a large river corridor
     year: '2020'
   Md_6je0AAAAJ:BwyfMAYsbu0C:
-    citations: 47
+    citations: 48
     title: The effects of spatial and temporal resolution of gridded meteorological forcing on watershed hydrological responses
     year: '2022'
   Md_6je0AAAAJ:ClCfbGk0d_YC:
@@ -81,8 +81,12 @@ papers:
     citations: 0
     title: High-resolution Modeling of Hydrologic Exchange Flows in the Columbia River Subbasin at the Hanford Reach
     year: '2019'
+  Md_6je0AAAAJ:GtLg2Ama23sC:
+    citations: 0
+    title: 'The Effects of Precipitation Variability on Supra-Permafrost Thermal Hydrology: Flashy Hillslopes with More Outflow'
+    year: '2026'
   Md_6je0AAAAJ:HbR8gkJAVGIC:
-    citations: 14
+    citations: 13
     title: Bridging hydrological ensemble simulation and learning using deep neural operators
     year: '2024'
   Md_6je0AAAAJ:ILKRHgRFtOwC:
@@ -206,7 +210,7 @@ papers:
     title: Analysis of the Impact of Physics Representation on Permafrost Modeling
     year: '2021'
   Md_6je0AAAAJ:d1gkVwhDpl0C:
-    citations: 4
+    citations: 5
     title: "\u6EB4\u79BB\u5B50\u793A\u8E2A\u6CD5\u5728\u534E\u5317\u5E73\u539F\u5730\u4E0B\u6C34\u8865\u7ED9\u8BA1\u7B97\u4E2D\u7684\u5E94\u7528"
     year: '2014'
   Md_6je0AAAAJ:e_rmSamDkqQC:
@@ -262,7 +266,7 @@ papers:
     title: Purpose-built modeling to inform climate impact mitigation.
     year: '2024'
   Md_6je0AAAAJ:kuK5TVdYjLIC:
-    citations: 43
+    citations: 44
     title: 'Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado'
     year: '2023'
   Md_6je0AAAAJ:lmc2jWPfTJgC:
@@ -326,7 +330,7 @@ papers:
     title: "Kilometer\u2010scale hydrologic exchange flows in a gravel bed river corridor and their implications to solute migration"
     year: '2020'
   Md_6je0AAAAJ:vDijr-p_gm4C:
-    citations: 29
+    citations: 30
     title: "River dynamics control transit time distributions and biogeochemical reactions in a dam\u2010regulated river corridor"
     year: '2020'
   Md_6je0AAAAJ:vbGhcppDl1QC:
