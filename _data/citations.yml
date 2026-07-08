@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-19'
+  last_updated: '2026-07-08'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
     citations: 2
@@ -22,7 +22,7 @@ papers:
     title: Quantifying Km-scale Hydrological Exchange Flows under Dynamic Flows and Their Influences on River Corridor Biogeochemistry
     year: '2017'
   Md_6je0AAAAJ:2osOgNQ5qMEC:
-    citations: 86
+    citations: 87
     title: Vulnerability of low-arsenic aquifers to municipal pumping in Bangladesh
     year: '2016'
   Md_6je0AAAAJ:35r97b3x0nAC:
@@ -62,7 +62,7 @@ papers:
     title: High-performance simulation of dynamic hydrologic exchange and implications for surrogate flow and reactive transport modeling in a large river corridor
     year: '2020'
   Md_6je0AAAAJ:BwyfMAYsbu0C:
-    citations: 48
+    citations: 50
     title: The effects of spatial and temporal resolution of gridded meteorological forcing on watershed hydrological responses
     year: '2022'
   Md_6je0AAAAJ:ClCfbGk0d_YC:
@@ -266,7 +266,7 @@ papers:
     title: Purpose-built modeling to inform climate impact mitigation.
     year: '2024'
   Md_6je0AAAAJ:kuK5TVdYjLIC:
-    citations: 44
+    citations: 45
     title: 'Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado'
     year: '2023'
   Md_6je0AAAAJ:lmc2jWPfTJgC:
@@ -278,7 +278,7 @@ papers:
     title: Data-model files associated with the manuscript titled" The Importance of Explicitly Representing the Streambed in Watershed Models"(Shuai et al., 2023 HP)
     year: '2022'
   Md_6je0AAAAJ:p__nRnzSRKYC:
-    citations: 6
+    citations: 7
     title: Modeling framework for evaluating the impacts of hydrodynamic pressure on hydrologic exchange fluxes and residence time for a large-scale river section over a long-term period
     year: '2022'
   Md_6je0AAAAJ:q3CdL3IzO_QC:
@@ -306,7 +306,7 @@ papers:
     title: Tidal and seasonal river stage fluctuations impact the formation of permeable natural reactive Barriers in Riverbank Sediments
     year: '2017'
   Md_6je0AAAAJ:tYavs44e6CUC:
-    citations: 26
+    citations: 27
     title: Using ensemble data assimilation to estimate transient hydrologic exchange flow under highly dynamic flow conditions
     year: '2022'
   Md_6je0AAAAJ:tuHXwOkdijsC:
