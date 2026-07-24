@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-08'
+  last_updated: '2026-07-24'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
     citations: 2
@@ -17,6 +17,10 @@ papers:
     citations: 0
     title: Impacts of climate conditions on groundwater flow and reactive solute transport in supra-permafrost aquifers
     year: '2024'
+  Md_6je0AAAAJ:0izLItjtcgwC:
+    citations: 0
+    title: 'Seasonal to decadal changes in supra-permafrost soil and aquifer thermal hydrology: broader, deeper, and longer activity'
+    year: '2026'
   Md_6je0AAAAJ:2KloaMYe4IUC:
     citations: 0
     title: Quantifying Km-scale Hydrological Exchange Flows under Dynamic Flows and Their Influences on River Corridor Biogeochemistry
@@ -45,6 +49,10 @@ papers:
     citations: 0
     title: 'Extended Hydrofabric: A Standardized Geospatial Database for Reproducible Water Management Modeling'
     year: Unknown Year
+  Md_6je0AAAAJ:8d8msizDQcsC:
+    citations: 0
+    title: The Effects of Weather Variability on Supra-Permafrost Thermal Hydrology
+    year: '2025'
   Md_6je0AAAAJ:9Nmd_mFXekcC:
     citations: 0
     title: Understanding Ecohydrology in a Managed Watershed through Integrated Modeling and Observations
@@ -81,6 +89,10 @@ papers:
     citations: 0
     title: High-resolution Modeling of Hydrologic Exchange Flows in the Columbia River Subbasin at the Hanford Reach
     year: '2019'
+  Md_6je0AAAAJ:FAceZFleit8C:
+    citations: 0
+    title: 'Extended Hydrofabric: A Standardized Geospatial Database Integrating Water Management Infrastructure Data for Reproducible Water Management Modeling'
+    year: '2025'
   Md_6je0AAAAJ:GtLg2Ama23sC:
     citations: 0
     title: 'The Effects of Precipitation Variability on Supra-Permafrost Thermal Hydrology: Flashy Hillslopes with More Outflow'
@@ -105,6 +117,10 @@ papers:
     citations: 0
     title: "Din\xE2micas de fluxo, nutrientes e is\xF3topos est\xE1veis nas \xE1guas subterr\xE2neas em zona parafluvial hiporr\xE9ica no Baixo Rio Colorado (Texas, EUA) regulado sobre curso de uma pequena \u2026"
     year: '2016'
+  Md_6je0AAAAJ:LO7wyVUgiFcC:
+    citations: 0
+    title: Hydrologic Observations Across the Hillslope-to-River Corridor of an Arctic Tundra Watershed
+    year: '2025'
   Md_6je0AAAAJ:M7yex6snE4oC:
     citations: 1
     title: Data and scripts associated with the manuscript evaluating the hydrologic responses of the Pacific Northwest watersheds to wildfires (v2)
@@ -118,7 +134,7 @@ papers:
     title: Quantifying Hydrological Disturbance using Geophysical Imaging and an ATS-flow Model during an Ecosystem-scale Coastal Flooding Experiment
     year: '2022'
   Md_6je0AAAAJ:NJ774b8OgUMC:
-    citations: 157
+    citations: 158
     title: 'Denitrification in the banks of fluctuating rivers: The effects of river stage amplitude, sediment hydraulic conductivity and dispersivity, and ambient groundwater flow'
     year: '2017'
   Md_6je0AAAAJ:PVjk1bu6vJQC:
@@ -193,6 +209,10 @@ papers:
     citations: 1
     title: Fate and Transport of Nutrients and Contaminants Under the Impact of Surface Water and Groundwater Interactions
     year: '2017'
+  Md_6je0AAAAJ:_FM0Bhl9EiAC:
+    citations: 0
+    title: 'Operationalizing Hydrology: Enhancing Flow Simulations with Water Management Infrastructure'
+    year: '2025'
   Md_6je0AAAAJ:_Re3VWB3Y0AC:
     citations: 0
     title: Solute Transport Dynamics in a Large Hyporheic Corridor System
@@ -201,6 +221,10 @@ papers:
     citations: 0
     title: Enhancing Water Management Modeling through Extended Hydrofabric
     year: '2024'
+  Md_6je0AAAAJ:anf4URPfarAC:
+    citations: 0
+    title: Hydrologic and Thermal Changes in Supra-Permafrost Soils and Aquifers Over the Last Four Decades of Warming
+    year: '2025'
   Md_6je0AAAAJ:b1wdh0AR-JQC:
     citations: 33
     title: 'Watershed Workflow: A toolset for parameterizing data-intensive, integrated hydrologic models'
@@ -278,7 +302,7 @@ papers:
     title: Data-model files associated with the manuscript titled" The Importance of Explicitly Representing the Streambed in Watershed Models"(Shuai et al., 2023 HP)
     year: '2022'
   Md_6je0AAAAJ:p__nRnzSRKYC:
-    citations: 7
+    citations: 8
     title: Modeling framework for evaluating the impacts of hydrodynamic pressure on hydrologic exchange fluxes and residence time for a large-scale river section over a long-term period
     year: '2022'
   Md_6je0AAAAJ:q3CdL3IzO_QC:
