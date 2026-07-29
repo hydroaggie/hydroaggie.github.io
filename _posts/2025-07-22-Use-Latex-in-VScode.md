@@ -2,6 +2,7 @@
 layout: post
 title: How to use LaTeX in VScode as an Overleaf alternative
 date: 2025-07-22
+last_updated: 2026-07-29
 description: Tutorial on how to use LaTeX in VScode as an alternative to Overleaf
 tags:
   - LaTeX
@@ -43,7 +44,7 @@ To view the compiled PDF, you can either click on the `View LaTeX PDF` button on
 
 {% include figure.liquid loading="eager" path="assets/img/blog/latex_vscode.png" caption="An example of using LaTeX in VSCode with side-by-side editor and PDF preview." class="img-fluid rounded z-depth-1" %}
 
-To jump from a specific line in the LaTeX file to the corresponding location in the PDF, you can use the `SyncTeX` feature. Simply place your cursor on the line you want to jump from and press `Cmd + Option + J` (Mac) or `Ctrl + Alt + J` (Windows/Linux). This will synchronize the LaTeX file with the PDF and take you to the corresponding location. To do the reverse, you can click on the PDF and press `Cmd + Click` (Mac) or `Ctrl + Click` (Windows/Linux) to jump back to the LaTeX file.
+To jump from a specific line in the LaTeX file to the corresponding location in the PDF, you can use the `SyncTeX` feature. Simply place your cursor on the line you want to jump from and press `Cmd + Option + J` (Mac) or `Ctrl + Alt + J` (Windows/Linux). Note that you can change the key bindings to something that's easy to remember (I changed it to `Cmd + right arrow` on my Mac). This will synchronize the LaTeX file with the PDF and take you to the corresponding location. To do the reverse, you can click on the PDF and press `Cmd + Click` (Mac) or `Ctrl + Click` (Windows/Linux) to jump back to the LaTeX file.
 
 ## Configuring LaTeX-Workshop to make it more like Overleaf
 
