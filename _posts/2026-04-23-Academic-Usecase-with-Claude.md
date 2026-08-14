@@ -157,11 +157,11 @@ This requires authentication with GitHub or another version control system. I fi
 
 These are some tips that I found useful when using Claude. Many of these can also be found in the [official documentation](https://code.claude.com/docs/en/best-practices) and community posts (e.g., [claude-code-tips](https://github.com/ykdojo/claude-code-tips)).
 
+- Provide **verification** or success criteria for the task you want to accomplish. **This is one of the most impactful tips per the [Claude Code team at Anthropic](https://support.claude.com/en/articles/14554000-claude-code-power-user-tips)**. If possible, provide some test cases or expected outputs (e.g., a screenshot). At the minimum, put a "success criteria"  section in the end of the prompt and let Claude verify if the task is accomplished successfully. This can greatly reduce the chances of getting an inaccurate or incomplete response from Claude. 
+
 - **Context matters**. Use `@` to directly reference files and `/add-dir` to add a directory to the context, or paste screenshots or code snippets. This will help Claude understand the task better and provide more accurate responses. However, too much context will slow down Claude and cause it to forget what was told earlier.
   
 - **Plan first** before you let Claude do the work. Ask Claude to come up with a detailed plan for a task. Let Claude ask you clarifying questions to make sure it understands the task correctly. This will save you time and tokens in the long run. E.g.,```I want to build a personal website. Interview me in detail to understand my needs and preferences, then come up with a detailed plan for how to build the website.```
-
-- Provide **verification** or success criteria for the task you want to accomplish. If possible, provide some test cases or expected outputs (e.g., a screenshot). At the minimum, put a "success criteria"  section in the end of the prompt and let Claude verify if the task is accomplished successfully. This can greatly reduce the chances of getting an inaccurate or incomplete response from Claude. 
 
 - Ask Claude to correct its own mistakes. If you find that the response from Claude is not accurate or contains errors, you can ask it to correct itself and put what it has learned into the memory so it won't make the same mistake again. It is kind of like training an AI to improve itself over time.
 

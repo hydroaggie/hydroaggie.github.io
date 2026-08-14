@@ -1,10 +1,12 @@
 ---
 layout: post
-title: PhD Position in Groundwater Hydrology and Machine Learning
+title: PhD Position in Groundwater Hydrology and Machine Learning (Closed)
 date: 2026-04-16
 inline: false
 related_posts: false
 ---
+
+**The position is now closed. We are no longer accepting applications for this PhD position.**
 
 We are looking for one PhD student interested in groundwater hydrology and machine learning starting in **Fall 2026** or **Spring 2027**.
 
