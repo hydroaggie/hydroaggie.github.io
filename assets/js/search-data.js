@@ -630,8 +630,8 @@ ninja.data = [{
           section: "News",},{id: "news-new-article-led-by-ehsan-ebrahimi-was-published-in-environmental-modeling-amp-amp-software",
           title: 'New article led by Ehsan Ebrahimi was published in Environmental Modeling &amp;amp;amp; Software...',
           description: "",
-          section: "News",},{id: "news-phd-position-in-groundwater-hydrology-and-machine-learning",
-          title: 'PhD Position in Groundwater Hydrology and Machine Learning',
+          section: "News",},{id: "news-phd-position-in-groundwater-hydrology-and-machine-learning-closed",
+          title: 'PhD Position in Groundwater Hydrology and Machine Learning (Closed)',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-04-16-PhD-position/";
