@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-24'
+  last_updated: '2026-08-17'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
-    citations: 2
+    citations: 3
     title: Evaluating the effects of burn severity and precipitation on post-fire watershed responses using distributed hydrologic models
     year: '2023'
   Md_6je0AAAAJ:-_dYPAW6P2MC:
@@ -37,6 +37,10 @@ papers:
     citations: 0
     title: Towards Trustworthy and Interpretable Deep Learning-assisted Ecohydrological Models
     year: '2021'
+  Md_6je0AAAAJ:4hFrxpcac9AC:
+    citations: 0
+    title: Advancements in Physics-Based, Integrated Hydrologic Modeling to Support Water Resources Management I Poster
+    year: '2025'
   Md_6je0AAAAJ:5qfkUJPXOUwC:
     citations: 1
     title: Evaluating post-fire watershed response to varying burn severity and precipitation regimes using fully-distributed and integrated hydrologic models
@@ -70,7 +74,7 @@ papers:
     title: High-performance simulation of dynamic hydrologic exchange and implications for surrogate flow and reactive transport modeling in a large river corridor
     year: '2020'
   Md_6je0AAAAJ:BwyfMAYsbu0C:
-    citations: 50
+    citations: 51
     title: The effects of spatial and temporal resolution of gridded meteorological forcing on watershed hydrological responses
     year: '2022'
   Md_6je0AAAAJ:ClCfbGk0d_YC:
@@ -101,6 +105,10 @@ papers:
     citations: 13
     title: Bridging hydrological ensemble simulation and learning using deep neural operators
     year: '2024'
+  Md_6je0AAAAJ:HtEfBTGE9r8C:
+    citations: 0
+    title: Quantitative Evaluation of Baseflow Separation Methods Using an Integrated Hydrologic Model in a Snow-Dominated Watershed
+    year: '2025'
   Md_6je0AAAAJ:ILKRHgRFtOwC:
     citations: 0
     title: What can we learn from multiple watershed models and observations?
@@ -123,7 +131,7 @@ papers:
     year: '2025'
   Md_6je0AAAAJ:M7yex6snE4oC:
     citations: 1
-    title: Data and scripts associated with the manuscript evaluating the hydrologic responses of the Pacific Northwest watersheds to wildfires (v2)
+    title: Data and scripts associated with the manuscript evaluating the hydrologic responses of the Pacific Northwest watersheds to wildfires
     year: '2023'
   Md_6je0AAAAJ:ML0RJ9NH7IQC:
     citations: 21
@@ -134,9 +142,13 @@ papers:
     title: Quantifying Hydrological Disturbance using Geophysical Imaging and an ATS-flow Model during an Ecosystem-scale Coastal Flooding Experiment
     year: '2022'
   Md_6je0AAAAJ:NJ774b8OgUMC:
-    citations: 158
+    citations: 160
     title: 'Denitrification in the banks of fluctuating rivers: The effects of river stage amplitude, sediment hydraulic conductivity and dispersivity, and ambient groundwater flow'
     year: '2017'
+  Md_6je0AAAAJ:NXb4pA-qfm4C:
+    citations: 0
+    title: Focal Area (s)
+    year: Unknown Year
   Md_6je0AAAAJ:PVjk1bu6vJQC:
     citations: 1
     title: 'Data and scripts associated with" Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado"'
@@ -193,12 +205,16 @@ papers:
     citations: 0
     title: Data for EMSL Project 49749 from March 2020
     year: '2020'
+  Md_6je0AAAAJ:XvxMoLDsR5gC:
+    citations: 0
+    title: 'Advances in Integrated Hydrologic Modeling: Applications Across Complex Systems'
+    year: Unknown Year
   Md_6je0AAAAJ:YohjEiUPhakC:
     citations: 0
     title: 'Arctic Active Layers are Staying Unfrozen: 40 years of Thermal-Hydrologic Change'
     year: '2025'
   Md_6je0AAAAJ:YsMSGLbcyi4C:
-    citations: 28
+    citations: 29
     title: The impact of the degree of aquifer confinement and anisotropy on tidal pulse propagation
     year: '2017'
   Md_6je0AAAAJ:Z5m8FVwuT1cC:
@@ -221,6 +237,10 @@ papers:
     citations: 0
     title: Enhancing Water Management Modeling through Extended Hydrofabric
     year: '2024'
+  Md_6je0AAAAJ:a9-T7VOCCH8C:
+    citations: 0
+    title: Simulating The Temporal and Spatial Dynamics of Groundwater Discharge in The Blacksmith Fork Watershed, UT Under Various Climate Scenarios
+    year: '2023'
   Md_6je0AAAAJ:anf4URPfarAC:
     citations: 0
     title: Hydrologic and Thermal Changes in Supra-Permafrost Soils and Aquifers Over the Last Four Decades of Warming
@@ -250,7 +270,7 @@ papers:
     title: 'Periodic Subsurface Flows Across Scales: Applications to Groundwater Systems Across the Geosphere'
     year: Unknown Year
   Md_6je0AAAAJ:evX43VCCuoAC:
-    citations: 60
+    citations: 61
     title: Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Regulated River Reach
     year: '2019'
   Md_6je0AAAAJ:fEOibwPWpKIC:
@@ -269,10 +289,6 @@ papers:
     citations: 2
     title: 'Estimating Watershed Subsurface Permeability From Stream Discharge Data using Deep Neural Networks, Frontiers in Earth Science: Dataset'
     year: '2019'
-  Md_6je0AAAAJ:i2xiXl-TujoC:
-    citations: 0
-    title: Dam Operations and Subsurface Hydrogeology Control Dynamics of Hydrologic Exchange Flows in a Regulated River Reach
-    year: '2022'
   Md_6je0AAAAJ:ipzZ9siozwsC:
     citations: 0
     title: Using Ensemble Data Assimilation to Estimate Long-term Hydrologic Exchange Fluxes under Highly Dynamic Condition
@@ -290,7 +306,7 @@ papers:
     title: Purpose-built modeling to inform climate impact mitigation.
     year: '2024'
   Md_6je0AAAAJ:kuK5TVdYjLIC:
-    citations: 45
+    citations: 47
     title: 'Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado'
     year: '2023'
   Md_6je0AAAAJ:lmc2jWPfTJgC:
@@ -302,7 +318,7 @@ papers:
     title: Data-model files associated with the manuscript titled" The Importance of Explicitly Representing the Streambed in Watershed Models"(Shuai et al., 2023 HP)
     year: '2022'
   Md_6je0AAAAJ:p__nRnzSRKYC:
-    citations: 8
+    citations: 7
     title: Modeling framework for evaluating the impacts of hydrodynamic pressure on hydrologic exchange fluxes and residence time for a large-scale river section over a long-term period
     year: '2022'
   Md_6je0AAAAJ:q3CdL3IzO_QC:
@@ -321,6 +337,10 @@ papers:
     citations: 0
     title: Investigation of groundwater flow and reactive transport in supra-permafrost aquifers
     year: '2024'
+  Md_6je0AAAAJ:sNmaIFBj_lkC:
+    citations: 0
+    title: Advancements in Physics-based, Integrated Hydrologic Modeling to Support Water Resources Management
+    year: Unknown Year
   Md_6je0AAAAJ:t7zJ5fGR-2UC:
     citations: 0
     title: Dam Induced Hydrologic Exchange Flows Alter River Corridor Thermal Regime
@@ -330,7 +350,7 @@ papers:
     title: Tidal and seasonal river stage fluctuations impact the formation of permeable natural reactive Barriers in Riverbank Sediments
     year: '2017'
   Md_6je0AAAAJ:tYavs44e6CUC:
-    citations: 27
+    citations: 28
     title: Using ensemble data assimilation to estimate transient hydrologic exchange flow under highly dynamic flow conditions
     year: '2022'
   Md_6je0AAAAJ:tuHXwOkdijsC:
@@ -353,8 +373,12 @@ papers:
     citations: 26
     title: "Kilometer\u2010scale hydrologic exchange flows in a gravel bed river corridor and their implications to solute migration"
     year: '2020'
+  Md_6je0AAAAJ:umqufdRvDiIC:
+    citations: 0
+    title: 'Coupled surface and subsurface flow and reactive transport across aquatic-terrestrial interfaces: Linking observations, experiments and models.'
+    year: Unknown Year
   Md_6je0AAAAJ:vDijr-p_gm4C:
-    citations: 30
+    citations: 31
     title: "River dynamics control transit time distributions and biogeochemical reactions in a dam\u2010regulated river corridor"
     year: '2020'
   Md_6je0AAAAJ:vbGhcppDl1QC:
