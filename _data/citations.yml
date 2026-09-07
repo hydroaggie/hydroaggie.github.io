@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-24'
+  last_updated: '2026-09-07'
 papers:
   Md_6je0AAAAJ:-FonjvnnhkoC:
     citations: 3
@@ -26,7 +26,7 @@ papers:
     title: Quantifying Km-scale Hydrological Exchange Flows under Dynamic Flows and Their Influences on River Corridor Biogeochemistry
     year: '2017'
   Md_6je0AAAAJ:2osOgNQ5qMEC:
-    citations: 87
+    citations: 88
     title: Vulnerability of low-arsenic aquifers to municipal pumping in Bangladesh
     year: '2016'
   Md_6je0AAAAJ:35r97b3x0nAC:
@@ -42,7 +42,7 @@ papers:
     title: Advancements in Physics-Based, Integrated Hydrologic Modeling to Support Water Resources Management I Poster
     year: '2025'
   Md_6je0AAAAJ:5qfkUJPXOUwC:
-    citations: 2
+    citations: 3
     title: Evaluating post-fire watershed response to varying burn severity and precipitation regimes using fully-distributed and integrated hydrologic models
     year: '2025'
   Md_6je0AAAAJ:7T2F9Uy0os0C:
@@ -74,7 +74,7 @@ papers:
     title: High-performance simulation of dynamic hydrologic exchange and implications for surrogate flow and reactive transport modeling in a large river corridor
     year: '2020'
   Md_6je0AAAAJ:BwyfMAYsbu0C:
-    citations: 51
+    citations: 52
     title: The effects of spatial and temporal resolution of gridded meteorological forcing on watershed hydrological responses
     year: '2022'
   Md_6je0AAAAJ:ClCfbGk0d_YC:
@@ -102,7 +102,7 @@ papers:
     title: 'The Effects of Precipitation Variability on Supra-Permafrost Thermal Hydrology: Flashy Hillslopes with More Outflow'
     year: '2026'
   Md_6je0AAAAJ:HbR8gkJAVGIC:
-    citations: 13
+    citations: 15
     title: Bridging hydrological ensemble simulation and learning using deep neural operators
     year: '2024'
   Md_6je0AAAAJ:HtEfBTGE9r8C:
@@ -246,7 +246,7 @@ papers:
     title: Hydrologic and Thermal Changes in Supra-Permafrost Soils and Aquifers Over the Last Four Decades of Warming
     year: '2025'
   Md_6je0AAAAJ:b1wdh0AR-JQC:
-    citations: 36
+    citations: 37
     title: 'Watershed Workflow: A toolset for parameterizing data-intensive, integrated hydrologic models'
     year: '2022'
   Md_6je0AAAAJ:bz8QjSJIRt4C:
@@ -306,7 +306,7 @@ papers:
     title: Purpose-built modeling to inform climate impact mitigation.
     year: '2024'
   Md_6je0AAAAJ:kuK5TVdYjLIC:
-    citations: 47
+    citations: 48
     title: 'Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado'
     year: '2023'
   Md_6je0AAAAJ:lmc2jWPfTJgC:
