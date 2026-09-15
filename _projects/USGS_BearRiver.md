@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bear River Water Management Modeling
-description: "Advance the representation of groundwater in a water management system model for the Bear River Watershed"
+title: Coupled Human-Water System
+description: "Advance the representation of groundwater in a water management system model"
 img: assets/img/projects/BearRiver.jpeg
 importance: 1
 category: Active
@@ -32,10 +32,10 @@ U.S. Geological Survey (USGS) [Water Resources Research 104b Program](https://wa
 
 **Duration**: 
 
-09/01/2024-08/31/2025
+09/01/2024-08/31/2026
 
 **Total Funding**: 
 
-$32,000
+$64,000
 
 
