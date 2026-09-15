@@ -658,9 +658,9 @@ ninja.data = [{
           description: "Dynamics of interconnected surface-subsurface flow and reactive transport processes across the hillslope-riparian zone-river corridor continuum of cold, high-latitude watersheds",
           section: "Projects",handler: () => {
               window.location.href = "/projects/DOE_arctic_project/";
-            },},{id: "projects-bear-river-water-management-modeling",
-          title: 'Bear River Water Management Modeling',
-          description: "Advance the representation of groundwater in a water management system model for the Bear River Watershed",
+            },},{id: "projects-coupled-human-water-system",
+          title: 'Coupled Human-Water System',
+          description: "Advance the representation of groundwater in a water management system model",
           section: "Projects",handler: () => {
               window.location.href = "/projects/USGS_BearRiver/";
             },},{
