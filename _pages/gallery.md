@@ -7,6 +7,15 @@ nav: true
 nav_order: 4
 images:
   slider: true
+_styles: |
+  swiper-slide img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: min(600px, 60vw);
+    margin: 0 auto;
+  }
 ---
 
 <!--
@@ -35,5 +44,6 @@ images:
 ## Group
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" rewind="true">
+  <swiper-slide>{% include figure.liquid path="assets/img/gallery/group/group_2026.jpg" caption="Group photo, May 2026. From left: Tarun Agrawal, Collins Stephenson, Devon Hill, Pin Shuai, and Ehsan Ebrahimi." class="img-fluid rounded z-depth-1" %}</swiper-slide>
   <swiper-slide>{% include figure.liquid path="assets/img/gallery/group/agu_2024.jpeg" caption="Academic family meet at AGU, 2024." class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
