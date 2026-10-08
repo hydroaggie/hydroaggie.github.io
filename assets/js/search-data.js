@@ -671,6 +671,11 @@ ninja.data = [{
           description: "Advance the representation of groundwater in a water management system model",
           section: "Projects",handler: () => {
               window.location.href = "/projects/USGS_BearRiver/";
+            },},{id: "projects-baseflow-prediction-in-snow-dominated-watersheds",
+          title: 'Baseflow Prediction in Snow-Dominated Watersheds',
+          description: "Advance Baseflow Prediction in Snow-Dominated Watersheds Using Physics-informed Machine Learning",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/USGS_baseflow/";
             },},{
         id: 'social-scholar',
         title: 'Google Scholar',
