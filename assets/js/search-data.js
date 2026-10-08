@@ -591,6 +591,11 @@ ninja.data = [{
           description: "Profile of Pin Shuai, PI",
           section: "Members",handler: () => {
               window.location.href = "/members/Pin_Shuai";
+            },},{id: "members-sakar-dhakal",
+          title: 'Sakar Dhakal',
+          description: "PhD Student",
+          section: "Members",handler: () => {
+              window.location.href = "/members/Sakar_Dhakal";
             },},{id: "members-tarun-agrawal",
           title: 'Tarun Agrawal',
           description: "Postdoctoral Fellow",
