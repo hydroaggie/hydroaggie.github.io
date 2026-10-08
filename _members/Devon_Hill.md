@@ -15,7 +15,7 @@ teaser: >
 
 profile:
     name: Devon Hill
-    position: PhD Student (co-advised with Dr. Beth Neilson)
+    position: Doctoral Student (co-advised with Dr. Beth Neilson)
     align: right
     image: devon_pic.jpg
     role: 

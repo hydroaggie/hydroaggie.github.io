@@ -17,7 +17,7 @@ teaser: >
 
 profile:
     name: Sakar Dhakal
-    position: PhD Student 
+    position: Doctoral Student
     align: right
     image: sakar-dhakal.jpg
     role: Graduate Research Assistant
